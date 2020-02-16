@@ -8,7 +8,7 @@ header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
     - About Me
-    - Github Page
+    - 闲聊
 ---
 # HELLO_WORLD!
 
@@ -56,14 +56,14 @@ tags:
 欢迎在博客下评论！  
 
 欢迎发邮件到  
-```
+
 cleveryh@qq.com  
 
 或者
 
 chenyh369@mail2.sysu.edu.cn
-```
-欢迎指教
+
+与我交流!
 
 ### 其他
 
