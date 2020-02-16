@@ -55,7 +55,7 @@ tags:
 
 欢迎在博客下评论！  
 
-欢迎发邮件到  cleveryh@qq.com  或者  chenyh369@mail2.sysu.edu.cn 与我交流!
+欢迎发邮件到  [cleveryh@qq.com](mailto:cleveryh@qq.com)  或者  [chenyh369@mail2.sysu.edu.cn](mailto:chenyh369@mail2.sysu.edu.cn) 与我交流!
 
 ### 其他
 
