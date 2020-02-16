@@ -14,7 +14,7 @@ github_repo: "https://github.com/CleverYh/cleveryh.github.io" # you code reposit
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "水激石则鸣，人激志则宏。"
 sidebar-avatar: /img/CleverYh.png       # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
