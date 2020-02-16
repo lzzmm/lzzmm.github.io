@@ -30,7 +30,7 @@ tags:
 
 ## 学习方向
 
-在下目前就读于中山大学数据科学与计算机学院计算机类。正在学习数学分析，高等代数，离散数学，数字电路基础，STM32，ROS，C/C++，Golang，MATLAB，Python，OpenCV，基于PyTorch的深度学习，Web开发。在中山大学数据科学与计算机学院无人系统研究所陈刚团队努力摸鱼。
+在下目前就读于中山大学数据科学与计算机学院计算机类。正在学习数学分析，高等代数，离散数学，数字电路基础，STM32，ROS，C/C++，Golang，MATLAB，Python，OpenCV，基于PyTorch的深度学习，Web开发。在[中山大学](http://www.sysu.edu.cn/)[数据科学与计算机学院](http://sdcs.sysu.edu.cn/)[无人系统研究所](https://www.usilab.cn/)[陈刚团队](https://www.usilab.cn/team/chengang/)努力摸鱼。
 
 ### 目前因为自己太懒导致一位朋友独自
 
