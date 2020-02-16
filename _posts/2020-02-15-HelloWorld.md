@@ -7,7 +7,7 @@ author:     炸毛
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - test
+    - About Me
     - Github Page
 ---
 # HELLO_WORLD!
