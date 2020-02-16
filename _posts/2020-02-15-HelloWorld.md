@@ -32,9 +32,7 @@ tags:
 
 在下目前就读于[中山大学](http://www.sysu.edu.cn/)[数据科学与计算机学院](http://sdcs.sysu.edu.cn/)计算机类。正在学习数学分析，高等代数，离散数学，数字电路基础，STM32，ROS，C/C++，Golang，MATLAB，Python，OpenCV，基于PyTorch的深度学习，Web开发。在中山大学数据科学与计算机学院[无人系统研究所](https://www.usilab.cn/)[陈刚团队](https://www.usilab.cn/team/chengang/)努力摸鱼。
 
-### 目前因为自己太懒导致一位[朋友](https://whaohan.github.io/about/)独自
-
-## 在一个难以出生的小程序上挣扎
+### 目前因为自己太懒导致一位[朋友](https://whaohan.github.io/about/)独自在一个难以出生的小程序上挣扎
 
 
 ## 未来展望
