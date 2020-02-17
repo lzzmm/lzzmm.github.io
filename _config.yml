@@ -51,10 +51,10 @@ kramdown:
     input: GFM                            # use Github Flavored Markdown !important
     syntax_highlighter_opts:
         span:
-        line_numbers: false
-    block:
-        line_numbers: true
-        start_line: 00
+            line_numbers: false
+        block:
+            line_numbers: true
+            start_line: 0
 
 
 
