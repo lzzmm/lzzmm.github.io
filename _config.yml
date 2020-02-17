@@ -64,6 +64,15 @@ kramdown:
 # Netease settings
 netease_comment: false
 
+# Gitalk
+gitalk:
+    enable: true                                             #是否开启Gitalk评论
+    clientID:     7fffbe4c3b1dd09438df                       #生成的clientID
+    clientSecret: 31af50fecf6080208cea63ddb5a889340ae1259e   #生成的clientSecret
+    repo: cleveryh.github.io    #仓库名称
+    owner: CleverYh             #GitHub用户名
+    admin: CleverYh
+    distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # Analytics settings
