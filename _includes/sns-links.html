@@ -79,9 +79,11 @@
   </li>
   {% endif %}
 </ul>
+<p>
 {% if site.email_1 %}
-    <p><a href="mailto:{{site.email_1}}">✉️  {{site.email_1}}</a></p>
+    <a href="mailto:{{site.email_1}}">✉️  {{site.email_1}}</a>
 {% endif %}
 {% if site.email_2 %}
-    <p><a href="mailto:{{site.email_2}}">✉️  {{site.email_2}}</a></p>
+    <a href="mailto:{{site.email_2}}">✉️  {{site.email_2}}</a>
 {% endif %}
+</p>
