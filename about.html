@@ -1,128 +1,31 @@
 ---
 layout: page
-title: "About ZM"
-description: "Hey, welcome to Zhamao's secret base."
-header-img: "img/home-bg.jpg"
+title: "About"
+description: "你是我的梦想"
+header-img: "img/about-bg.jpg"
+multilingual: true
 ---
 
-<!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 | Simplified Chinese </option>
-    <option value="1"> 英文 | English </option>
-</select>
+{% include multilingual-sel.html %}
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-
-    <!--copied from markdown -->
-    <blockquote><p>//冰冻三尺 非一日之寒<br>
-    //积土成山 非斯须之作</p><br><p>苟利国家生死以<br>
-    岂因祸福避趋之</p></blockquote>
-
-    <p>嘿，我是<strong>炸毛</strong>，一只本科生，现就读于<a href="http://sdcs.sysu.edu.cn/">中山大学数据科学与计算机学院</a>计算机类。</p>
-
-    <p>炸毛十分的<strong>懒</strong>。更多关于炸毛请前往 <a href="https://cleveryh.github.io/2020/02/15/HelloWorld/">Hello_World!</a></p>
-
-    <p>这是利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。源码在<a href="https://github.com/CleverYh/cleveryh.github.io_">GitHub</a>上。(●'◡'●)</p>
-
-    <p>2020前的博客来自柏荧的博客，我从他那里Fork来了模板。我保留他的文章以便自己以后学习，诸位也可以看看。虽然本人十分的<strong>菜</strong>，但是热爱计算机和web。我从现在开始克服懒惰努力写自己的博客。请多指教！(￣▽￣)"</p>
-    
-    <p>欢迎评论和发邮件到 <br> <a href="mailto:cleveryh@qq.com">cleveryh@qq.com</a> 或 <br> <a href="mailto:chenyh369@mail2.sysu.edu.com">chenyh369@mail2.sysu.edu.com</a> 或 <br> <a href="mailto:cortexcyh@gmail.com">cortexcyh@gmail.com</a> <br> 指出错误或与我交流(●'◡'●)</p>
-    
-    <p>最后更新于2020年2月16日。</p>
-
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote><p>Le vent se lève, il faut tenter de vivre. </p></blockquote>
-
-    <p>Hey, I am <strong>Yuhan</strong>. You can call me <strong>Zhamao</strong>. I am a undergraduate and currently studying in <a href="http://sdcs.sysu.edu.cn/">School of Data and Computer Science</a>, Sun Yat-sen University Guangzhou East Campus.</p>
-
-    <p>This is my personal blog. My GitHub is <a href="https://github.com/CleverYh">CleverYh</a>.</p>
-    
-    <p>I like reading, gaming, coding, running and swimming.</p>
-
-    <p>Blogs posted before 2020 is written by BaiYing, I keep them for myself to study. And I'll share my life here from now on.</p>
-
-    <p>For more please click here → <a href="https://cleveryh.github.io/2020/02/15/HelloWorld/">Hello_World!</a> </p>
-
-    <p>Although I'm so <strong>weak</strong> in Computer Science, I still love it very much.<br> I'd welcome any suggestion. (￣▽￣)"</p>
-    
-    <p>You can make comment through Gitalk down here or sent e-mail to me at <br> <a href="mailto:cleveryh@qq.com">cleveryh@qq.com</a> or <br> <a href="mailto:chenyh369@mail2.sysu.edu.com">chenyh369@mail2.sysu.edu.com</a> or <br> <a href="mailto:cortexcyh@gmail.com">cortexcyh@gmail.com</a> <br> (●'◡'●)</p>
-
-    <p>Latest update on Feb.16th,2020.</p>
-
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
 </div>
 
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
 
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
-
-
-<!-- Gitalk 评论 start  -->
-{% if site.gitalk.enable %}
-<!-- Gitalk link  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-    <script type="text/javascript">
-    var gitalk = new Gitalk({
-    clientID: '{{site.gitalk.clientID}}',
-    clientSecret: '{{site.gitalk.clientSecret}}',
-    repo: '{{site.gitalk.repo}}',
-    owner: '{{site.gitalk.owner}}',
-    admin: ['{{site.gitalk.admin}}'],
-    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-    id: 'about',
-    });
-    gitalk.render('gitalk-container');
-</script>
-{% endif %}
-<!-- Gitalk end -->
-
-<!-- disqus 评论框 start  -->
-{% if site.disqus.enable %}
-
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
 <div class="comment">
     <div id="disqus_thread" class="disqus-thread">
+
     </div>
 </div>
 <!-- disqus 评论框 end -->
@@ -130,8 +33,8 @@ header-img: "img/home-bg.jpg"
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus.username}}";
-    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
     var disqus_url = "{{site.url}}{{page.url}}";
 
     (function() {
@@ -142,4 +45,3 @@ header-img: "img/home-bg.jpg"
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
-
