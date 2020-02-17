@@ -54,12 +54,6 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-  syntax_highlighter_opts:
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
 
 
 
@@ -94,7 +88,7 @@ ga_domain:     auto                   # 默认的是 auto, 这里可以自定义
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 2              # 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 
 
