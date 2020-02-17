@@ -8,6 +8,8 @@ keyword: "炸毛" # "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的�
 url: "http://cleveryh.github.io"        # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
+github_repo: "https://github.com/CleverYh/cleveryh.github.io" # your code repository
+
 # Publish posts or collection documents with a future date.
 future: true
 
