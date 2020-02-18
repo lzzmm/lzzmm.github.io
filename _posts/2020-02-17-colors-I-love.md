@@ -2,7 +2,7 @@
 layout:     keynote
 title:      "My Favorite Colors"
 subtitle:   "给你点颜色看看"
-iframe:     "http://yanshuo.io/assets/player/?deck=5e4b88cb21b47e006b0be6b3"
+iframe:     "/_keynotes/color.html"
 navcolor:   "invert"
 date:       2020-02-17
 author:     "Yh"
