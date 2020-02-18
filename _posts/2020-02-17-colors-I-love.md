@@ -9,6 +9,6 @@ author:     "Yh"
 tags:       Slides
 ---
 
-># [Watching Fullscreen → ](http://yanshuo.io/assets/player/?deck=5e4b88cb21b47e006b0be6b3)
+# [Watching Fullscreen → ](http://yanshuo.io/assets/player/?deck=5e4b88cb21b47e006b0be6b3)
 
 # 在此持续更新我的颜色收藏。
