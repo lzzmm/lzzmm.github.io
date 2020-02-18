@@ -117,35 +117,35 @@ friends: [
     {
         title: "HH",
         href: "https://whaohan.github.io"
-    },{
+    #},{
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "Sherry Wu",
-        href: "https://xuechundesign.github.io"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "JiyinYiyong",
-        href: "http://tiye.me/"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
+    #    title: "乱序",
+    #    href: "http://mida.re/"
+    #},{
+    #    title: "Sherry Wu",
+    #    href: "https://xuechundesign.github.io"
+    #},{
+    #    title: "Luke 的自留地",
+    #    href: "http://hmqk1995.github.io"
+    #},{
+    #    title: "Ebn's Blog",
+    #    href: "http://ebnbin.com/"
+    #},{
+    #    title: "SmdCn's Blog",
+    #    href: "http://blog.smdcn.net"
+    #},{
+    #    title: "JiyinYiyong",
+    #    href: "http://tiye.me/"
+    #},{
+    #    title: "David's Game",
+    #    href: "https://www.ruoyaowu.com/"
+    #},{
+    #    title: "DHong Say",
+    #    href: "http://dhong.co"
+    #},{
+    #    title: "尹峰以为",
+    #    href: "http://ingf.github.io/"
     }
 ]
