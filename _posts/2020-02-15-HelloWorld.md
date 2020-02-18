@@ -8,7 +8,6 @@ header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
     - About Me
-    - 闲聊
 ---
 # HELLO_WORLD!
 
