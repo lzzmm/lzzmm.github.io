@@ -4,7 +4,7 @@ title:      Hello_world!
 subtitle:   我的第一篇博客
 date:       2020-02-15
 author:     炸毛
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/home-bg.jpg
 catalog: true
 tags:
     - About Me
