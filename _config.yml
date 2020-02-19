@@ -5,7 +5,7 @@ header-img: img/home-bg-star_track.jpg
 email_1: cortexcyh@gmail.com
 email_2: cleveryh@qq.com
 description: "炸毛的秘密基地" # "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "炸毛" # "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+keyword: "炸毛, CleverYh, Yh, 炸毛的秘密基地" # "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "http://cleveryh.github.io"        # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -65,7 +65,7 @@ kramdown:
 # disqus_username: hux
 
 # Netease settings
-netease_comment: false
+netease_comment: true
 
 # Gitalk
 gitalk:
@@ -80,11 +80,11 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: c7c6e07d8c4af60ce3143894898b897d
 
 # Google Analytics
-# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-# ga_domain: huangxuan.me
+# ga_track_id: 'UA-158666159-1'            # Format: UA-xxxxxx-xx
+# ga_domain: auto
 
 
 
@@ -97,7 +97,7 @@ sidebar-avatar: /img/CleverYh.png      # use absolute URL, seeing it's used in b
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 2              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
 
@@ -108,7 +108,7 @@ service-worker: true
 
 
 # MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
+page-mathjax: true
 
 
 
