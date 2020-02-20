@@ -1,4 +1,16 @@
-## 《解密Photoshop+Lightroom数码照片后期处理专业技法》
+---
+layout:     post
+title:      《解密Photoshop+Lightroom数码照片后期处理专业技法》
+subtitle:   
+date:       2020-12-22
+author:     炸毛
+header-img:  # img/post-bg-desk.jpg
+catalog: true
+tags:
+    - 读书笔记
+    - 不适合阅读
+---
+
 
 ## 如何拍出好照片
 
