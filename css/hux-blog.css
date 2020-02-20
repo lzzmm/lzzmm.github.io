@@ -1706,3 +1706,8 @@ img::-moz-selection {
   left: 0;
   top: 0;
 }
+
+/* 测试看板娘 */
+#live2dcanvas {
+  border: 0 !important;
+}
