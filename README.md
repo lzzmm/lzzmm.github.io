@@ -1,4 +1,4 @@
-Cloned Hux Blog
+Cloned Hux Blog, Add Gitalk and other things.
 ========
 
 ### [View Live Hux Blog &rarr;](https://huangxuan.me)  

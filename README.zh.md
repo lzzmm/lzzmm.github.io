@@ -1,4 +1,4 @@
->魔改Huxblog，增加了Gitalk。
+>魔改Huxblog，增加了Gitalk。加入iframe格式控制。
 
 # Hux blog 模板
 
