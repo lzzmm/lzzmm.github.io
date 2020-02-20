@@ -2,7 +2,7 @@
 layout:     post
 title:      数码照片后期处理
 subtitle:   《解密Photoshop+Lightroom数码照片后期处理专业技法》
-date:       2020-12-22
+date:       2019-12-22
 author:     炸毛
 header-style: text
 # header-img:  # img/post-bg-desk.jpg
