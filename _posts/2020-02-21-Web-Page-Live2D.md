@@ -63,9 +63,5 @@ DevTools(`F12`) -> `Sources` -> 左边(Chrome为例)`Page`栏 -> `top` -> `cleve
 
 其他功能有空再研究。
 
-## 问题
-
-- 四只手
-- 手机端影响文字显示
 
 https://github.com/xiazeyu/live2d-widget.js
