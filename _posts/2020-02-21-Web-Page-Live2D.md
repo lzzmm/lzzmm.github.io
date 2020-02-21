@@ -4,7 +4,6 @@ title:      Live2D!
 subtitle:   Deploy Live2D on web page
 date:       2020-02-21
 author:     炸毛
-header-img: img/post-bg-desk.jpg
 catalog: true
 mathjax: true
 live2d:  true
@@ -60,3 +59,5 @@ DevTools -> Sources -> 左边(Chrome为例)Page栏 -> top -> cleveryh.github.io 
 添加CSS代码。
 
 # 成功！
+
+其他功能有空再研究。
