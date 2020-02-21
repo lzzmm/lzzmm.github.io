@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Live2D!
-subtitle:   Deploy Live2D on web page
+title:      Live2D! Poster Girl!
+subtitle:   Deploy dynamic poster girl with Live2D on web page
 date:       2020-02-21
 author:     炸毛
 catalog: true
@@ -62,5 +62,10 @@ DevTools(`F12`) -> `Sources` -> 左边(Chrome为例)`Page`栏 -> `top` -> `cleve
 # 成功！
 
 其他功能有空再研究。
+
+## 问题
+
+- 四只手
+- 手机端影响文字显示
 
 https://github.com/xiazeyu/live2d-widget.js
