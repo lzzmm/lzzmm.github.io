@@ -44,7 +44,7 @@ tags:
 # 引用JS文件
 然后我们发现在这段代码中引用了两个JS文件。这两个文件可以通过DevTools(`F12`)从这个页面拿走。
 
-## 具体操作
+#### 具体操作
 DevTools(`F12`) -> `Sources` -> 左边(Chrome为例)`Page`栏 -> `top` -> `cleveryh.github.io` -> `js` -> `L2Dwidget.0.min.js` 和 `L2Dwidget.min.js` , 右键`Save as`即可保存。
 
 然后根据这两个JS文件在你网页上的目录修改上面脚本代码头两行，依葫芦画瓢。
