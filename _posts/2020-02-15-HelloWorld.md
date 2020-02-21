@@ -6,6 +6,7 @@ date:       2020-02-15
 author:     炸毛
 header-img: img/home-bg.jpg
 catalog: true
+live2d:  true
 tags:
     - About Me
 ---
