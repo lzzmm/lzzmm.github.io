@@ -8,7 +8,7 @@ catalog: true
 mathjax: true
 live2d:  true
 header-style: 
-header-img: img/post-bg-live2d.jpg
+header-img: img/post-bg-live2d-dark.jpg
 tags:
     - JavaScript
     - Web
