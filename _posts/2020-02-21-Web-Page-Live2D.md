@@ -61,3 +61,5 @@ DevTools(`F12`) -> `Sources` -> 左边(Chrome为例)`Page`栏 -> `top` -> `cleve
 # 成功！
 
 其他功能有空再研究。
+
+https://github.com/xiazeyu/live2d-widget.js
