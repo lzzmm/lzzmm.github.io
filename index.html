@@ -3,20 +3,6 @@ layout: page
 description: "Thinking will not overcome fear but action will."
 ---
 
-<script type="text/javascript" charset="utf-8"  src="https://cleveryh.github.io/js/L2Dwidget.0.min.js"></script>
-<script type="text/javascript" charset="utf-8"  src="https://cleveryh.github.io/js/L2Dwidget.min.js"></script>
-<script type="text/javascript">
-    L2Dwidget.init({"display": {
-            "superSample": 2,
-            "width": 200,
-            "height": 400,
-            "position": "right",
-            "hOffset": 0,
-            "vOffset": 0
-        }
-    });
-</script>
-
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -58,3 +44,18 @@ description: "Thinking will not overcome fear but action will."
     {% endif %}
 </ul>
 {% endif %}
+
+<!--我加的-->
+<script type="text/javascript" charset="utf-8"  src="https://cleveryh.github.io/js/L2Dwidget.0.min.js"></script>
+<script type="text/javascript" charset="utf-8"  src="https://cleveryh.github.io/js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+    L2Dwidget.init({"display": {
+            "superSample": 2,
+            "width": 200,
+            "height": 400,
+            "position": "right",
+            "hOffset": 0,
+            "vOffset": 0
+        }
+    });
+</script>
