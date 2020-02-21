@@ -7,8 +7,8 @@ author:     炸毛
 catalog: true
 mathjax: true
 live2d:  true
-header-style: text
-header-img: http://uploads.5068.com/allimg/1712/151-1G2050T557.jpg
+header-style: 
+header-img: img/post-bg-live2d.jpg
 tags:
     - JavaScript
     - Web
