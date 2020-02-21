@@ -7,6 +7,7 @@ author:     炸毛
 header-style: text
 # header-img:  # img/post-bg-desk.jpg
 catalog: true
+live2d:  false
 tags:
     - 读书笔记
     - 不适合阅读
