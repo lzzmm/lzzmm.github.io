@@ -8,7 +8,7 @@ header-img: img/home-bg.jpg
 catalog: true
 live2d:  true
 tags:
-    - About Me
+    - 漫谈
 ---
 # HELLO_WORLD!
 
