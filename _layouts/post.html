@@ -125,6 +125,26 @@ layout: default
   {% include mathjax_support.html %}
 {% endif %}
 
+<!-- CleverYh -->
+{% if page.live2d %}
+<!-- Live2D start -->
+<script type="text/javascript" charset="utf-8"  src="{{ site.baseurl }}/js/L2Dwidget.0.min.js"></script>
+<script type="text/javascript" charset="utf-8"  src="{{ site.baseurl }}/js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+    L2Dwidget.init({"display": {
+        "superSample": 2,
+        "width": 200,
+        "height": 400,
+            "position": "left",
+            "hOffset": 0,
+        "vOffset": 0
+        }
+    });
+</script>
+<!-- Live2D end -->
+{% endif %}
+<!-- End CleverYh -->
+
 {% if site.netease_comment %}
 <!-- 网易云跟帖JS代码 start -->
 <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>

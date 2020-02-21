@@ -94,6 +94,22 @@ multilingual: true
     _render();
 </script>
 
+<!-- Live2D start -->
+<script type="text/javascript" charset="utf-8"  src="{{ site.baseurl }}/js/L2Dwidget.0.min.js"></script>
+<script type="text/javascript" charset="utf-8"  src="{{ site.baseurl }}/js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+    L2Dwidget.init({"display": {
+        "superSample": 2,
+        "width": 200,
+        "height": 400,
+        "position": "right",
+        "hOffset": 0,
+        "vOffset": 0
+        }
+    });
+</script>
+<!-- Live2D end -->
+
 
 <!-- Gitalk 评论 start  -->
 {% if site.gitalk.enable %}
