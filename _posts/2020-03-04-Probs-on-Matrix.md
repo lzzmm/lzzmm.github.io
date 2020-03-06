@@ -3,7 +3,7 @@ layout:     post
 title:      Matrix OJ!
 subtitle:   Simple problems in a page
 date:       2020-03-04
-author:     International ZHAMAO
+author:     Traditial ZHAMAO
 header-img: img/home-bg.jpg
 catalog: true
 mathjax: true
