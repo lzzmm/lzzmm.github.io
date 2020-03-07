@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      摄影笔记
-subtitle:   Learn from photographing
+subtitle:   Learned from photographing
 date:       2019-12-22
 author:     炸毛
 header-img:  img/post-bg-birds.png
@@ -50,8 +50,8 @@ tags:
 - SONY ICLE-α6400 
     - 4K `30p 100M`/`25p 100M Super35mm` 果冻警告⚠
     - HD `120p 100M`/`60p 50M Super35mm`
-    - 24MP 6000x4000 APS-C
-- E PZ 16–50mm ~~F3.5–5.6~~ F8 GM OSS（电动变焦）  
+    - 24MP 6000x4000 APS-C 祖传Exmor传感器
+- E PZ 16–50mm ~~F3.5–5.6~~ **F8 GM** OSS（电动变焦）  
     - 35 mm等效焦距：24 – 75 mm
     - 镜头组–镜片数：8组9片
     - 视角：83° – 32°
@@ -64,3 +64,4 @@ tags:
 - 几百块的便宜三脚架
     - 可拆中轴
     - 球形云台
+- ~~无情铁手稳定器~~
