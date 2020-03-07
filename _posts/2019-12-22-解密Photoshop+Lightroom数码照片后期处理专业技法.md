@@ -9,6 +9,7 @@ header-style: text
 catalog: true
 live2d:  false
 tags:
+    - 摄影
     - 读书笔记
     - 不适合阅读
 ---
