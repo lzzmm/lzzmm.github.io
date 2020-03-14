@@ -86,32 +86,22 @@ int main() {
 
 一个比赛模块需要实现以下请求： 
 
-1. createContest cid t pid _ 1 pid _ 2 ... pid _ t
-
-表示要创建一个比赛，cid是一个正整数，是这场比赛的唯一标识。
-
+1. createContest cid t pid _ 1 pid _ 2 ... pid _ t  
+表示要创建一个比赛，cid是一个正整数，是这场比赛的唯一标识。  
 t表示这场比赛有t(1<=t<=1000)道题目，接下来t个不同的整数，表示这场比赛的题目编号。
 
-2. submission sid cid pid uid result
-
+2. submission sid cid pid uid result  
 该条状态的sid要么之前没出现过，要么以前出现过，但是被rejudge了。
-
 result为AC或者UNAC。
 
-3. getRank cid uid
-
-在一场比赛中，所有有提交的用户都应该算在排名内(包括被rejudge的提交)，用户的排名按照通过的题目数从大到小排序，如果题目数相同，则按随机顺序排序。
-
-该指令需要统计用户uid在cid这场比赛中的**当前通过题目数**，**当前可能最高排名**以及**当前可能最低排名**。
-
-值得注意的是，用户uid在cid这场比赛中同一道题目的多个通过记录只算一次。
-
-**输出格式**: uid solved highest lowest 
-
+3. getRank cid uid  
+在一场比赛中，所有有提交的用户都应该算在排名内(包括被rejudge的提交)，用户的排名按照通过的题目数从大到小排序，如果题目数相同，则按随机顺序排序。  
+该指令需要统计用户uid在cid这场比赛中的**当前通过题目数**，**当前可能最高排名**以及**当前可能最低排名**。 
+值得注意的是，用户uid在cid这场比赛中同一道题目的多个通过记录只算一次。  
+**输出格式**: uid solved highest lowest   
 分别代表用户ID，通过题目数量，最高排名以及最低排名，其中highest <= lowest。
 
-4. rejudge sid
-
+4. rejudge sid  
 重测以sid标识的提交记录，即将该记录的result改成WAIT
 
 ### 输入格式
