@@ -7,6 +7,7 @@ author:     Traditial ZHAMAO
 # header-style: black
 # header-mask: 0.01
 header-img-outchain: true
+header-img-credit: test
 header-img: https://s1.ax1x.com/2020/03/15/833RbQ.jpg
 catalog: true
 mathjax: true
