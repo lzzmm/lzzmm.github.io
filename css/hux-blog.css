@@ -1045,7 +1045,7 @@ samp {
 .intro-header.style-text .tags .tag:hover,
 .intro-header.style-text .tags a:active,
 .intro-header.style-text .tags .tag:active {
-  background-color: rgba(0, 225, 255, 0.11);
+  background-color: rgba(0, 225, 255, 0.2);
 }
 /* by Yh */
 .intro-header.style-black .site-heading,
@@ -1068,7 +1068,7 @@ samp {
 .intro-header.style-black .tags .tag:hover,
 .intro-header.style-black .tags a:active,
 .intro-header.style-black .tags .tag:active {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 202, 216, 0.5);
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style-black {
@@ -1080,7 +1080,7 @@ samp {
 .intro-header.style-black .post-heading,
 .intro-header.style-black .page-heading {
   padding: 85px 0 55px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style-black .site-heading,
@@ -1155,7 +1155,7 @@ samp {
   font-size: 16px;
 }
 .intro-header.style-black .post-heading .meta a {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style-black .post-heading h1 {
@@ -1172,13 +1172,13 @@ samp {
   position: absolute;
   bottom: 6px;
   right: 9px;
-  color: white;
+  color: rgb(0, 0, 0);
   opacity: 0.3;
   font-size: 10px;
   z-index: 1;
 }
 .intro-header.style-black .header-img-credit a {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style-black .header-img-credit {
