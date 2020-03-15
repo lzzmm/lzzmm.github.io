@@ -1023,7 +1023,16 @@ samp {
   /* 0 on mobile, modify by Hux */
 }
 .intro-header.style-text {
-  background: none;
+  /* background: none; */
+  background: no-repeat center center;
+  background-color: #cccccc;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 0px;
+  /* 0 on mobile, modify by Hux */
 }
 .intro-header.style-text .site-heading,
 .intro-header.style-text .post-heading,
