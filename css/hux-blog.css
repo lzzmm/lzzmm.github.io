@@ -1026,13 +1026,13 @@ samp {
 .intro-header.style-black .site-heading,
 .intro-header.style-black .post-heading,
 .intro-header.style-black .page-heading {
-  padding: 85px 0 55px;
+  padding: 150px 0 150px;
   color: #000000;
 }
 .intro-header.style-black .site-heading .subheading,
 .intro-header.style-black .post-heading .subheading,
 .intro-header.style-black .page-heading .subheading {
-  margin-bottom: 150px;
+  margin-bottom: 15px;
 }
 .intro-header.style-black .tags a,
 .intro-header.style-black .tags .tag {
