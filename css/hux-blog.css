@@ -1022,6 +1022,30 @@ samp {
   margin-bottom: 0px;
   /* 0 on mobile, modify by Hux */
 }
+/* by Yh */
+.intro-header.style-black .site-heading,
+.intro-header.style-black .post-heading,
+.intro-header.style-black .page-heading {
+  padding: 85px 0 55px;
+  color: #000000;
+}
+.intro-header.style-black .site-heading .subheading,
+.intro-header.style-black .post-heading .subheading,
+.intro-header.style-black .page-heading .subheading {
+  margin-bottom: 15px;
+}
+.intro-header.style-black .tags a,
+.intro-header.style-black .tags .tag {
+  border-color: #000000;
+  color: #000000;
+}
+.intro-header.style-black .tags a:hover,
+.intro-header.style-black .tags .tag:hover,
+.intro-header.style-black .tags a:active,
+.intro-header.style-black .tags .tag:active {
+  background-color: rgba(0, 202, 216, 0.5);
+}
+/* end Yh */
 .intro-header.style-text {
   background: none;
 }
@@ -1150,13 +1174,14 @@ samp {
   position: absolute;
   bottom: 6px;
   right: 9px;
-  color: white;
-  opacity: 0.5;
+  color: black;
+  opacity: .6;
   font-size: 12px;
   z-index: 1;
+  text-shadow: 3px 3px 7px #d3d3d3;
 }
 .intro-header .header-img-credit a {
-  color: white;
+  color: black;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .header-img-credit {
@@ -1165,30 +1190,7 @@ samp {
     right: 15px;
   }
 }
-/* by Yh */
-.intro-header.style-black .site-heading,
-.intro-header.style-black .post-heading,
-.intro-header.style-black .page-heading {
-  padding: 85px 0 55px;
-  color: #000000;
-}
-.intro-header.style-black .site-heading .subheading,
-.intro-header.style-black .post-heading .subheading,
-.intro-header.style-black .page-heading .subheading {
-  margin-bottom: 15px;
-}
-.intro-header.style-black .tags a,
-.intro-header.style-black .tags .tag {
-  border-color: #000000;
-  color: #000000;
-}
-.intro-header.style-black .tags a:hover,
-.intro-header.style-black .tags .tag:hover,
-.intro-header.style-black .tags a:active,
-.intro-header.style-black .tags .tag:active {
-  background-color: rgba(0, 202, 216, 0.5);
-}
-/* end Yh */
+
 .post-preview > a {
   color: #404040;
 }
