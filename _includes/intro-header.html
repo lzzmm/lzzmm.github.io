@@ -41,7 +41,7 @@
     {% endif %}
 {% if page.header-style == 'text' %}
 <header class="intro-header style-text" >
-{% else if page.header-style == 'black' %}
+{% elif page.header-style == 'black' %}
 <header class="intro-header style-black" >
 {% else %}
 <header class="intro-header" >
@@ -64,7 +64,7 @@
                     <h1>{{ page.title }}</h1>
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}{% if page.timecost == '0' %}<br>Not recommended to read{% else if page.timecost %}<br>About {{ page.timecost }} to read{% endif %}}</span>
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}{% if page.timecost == '0' %}<br>Not recommended to read{% elif page.timecost %}<br>About {{ page.timecost }} to read{% endif %}}</span>
                 </div>
             </div>
         </div>
