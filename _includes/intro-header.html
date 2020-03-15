@@ -41,10 +41,12 @@
     {% endif %}
 {% if page.header-style == 'text' %}
 <header class="intro-header style-text" >
-{% else if page.header-style == 'black' %}
-<header class="intro-header style-black" >
 {% else %}
+    {% if page.header-style == 'black' %}
+<header class="intro-header style-black" >
+    {% else %}
 <header class="intro-header" >
+    {% endif %}
 {% endif %}
     <div class="header-mask"></div>
     {% if page.header-img-credit %}
