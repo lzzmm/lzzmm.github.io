@@ -1023,16 +1023,7 @@ samp {
   /* 0 on mobile, modify by Hux */
 }
 .intro-header.style-text {
-  /* background: none; */
-  background: no-repeat center center;
-  background-color: #cccccc;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 0px;
-  /* 0 on mobile, modify by Hux */
+  background: none;
 }
 .intro-header.style-text .site-heading,
 .intro-header.style-text .post-heading,
@@ -1056,6 +1047,41 @@ samp {
 .intro-header.style-text .tags .tag:active {
   background-color: rgba(0, 225, 255, 0.11);
 }
+/* by Yh */
+.intro-header.style-black {
+  background: no-repeat center center;
+  background-color: #cccccc;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 0px;
+  /* 0 on mobile, modify by Hux */
+}
+.intro-header.style-black .site-heading,
+.intro-header.style-black .post-heading,
+.intro-header.style-black .page-heading {
+  padding: 85px 0 55px;
+  color: #3b3b3b;
+}
+.intro-header.style-black .site-heading .subheading,
+.intro-header.style-black .post-heading .subheading,
+.intro-header.style-black .page-heading .subheading {
+  margin-bottom: 15px;
+}
+.intro-header.style-black .tags a,
+.intro-header.style-black .tags .tag {
+  border-color: #004f63;
+  color: #004f63;
+}
+.intro-header.style-black .tags a:hover,
+.intro-header.style-black .tags .tag:hover,
+.intro-header.style-black .tags a:active,
+.intro-header.style-black .tags .tag:active {
+  background-color: rgba(0, 225, 255, 0.11);
+}
+/* end Yh */
 @media only screen and (min-width: 768px) {
   .intro-header {
     margin-bottom: 20px;
@@ -1066,7 +1092,7 @@ samp {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 85px 0 55px;
-  color: #fff);
+  color: #fff;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
