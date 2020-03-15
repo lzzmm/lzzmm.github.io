@@ -1045,7 +1045,7 @@ samp {
 .intro-header.style-text .tags .tag:hover,
 .intro-header.style-text .tags a:active,
 .intro-header.style-text .tags .tag:active {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 225, 255, 0.11);
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
@@ -1057,7 +1057,7 @@ samp {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 85px 0 55px;
-  color: white;
+  color: rgb(220, 255, 255);
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
