@@ -1048,17 +1048,6 @@ samp {
   background-color: rgba(0, 225, 255, 0.11);
 }
 /* by Yh */
-.intro-header.style-black {
-  background: no-repeat center center;
-  background-color: #cccccc;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 0px;
-  /* 0 on mobile, modify by Hux */
-}
 .intro-header.style-black .site-heading,
 .intro-header.style-black .post-heading,
 .intro-header.style-black .page-heading {
