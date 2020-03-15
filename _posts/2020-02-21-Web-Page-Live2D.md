@@ -4,11 +4,11 @@ title:      Live2D! Poster Girl!
 subtitle:   Deploy dynamic poster girl with Live2D on web page
 date:       2020-02-21
 author:     炸毛
-catalog: true
-mathjax: true
-live2d:  true
-header-style: 
-header-img: img/post-bg-live2d-dark.jpg
+catalog:    true
+mathjax:    true
+live2d:     true
+header-style:   black
+header-img:     img/post-bg-live2d.jpg
 tags:
     - JavaScript
     - Web
