@@ -1047,30 +1047,7 @@ samp {
 .intro-header.style-text .tags .tag:active {
   background-color: rgba(0, 225, 255, 0.2);
 }
-/* by Yh */
-.intro-header.style-black .site-heading,
-.intro-header.style-black .post-heading,
-.intro-header.style-black .page-heading {
-  padding: 85px 0 55px;
-  color: #000000;
-}
-.intro-header.style-black .site-heading .subheading,
-.intro-header.style-black .post-heading .subheading,
-.intro-header.style-black .page-heading .subheading {
-  margin-bottom: 15px;
-}
-.intro-header.style-black .tags a,
-.intro-header.style-black .tags .tag {
-  border-color: #000000;
-  color: #000000;
-}
-.intro-header.style-black .tags a:hover,
-.intro-header.style-black .tags .tag:hover,
-.intro-header.style-black .tags a:active,
-.intro-header.style-black .tags .tag:active {
-  background-color: rgba(0, 202, 216, 0.5);
-}
-/* end Yh */
+
 @media only screen and (min-width: 768px) {
   .intro-header {
     margin-bottom: 20px;
@@ -1188,6 +1165,30 @@ samp {
     right: 15px;
   }
 }
+/* by Yh */
+.intro-header.style-black .site-heading,
+.intro-header.style-black .post-heading,
+.intro-header.style-black .page-heading {
+  padding: 85px 0 55px;
+  color: #000000;
+}
+.intro-header.style-black .site-heading .subheading,
+.intro-header.style-black .post-heading .subheading,
+.intro-header.style-black .page-heading .subheading {
+  margin-bottom: 15px;
+}
+.intro-header.style-black .tags a,
+.intro-header.style-black .tags .tag {
+  border-color: #000000;
+  color: #000000;
+}
+.intro-header.style-black .tags a:hover,
+.intro-header.style-black .tags .tag:hover,
+.intro-header.style-black .tags a:active,
+.intro-header.style-black .tags .tag:active {
+  background-color: rgba(0, 202, 216, 0.5);
+}
+/* end Yh */
 .post-preview > a {
   color: #404040;
 }
