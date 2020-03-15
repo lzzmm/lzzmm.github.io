@@ -5,7 +5,7 @@ subtitle:   Simple problems in a page
 date:       2020-03-04
 author:     Traditial ZHAMAO
 # header-style: black
-header-mask: 1
+header-mask: 0.01
 header-img-outchain: true
 header-img: https://s1.ax1x.com/2020/03/15/833RbQ.jpg
 catalog: true
