@@ -4,7 +4,8 @@ title:      Hello_world!
 subtitle:   我的第一篇博客
 date:       2020-02-15
 author:     炸毛
-header-img: img/home-bg.jpg
+header-img-outchain:    true
+header-img: https://s1.ax1x.com/2020/03/16/8YCKhQ.png
 catalog: true
 live2d:  false
 tags:
