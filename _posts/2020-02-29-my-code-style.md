@@ -4,6 +4,7 @@ title:      My Code Style
 subtitle:   大括号换不换行？
 date:       2020-02-29
 author:     Programmer ZHAMAO
+timecost:   1 minute
 header-img: img/home-bg.jpg
 catalog: true
 mathjax: true
