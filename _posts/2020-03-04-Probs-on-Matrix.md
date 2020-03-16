@@ -13,7 +13,7 @@ header-img-outchain:    true
 header-img: https://s1.ax1x.com/2020/03/16/8JHOyQ.jpg
 catalog: true
 mathjax: true
-live2d:  true
+live2d:  false
 tags:
     - C
     - Matrix
