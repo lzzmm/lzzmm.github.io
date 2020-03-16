@@ -1147,14 +1147,14 @@ samp {
   position: absolute;
   bottom: 6px;
   right: 9px;
-  color: rgb(255, 255, 255);
+  color: black;
   opacity: .6;
   font-size: 12px;
   z-index: 1;
-  text-shadow: 3px 3px 7px #d3d3d3;
+  text-shadow: 3px 3px 7px #333333;
 }
 .intro-header.style.black .header-img-credit a {
-  color: rgb(255, 255, 255);
+  color: black;
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style.black .header-img-credit {
@@ -1292,14 +1292,14 @@ samp {
   position: absolute;
   bottom: 6px;
   right: 9px;
-  color: black;
+  color: white;
   opacity: .6;
   font-size: 12px;
   z-index: 1;
   text-shadow: 3px 3px 7px #d3d3d3;
 }
 .intro-header .header-img-credit a {
-  color: black;
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .header-img-credit {
