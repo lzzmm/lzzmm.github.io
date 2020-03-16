@@ -4,7 +4,8 @@ title:      摄影笔记
 subtitle:   Learned from photographing
 date:       2019-12-22
 author:     炸毛
-header-img:  img/post-bg-birds.png
+header-img-outchain:    true
+header-img:  https://s1.ax1x.com/2020/03/16/8YeQ9f.png
 header-img-credit:      Yuhan Chen
 header-img-year:        2020
 catalog: true
