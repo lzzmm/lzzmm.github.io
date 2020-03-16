@@ -7,7 +7,7 @@ author:     炸毛
 catalog:    true
 mathjax:    true
 live2d:     true
-timecost:   3 minutes
+timecost:   2 minutes
 header-style:   black
 nav-style:      invert
 header-img:     img/post-bg-live2d.jpg
