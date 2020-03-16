@@ -1026,13 +1026,13 @@ samp {
 .intro-header.style-black .site-heading,
 .intro-header.style-black .post-heading,
 .intro-header.style-black .page-heading {
-  padding: 150px 0 150px;
+  /* padding: 150px 0 150px; */
   color: #000000;
 }
 .intro-header.style-black .site-heading .subheading,
 .intro-header.style-black .post-heading .subheading,
 .intro-header.style-black .page-heading .subheading {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .intro-header.style-black .tags a,
 .intro-header.style-black .tags .tag {
@@ -1055,7 +1055,7 @@ samp {
 .intro-header.style.black .post-heading,
 .intro-header.style.black .page-heading {
   padding: 85px 0 55px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style.black .site-heading,
@@ -1130,7 +1130,7 @@ samp {
   font-size: 16px;
 }
 .intro-header.style.black .post-heading .meta a {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style.black .post-heading h1 {
@@ -1147,14 +1147,14 @@ samp {
   position: absolute;
   bottom: 6px;
   right: 9px;
-  color: black;
+  color: rgb(255, 255, 255);
   opacity: .6;
   font-size: 12px;
   z-index: 1;
   text-shadow: 3px 3px 7px #d3d3d3;
 }
 .intro-header.style.black .header-img-credit a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 @media only screen and (min-width: 768px) {
   .intro-header.style.black .header-img-credit {
