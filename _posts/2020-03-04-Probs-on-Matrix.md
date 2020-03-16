@@ -5,12 +5,12 @@ subtitle:   Simple problems in a page
 date:       2020-03-04
 author:     Traditial ZHAMAO
 timecost:   10 minutes
-# header-style:
+header-style: black
 # header-mask: 0.01
 # header-img-credit:      Yuhan Chen
 # header-img-year:        2019 
 header-img-outchain:    true
-header-img: https://s1.ax1x.com/2020/03/15/833RbQ.jpg
+header-img: https://s1.ax1x.com/2020/03/16/8JD68f.jpg
 catalog: true
 mathjax: true
 live2d:  true
