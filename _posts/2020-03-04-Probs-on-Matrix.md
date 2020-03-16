@@ -1,9 +1,9 @@
 ---
 layout:     post
 title:      Matrix OJ!
-subtitle:   Simple problems in a page
+subtitle:   o((⊙﹏⊙))o 
 date:       2020-03-04
-author:     Traditial ZHAMAO
+author:     蒟蒻炸毛
 timecost:   10 minutes
 header-style: black
 # header-mask: 0.01
