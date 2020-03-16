@@ -1148,7 +1148,7 @@ samp {
   bottom: 6px;
   right: 9px;
   color: black;
-  opacity: .6;
+  opacity: .8;
   font-size: 12px;
   z-index: 1;
   text-shadow: 3px 3px 7px #333333;
@@ -1293,7 +1293,7 @@ samp {
   bottom: 6px;
   right: 9px;
   color: white;
-  opacity: .6;
+  opacity: .8;
   font-size: 12px;
   z-index: 1;
   text-shadow: 3px 3px 7px #d3d3d3;
