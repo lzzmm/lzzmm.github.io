@@ -5,6 +5,8 @@ subtitle:   Learned from photographing
 date:       2019-12-22
 author:     炸毛
 header-img:  img/post-bg-birds.png
+header-img-credit:      Yuhan Chen
+header-img-year:        2020
 catalog: true
 live2d:  false
 tags:
