@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      My Code Style
-subtitle:   大括号换不换行？
+subtitle:   And how to change the format style on Visual Studio Code
 date:       2020-02-29
 author:     Programmer ZHAMAO
 timecost:   1 minute
