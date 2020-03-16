@@ -4,7 +4,7 @@ title:      :-)
 subtitle:   17岁的最后一次有感
 date:       2020-02-25
 author:     炸毛
-timecost:   0
+timecost:   10 minutes
 header-style: text
 catalog: true
 live2d:  false
