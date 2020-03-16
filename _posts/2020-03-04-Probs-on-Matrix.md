@@ -5,7 +5,7 @@ subtitle:   Simple problems in a page
 date:       2020-03-04
 author:     Traditial ZHAMAO
 timecost:   10 minutes
-header-style:
+# header-style:
 # header-mask: 0.01
 # header-img-credit:      Yuhan Chen
 # header-img-year:        2019 
