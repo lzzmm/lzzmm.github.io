@@ -15,10 +15,11 @@ tags:
 ---
 
 #### C
+- BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4
 - 大括号不换行但是空一格
-- 4个空格Tab
+- 4个空格缩进
 - if、for后有一个空格
-- 运算符旁空格，作为下标时没有，指针运算符也没有
+- 运算符旁空格，指针运算符也没有
 - 命名大概是喜欢下划线也喜欢驼峰
 
 ```c
@@ -36,7 +37,7 @@ int main() {
             else printf("False\n");
         }
     }
-    cnt[maxm-n] = cnt[n+1] + cn[n%4] + n;
+    cnt[maxm - n] = cnt[n + 1] + cn[n % 4] + n;
 }
 ```
 
