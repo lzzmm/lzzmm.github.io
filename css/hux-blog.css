@@ -948,17 +948,17 @@ samp {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .navbar-custom.invert .navbar-toggle .icon-bar {
-  background-color: #404040;
+  background-color: #1f1f1f;
 }
 .navbar-custom.invert .navbar-brand {
-  color: #404040;
+  color: #1f1f1f;
 }
 .navbar-custom.invert .navbar-brand:hover,
 .navbar-custom.invert .navbar-brand:focus {
   color: #0085a1;
 }
 .navbar-custom.invert .nav li a {
-  color: #404040;
+  color: #1f1f1f;
 }
 .navbar-custom.invert .nav li a:hover,
 .navbar-custom.invert .nav li a:focus {
