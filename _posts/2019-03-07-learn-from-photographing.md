@@ -8,7 +8,7 @@ header-img-outchain:    true
 # header-style: black
 header-img:                 https://s1.ax1x.com/2020/03/16/8YeQ9f.png
 header-img-credit:          Yuhan Chen
-header-img-credit-href：    https://cleveryh.github.io/about/
+#header-img-credit-href：    # https://cleveryh.github.io/about/
 header-img-year:            2020
 catalog: true
 live2d:  false
