@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Matrix OJ!
-subtitle:   o((⊙﹏⊙))o 
+subtitle:   The Art of Coding
 date:       2020-03-04
 author:     蒟蒻炸毛
 timecost:   12 minutes
@@ -19,6 +19,310 @@ tags:
     - Matrix
 ---
 
+# 8658 Day20 STA的愤慨 (STA的分裂)
+
+### 题目描述
+
+不知道为什么，STA的生活变得异常忙碌，每天起来就发现自己有n件工作要做。于是STA只好把他们都记下来，拉成一个待办清单。
+
+白天STA最多也只能做m次操作，要么就是从待办清单上挑一件工作完成它，要么就是把一件新的工作加到清单里面。
+
+晚上STA还要处理白天没处理完的工作，这样才能上床睡觉。
+
+为了提高自己的效率，STA决定给这些工作各自都标上一个优先级p。为了好区分，每件工作的优先级都不会重复。因此从待办清单上选择工作的时候，STA总是会选优先级最大的工作。
+
+可惜STA一天要做的工作太多了，他想了想，索性写个程序帮他管理这些。
+
+### 输入格式
+第一行两个整数n，m
+下面n行整数为n件工作各自的优先级p
+在下面为m行操作的指令，共分为两种
+
+第一种
+```
+q
+```
+表示选取当前清单里面优先级最高的工作
+
+第二种
+```
+a 10
+```
+表示将优先级为10的工作加入待办清单
+
+如果在m次操作结束后，待办清单不为空，那么STA将会不停从里面选取优先级最大的工作完成它，直到清单为空。
+
+### 输出格式
+每次STA从待办清单上选择了一项工作去完成，就产生一行输出，包含这件工作的优先级。
+
+
+### 输入样例
+```
+5 6
+1
+2
+5
+9
+7
+q
+q
+a 8
+q
+a 4
+q
+```
+
+### 输出样例
+```
+9
+7
+8
+5
+4
+2
+1
+```
+
+### 数据范围
+
+$ 10 \leq n \leq 1e6 , n + 1 \leq m \leq 1.5 \times n , 1 \leq p \leq 1e9$
+
+### 题解
+
+今日STA大发慈悲，提交文件名为 `heap.c` , 立马上堆。
+
+堆是用数组实现的二叉树，它没有使用父指针或者子指针，根据“堆属性”来排序，“堆属性”决定了树中节点的位置。是稳定效率最高的一种排序算法。
+
+- 构建优先队列  
+- 支持堆排序  
+- 快速找出一个集合中的最小值（或者最大值）  
+    1. 最小堆  
+        - 根的值小于左右子树的值   
+        - 子树也是最小堆  
+    2. 最大堆  
+        - 根的值大于左右子树的值  
+        - 子树也是最大堆
+
+这题求优先级最大的工作，因此用最大堆。   
+
+
+```c
+#include <stdio.h>
+#define MAX_SIZE 1000006
+int Heap[MAX_SIZE];
+int Cur = 0;
+
+void swap(int *a, int *b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+// 最大堆
+void Insert(int val) { // 插入
+
+    Heap[++Cur] = val; // 新元素加入堆
+    int Temp_Cur = Cur;
+    while (Temp_Cur > 1) { // 新元素还没成为树根时
+
+        int Root = Temp_Cur / 2;                // 找爸爸
+        if (Heap[Root] < val)                   // 爸爸比它小
+            swap(&Heap[Root], &Heap[Temp_Cur]); // 交换
+        else
+            break;       // 它已经在堆中立足
+        Temp_Cur = Root; // 该新结点的新位置
+    }
+}
+
+int Pop() { // 删除
+
+    if (Cur == 0) // 堆空
+        return -99999999;
+    int Temp_Top = Heap[1]; // 暂存堆顶便于返回
+    Heap[1] = Heap[Cur];    // 将末尾结点提到树根
+    int Root = 1;
+    while (2 * Root < Cur) { // 还没有变成树叶
+
+        int L_Child = Root * 2;                                // 左儿子
+        int R_Child = Root * 2 + 1;                            // 右儿子
+        if (R_Child >= Cur || Heap[L_Child] > Heap[R_Child]) { // 没有右儿子或者左儿子值大
+
+            if (Heap[Root] < Heap[L_Child]) {      // 比最小的儿子大
+                swap(&Heap[Root], &Heap[L_Child]); // 交换
+                Root = L_Child;
+            } else
+                break;
+        } else {
+            if (Heap[Root] < Heap[R_Child]) {      // 比最小的儿子大
+                swap(&Heap[Root], &Heap[R_Child]); // 交换
+                Root = R_Child;
+            } else
+                break;
+        }
+    }
+    Cur--;
+    return Temp_Top; //返回堆顶
+}
+
+void op_q(void) {
+    int pop = Pop();
+    printf("%d\n", pop);
+}
+void op_a(void) {
+    int val;
+    scanf("%d", &val);
+    Insert(val);
+}
+
+int main() {
+    int m, n;
+    scanf("%d%d", &n, &m);
+
+    for (int i = 0; i < n; i++) {
+        int p;
+        scanf("%d", &p);
+        Insert(p);
+    }
+
+    for (int i = 0; i < m; i++) {
+        char op;
+        scanf(" %c", &op); //" %c",前面的空格是为了不被上一个回车影响。
+        if (op == 'q')
+            op_q();
+        else if (op == 'a')
+            op_a();
+    }
+
+    while (Cur != 0) {
+        op_q(); // 从大到小输出剩下的优先级
+    }
+
+    return 0;
+}
+```
+
+
+# 8659 Day20 STA的阴谋 
+
+### 题目描述
+
+有一天STA加了个实验室，为了庆祝，他买了块白板挂在自己的座位旁边。每天往上面写点奇怪的想法。
+
+因此STA在实验室发呆的时候喜欢盯着白板，看看能不能把上面的想法关联起来。如果STA觉得两个想法有联系，就会把两个想法之间连一条线。那么显然，想法之间还可以通过别的想法间接关联起来。
+
+于是STA偶尔也会思考，到底两个特定的想法之间是不是有关联的，无论是直接的，还是间接的。
+
+但是STA的想法实在太多了。于是他决定给这些方法编个号，从1到n，然后写个程序来帮他处理这个事情。
+
+当然STA不会把一个想法和自己关联起来，但还是可能会把两个想法重复关联起来，当然关联多次的话跟一次并无差别。
+
+### 输入格式
+第一行为两个整数n，m，表示STA**最多**会产生n个想法，以及会进行m次操作。
+接下来为m行操作的指令，共分两种。
+第一种
+
+```
+c 1 2
+```
+表示将编号为1和2的想法关联起来
+
+第二种
+```
+q 1 2
+```
+表示查询编号为1和2的想法是否存在关联。
+
+### 输出格式
+对于每一个q指令产生一行输出。
+如果两个想法存在关联，输出**Connected!**，如果不存在关联，输出**Not connected!**
+
+### 样例输入
+```
+5 5
+c 1 2
+c 2 3
+c 1 3
+q 1 3
+q 4 5
+```
+
+### 样例输出
+```
+Connected!
+Not connected!
+```
+
+### 数据范围
+$ 10 \leq n \leq 1e6  ,  n + 1 \leq  m \leq 7 \times n $
+
+### 题解
+
+同样，输入文件名为 `disjoint.c` , 立马上并查集。
+
+并查集(Union Find)是一种常用的树形数据结构，用于处理一些不相交集合（Disjoint Sets）的合并及查询问题。常常在使用中以森林来表示。 包含查询(find)和合并(unite)操作。时间复杂度O(a(n))。
+
+1. 初始化
+    把每个点所在集合初始化为其自身。通常来说，这个步骤在每次使用该数据结构时只需要执行一次，无论何种实现方式，时间复杂度均为O(N)。  
+2. 查找
+    查找元素所在的集合，即根节点。  
+3. 合并
+    将两个元素所在的集合合并为一个集合。通常来说，合并之前，应先判断两个元素是否属于同一集合，这可用上面的“查找”操作实现。
+
+```c
+#include <stdio.h>
+#define MAX_N 1100000
+
+int n, m, FHM_ak_ioi[MAX_N];
+/*
+x代表idea，FHM_ak_ioi[x]中所存的数代表这一集合中所有idea都与一个idea有联系
+相当于第一个集合所有的元素都与第一个元素有联系
+搜索时只要找元素所指向的FHM_ak_ioi[x]=x的元素(即父元素)
+然后比较两个元素的父元素是否相同就可以判断其关系
+*/
+int find_father(int x) {
+    if (FHM_ak_ioi[x] == x)
+        return x;
+    else
+        return FHM_ak_ioi[x] = find_father(FHM_ak_ioi[x]);
+    // return (FHM_ak_ioi[x] == x) ? x : FHM_ak_ioi[x] = find_father(FHM_ak_ioi[x]);
+}
+void unite(int x, int y) {
+    FHM_ak_ioi[x] = y;
+}
+void op_c(int u, int v) { // 合并
+    if (find_father(u) != find_father(v))
+        unite(FHM_ak_ioi[u], FHM_ak_ioi[v]);
+}
+void op_q(int u, int v) { // 查询
+    if (find_father(u) != find_father(v))
+        printf("Not connected!\n");
+    else
+        printf("Connected!\n");
+}
+
+int main(void) {
+    scanf("%d%d", &n, &m);
+    for (int i = 1; i <= n; i++) FHM_ak_ioi[i] = i; // init
+
+    for (int i = 1; i <= m; i++) {
+        char op;
+        int u, v;
+        scanf(" %c", &op); //" %c",前面的空格是为了不被上一个回车影响。
+        scanf("%d%d", &u, &v);
+        if (op == 'c') {
+            op_c(u, v);
+        } else if (op == 'q') {
+            op_q(u, v);
+        }
+    }
+
+    return 0;
+}
+```
+
+## 今日收获
+
+" %c",前面的空格可以使读取不被上一个回车影响。若不加空格则读入的是`\n(int 10)`
 
 
 # 8516 Day11 异世界六部曲（一）异世界的街道 
@@ -44,7 +348,7 @@ tags:
 ### 题解
 好沙雕(￣▽￣)"  
 一开始可能觉得摸不着头脑然后去递推，但是其实这道题属于那种刻意添加无关元素的题。
-仔细思考会发现平民和出题人（下简称486）的生死并没有什么关系=-=那我们排除平民来看混混，如果混混是奇数只，那肯定到最后至少剩一只，于是486必死；如果是0个那486必活；如果是偶数只，那486碰到n个混混的概率就是`n/n+1`，存货概率`1/n`。
+仔细思考会发现平民和出题人（下简称486）的生死并没有什么关系=-=那我们排除平民来看混混，如果混混是奇数只，那肯定到最后至少剩一只，于是486必死；如果是0个那486必活；如果是偶数只，那486碰到n个混混的概率就是`n/n+1`，存活概率`1/n`。
 ```c
 #include <stdio.h>
 int main() {
@@ -60,6 +364,7 @@ int main() {
     return 0;
 }
 ```
+
 
 
 # 8514 Day11 异世界六部曲（二）罗姆的常系数齐次线性递推
