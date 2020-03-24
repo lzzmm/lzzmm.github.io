@@ -4,7 +4,7 @@ title:      Matrix OJ!
 subtitle:   The Art of Coding
 date:       2020-03-04
 author:     蒟蒻炸毛
-timecost:   12 minutes
+timecost:   15 minutes
 header-style: black
 # header-mask: 0.01
 # header-img-credit:      Yuhan Chen
