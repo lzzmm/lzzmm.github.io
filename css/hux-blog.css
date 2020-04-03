@@ -578,13 +578,10 @@ body {
   background-image: url(/img/1.png);
     background-position-x: initial;
     background-position-y: initial;
-    /* background-size: 220px 220px;
-    background-repeat-x: repeat;
-    background-repeat-y: repeat;
-    background-attachment: scroll;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 p {
   margin: 30px 0;
