@@ -2,7 +2,17 @@
 <html lang="en">
 
 <head>
-    <script type="text/javascript" src="../js/traditional.js"></script>
+    <script type="text/javascript" src="js/traditional.js"></script>
+    <script type="text/JavaScript" language="JavaScript">
+         // var obj = document.body;
+        function s22t(){
+            document.body.innerHTML=s2t(document.body.innerHTML);
+             // document.body.innerHTML
+        }
+        function t22s(){
+            document.body.innerHTML=t2s(document.body.innerHTML);
+        }
+    </script>
     <meta charset="UTF-8">
     <title>荆轲刺秦王</title>
 </head>
@@ -10,6 +20,7 @@
 <body>
     <input type="button" value="繁体" οnclick="zh_tran('t');" /><br />
     <input type="button" value="简体" οnclick="zh_tran('s');" />&nbsp;
+    <a href="javascript:s22t()">繁体中文</a><a href="javascript:t22s()">简体中文</a> 
     <div>
         <p>于千万人之中，遇见你要遇见的人。于千万年之中，时间无涯的荒野里，没有早一步，也没有迟一步，遇上了也只能轻轻地说一句：“哦，你也在这里吗？”</p>
     </div>
