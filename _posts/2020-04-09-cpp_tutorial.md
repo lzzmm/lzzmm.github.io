@@ -182,7 +182,7 @@ void FreeMatrix(int **mat, int row) {
     delete[] mat;
 }
 ```
-其中的 `reshape`函数也可以如下实现。
+其中的 `Reshape`函数也可以如下实现。
 
 ```cpp
 int **Reshape(int *vec, int row, int col) {
