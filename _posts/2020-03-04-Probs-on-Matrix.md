@@ -475,7 +475,7 @@ $$
 已知前$k$项的值$f _ 1,~f _ 2,\cdots,f _ k$，构造初始向量$\vec v _ 0=\begin{bmatrix}f _ {k} \newline f _ {k-1} \newline \vdots \newline f _ 1 \end{bmatrix}$，那么$A \vec v _ 0=\begin{bmatrix}f _ {k+1} \newline f _ {k} \newline \vdots \newline f _ 2 \end{bmatrix}$，$A^{n-k} \cdot \vec v _ 0$可得$\begin{bmatrix}f _ {n} \newline f _ {n-1} \newline \vdots \newline f _ {n-k+1} \end{bmatrix}$，即可得到$f _ {n}$。提示二中快速幂正可用于矩阵，所以这题的时间复杂度是 𝑂(𝑘^3  log⁡𝑛 )  ，其中 𝑂(𝑘^3 ) 为矩阵乘法的复杂度，共需做 log_2⁡𝑛 次矩阵乘法。
 
 ```c
-
+// todo:
 ```
 
  
