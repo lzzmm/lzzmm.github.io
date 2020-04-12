@@ -227,8 +227,7 @@ void g(int x, int& y1, int& y2); // y1, y2是返回值
 void addsub(int x, int y, int& sum, int& diff); // 将x, y相加结果储存在sum中，相减结果储存在diff中
 void swap(int& x, int& y); // 交换x, y的值
 ```
-<details>
-<summary>Provided: main.cpp</summary>
+#### Provided: main.cpp
 
 ```cpp
 #include <iostream>
@@ -249,10 +248,8 @@ int main() {
     return 0;
 }
 ```
-</details>
 
-<details>
-<summary>Provided: functions.h</summary>
+#### Provided: functions.h
 
 ```cpp
 #ifndef FUNCTION_H
@@ -263,10 +260,8 @@ void addsub(int, int, int&, int&);
 
 #endif
 ```
-</details>
 
-<details>
-<summary>Answer: functions.cpp</summary>
+#### Answer: functions.cpp
 
 ```cpp
 // 将x, y相加结果储存在sum中，相减结果储存在diff中
@@ -283,4 +278,4 @@ void swap(int &x, int &y) {
     y = tmp;
 }
 ```
-</details>
+
