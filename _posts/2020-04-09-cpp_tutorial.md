@@ -49,8 +49,7 @@ tags:
 -45uuuuu
 ```
 
-<details>
-    <summary>C++ code</summary>
+#### C++ code
 
 注释掉的是我一开始写的，也能过，但是不美观。
 ```cpp
@@ -72,7 +71,7 @@ int main() {
     return 0;
 }
 ```
-</details>
+
 
 # Week1 Create Array
 
@@ -108,8 +107,7 @@ void FreeMatrix(int** mat, int row);
 
 将长度为$6$的向量reshape为$2 \times 3$的矩阵。
 
-<details>
-    <summary>Provided: main.cpp</summary>
+#### Provided: main.cpp
 
 ```cpp
 // #include "check.h"
@@ -138,10 +136,9 @@ int main() {
     return 0;
 }
 ```
-</details>
 
-<details>
-<summary>Provided: functions.h</summary>
+
+#### Provided: functions.h
 
 ```cpp
 #ifndef FUNCTION_H
@@ -154,10 +151,9 @@ void FreeMatrix(int** mat, int row);
 
 #endif
 ```
-</details>
 
-<details>
-    <summary>Answer: functions.cpp</summary>
+
+#### Answer: functions.cpp
 以下是我原来写的。
 
 ```cpp
@@ -200,7 +196,6 @@ int **Reshape(int *vec, int row, int col) {
     return matrix;
 }
 ```
-</details>
 
 # Week1 Call by Reference
 

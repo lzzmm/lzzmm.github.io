@@ -105,8 +105,7 @@ $ 10 \leq n \leq 1e6 , n + 1 \leq m \leq 1.5 \times n , 1 \leq p \leq 1e9$
 
 这题求优先级最大的工作，因此用最大堆。   
 
-<details>
-<summary>Code</summary>
+#### Code
 
 ```c
 #include <stdio.h>
@@ -202,7 +201,6 @@ int main() {
     return 0;
 }
 ```
-</details>
 
 
 # 8659 Day20 STA的阴谋 
@@ -271,8 +269,7 @@ $ 10 \leq n \leq 1e6  ,  n + 1 \leq  m \leq 7 \times n $
 3. 合并
     将两个元素所在的集合合并为一个集合。通常来说，合并之前，应先判断两个元素是否属于同一集合，这可用上面的“查找”操作实现。
 
-<details>
-<summary>Code</summary>
+#### Code
 
 ```c
 #include <stdio.h>
@@ -325,7 +322,7 @@ int main(void) {
     return 0;
 }
 ```
-</details>
+
 
 #### 今日收获
 
@@ -554,11 +551,11 @@ pid的范围是1000 ~ 1000 + pcnt - 1，uid的范围是1 ~ ucnt，cid的范围�
 
 4、对于rejudge指令，在此请求前，保证存在以sid标识的提交。
 
-### 输出格式
+#### 输出格式
 
 对于每一个**getRank**请求，根据要求输出用户ID，通过题目数量，最高排名以及最低排名，整数之间用一个空格隔开。
 
-### 样例输入
+#### 样例输入
 
 ```
 7 5 17
@@ -581,7 +578,7 @@ rejudge 5
 getRank 1 2
 ```
 
-### 样例输出
+#### 样例输出
 
 ```
 1 1 1 1
@@ -593,11 +590,11 @@ getRank 1 2
 2 1 1 2
 ```
 
-### 数据范围
+#### 数据范围
 
 1 <= pcnt, ucnt <= 5000, 1 <= m <= 300000, 1 <= cid <= 50
 
-### 题解
+#### 题解
 
 此题为竞赛题，主要考察数据结构运用和巧妙处理数据。
 1. createContest  
@@ -633,8 +630,7 @@ __比如，曾经做出>=3题的有x人，做出>=4题的有y人，现在有位�
 
 最终，这题的时间复杂度是 `𝑂(𝑚∙𝑚𝑎𝑥𝑐𝑖𝑑)`，空间复杂度是 `𝑂(𝑝𝑐𝑛𝑡⋅𝑚𝑎𝑥𝑐𝑖𝑑+𝑚)`。
 
-<details>
-<summary>Code</summary>
+#### Code
 
 ```cpp
 #include <stdio.h>
@@ -712,7 +708,6 @@ int main() {
     return 0;
 }
 ```
-</details>
 
 # 8522 Day12 异世界六部曲（四）蕾姆的进攻
 
@@ -750,8 +745,7 @@ int main() {
 
 ​	现代普通计算机$1s$大约能执行$10^8$次操作。
 
-<details>
-<summary>Code</summary>
+#### Code
 
 ```c
 #include <stdio.h>
@@ -779,7 +773,7 @@ int main() {
     return 0;
 }
 ```
-</details>
+
 
 # 8520 Day12 异世界六部曲（五）艾米莉亚留的题
 
@@ -877,8 +871,7 @@ TODO:
 输出的前两行其实是一个问题，求一定区间的最大或最小值。用单调队列的方式。
 第三行
 
-<details>
-<summary>Code</summary>
+#### Code
 
 ```c
 #include <stdio.h>
@@ -954,7 +947,6 @@ int main() {
     return 0;
 }
 ```
-</details>
 
 通过这题可以更加深入地理解队列和栈的使用，可以感受到出题人的一片苦心。
 
