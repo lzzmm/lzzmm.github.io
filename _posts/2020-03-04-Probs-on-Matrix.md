@@ -733,7 +733,7 @@ int main() {
 
 #### Ouput
 
-​	输出$\{a _ i \bmod a _ j|1\le i,j\le n\}$的最大值。
+​	输出$\{a _ i \bmod a _ j \vert 1\le i,j\le n\}$的最大值。
 
 #### Example
 
