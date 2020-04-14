@@ -1143,6 +1143,8 @@ COMPLEX COMPLEX::operator--(int) {
 * point有两个基本属性x，y分别记录了x和y轴的坐标，x，y的初始值为0；
 * point有一个方法，judge可以判断三个点是否在一条直线上
 * point可以打印出点的坐标(x,y)
+
+
 #### Sample Input
 ```
 1 1
@@ -1157,4 +1159,4 @@ True
 3
 ```
 #### Hint
-``` 观察给出的main函数，实现point
+观察给出的`main`函数，实现`point`
