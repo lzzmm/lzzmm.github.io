@@ -939,3 +939,222 @@ foo(&s, 1, 2); // constructor will be called in foo
 
 
 参考：https://www.cnblogs.com/weijiaen/p/3983492.html
+
+*******************************
+
+# Week2 Constructor and destructor
+
+#### Description
+Given the following Object class implemetation, write a function to produce the desired output. No changes should be made with the Object class.
+
+#### Provided: Object.h
+
+```cpp
+class Object {
+public:
+    Object(int i) {
+        id = i;
+        count++;
+        cout<<"Object "<<id<<" is created, we've got "<<count<<" object(s) now!"<<endl;
+    }
+    ~Object() { 
+        count--;
+        cout<<"Object "<<id<<" is deleted, we've got "<<count<<" object(s) now!"<<endl;
+    }
+private:
+    int id;
+    static int count;
+};
+int Object::count = 0;
+
+
+ int main()
+{
+    TestObjects();
+    return 0;
+}
+```
+#### Output
+Output should just be produced by the constructor and destructor of the Object class.
+## Sample Output
+```
+Object 1 is created, we've got 1 object(s) now!
+Object 2 is created, we've got 2 object(s) now!
+Object 3 is created, we've got 3 object(s) now!
+Object 3 is deleted, we've got 2 object(s) now!
+Object 2 is deleted, we've got 1 object(s) now!
+Object 4 is created, we've got 2 object(s) now!
+Object 4 is deleted, we've got 1 object(s) now!
+Object 1 is deleted, we've got 0 object(s) now!
+```
+
+#### Provided: main.cpp
+
+```cpp
+#include <iostream>
+using namespace std;
+
+extern void TestObjects();
+
+int main() {
+    TestObjects();
+    return 0;
+}
+```
+
+#### Answer: Object.c
+
+```cpp
+#include "Object.h"
+
+extern void TestObjects() {
+    Object *a = new Object(1);
+    Object *b = new Object(2);
+    Object *c = new Object(3);
+    delete c;
+    delete b;
+    Object *d = new Object(4);
+    delete d;
+    delete a;
+    return;
+}
+```
+
+# Week2 复数类操作符重载
+
+#### Description
+实现复数的操作符重载，你需要做的是，将complex.h文件的函数声明，全部在complex.cpp中实现
+函数的声明如下：
+
+```cpp
+class COMPLEX
+{
+public:
+    COMPLEX(double r = 0, double i = 0); // 构造函数
+    COMPLEX(const COMPLEX &other);       // 拷贝构造函数
+    void print();                        // 打印复数
+                                         // 重载加法运算符（二元）
+    COMPLEX operator+(const COMPLEX &other);
+    // 重载减法运算符（二元）
+    COMPLEX operator-(const COMPLEX &other);
+    COMPLEX operator-(); // 重载求负运算符（一元）
+                         // 重载赋值运算符（二元）
+    COMPLEX operator=(const COMPLEX &other);
+        COMPLEX & operator++();     //重载前置++
+        COMPLEX operator++(int);     //重载后置++
+        COMPLEX & operator--();        //重载前置--
+        COMPLEX operator--(int);        //重载后置--
+protected:
+    double real, image; // 复数的实部与虚部
+};
+```
+
+```
+输出格式为：
+1+2i
+-5-6i
+-5-6i
+-4-5i
+-4-5i
+-5-6i
+-6-7i
+-6-7i
+-5-6i
+-5-6i
+```
+
+#### Answer: complex.cpp
+
+```cpp
+#include "COMPLEX.h"
+#include <iomanip>
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+using std::noshowpos;
+using std::showpos;
+
+COMPLEX::COMPLEX(double r, double i):real(r),image(i) {}
+COMPLEX::COMPLEX(const COMPLEX &other) : real(other.real), image(other.image) {}
+
+void COMPLEX::print(void) {
+    if (real != 0 && image != 0) {
+        cout << real << showpos << image << "i" << noshowpos << endl;
+    } else if (image == 0) {
+        cout << real << endl;
+    } else if (real == 0) {
+        cout << noshowpos << image << "i" << endl;
+    }
+}
+COMPLEX COMPLEX::operator+(const COMPLEX &other) {
+    COMPLEX ret;
+    ret.real = this->real + other.real;
+    ret.image = this->image + other.image;
+    return ret;
+}
+COMPLEX COMPLEX::operator-(const COMPLEX &other) {
+    COMPLEX ret;
+    ret.real = this->real - other.real;
+    ret.image = this->image - other.image;
+    return ret;
+}
+COMPLEX COMPLEX::operator-() {
+    this->image = -this->image;
+    this->real = -this->real;
+    return *this;
+}
+COMPLEX COMPLEX::operator=(const COMPLEX &other) {
+    this->image = other.image;
+    this->real = other.real;
+    return *this;
+}
+
+COMPLEX &COMPLEX::operator++() {    //重载前置++
+    this->image++;
+    this->real++;
+    return *this;
+}
+COMPLEX COMPLEX::operator++(int) {  //重载后置++
+    COMPLEX ret(*this);
+    this->image++;
+    this->real++;
+    return ret;
+}
+COMPLEX &COMPLEX::operator--() {
+    this->image--;
+    this->real--;
+    return *this;    
+}
+COMPLEX COMPLEX::operator--(int) {
+    COMPLEX ret(*this);
+    this->image--;
+    this->real--;
+    return ret;
+}
+```
+
+# Week2 实现一个简单point类
+
+#### Description
+实现一个point类，它具有以下特征：
+
+* point有一个静态数据成员，count，记录了一共创建了多少个point对象
+* point有两个基本属性x，y分别记录了x和y轴的坐标，x，y的初始值为0；
+* point有一个方法，judge可以判断三个点是否在一条直线上
+* point可以打印出点的坐标(x,y)
+#### Sample Input
+```
+1 1
+2 2
+3 3
+```
+#### Sample Output
+```
+(1,1)
+1
+True
+3
+```
+#### Hint
+``` 观察给出的main函数，实现point
