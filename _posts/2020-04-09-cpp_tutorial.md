@@ -1160,3 +1160,77 @@ True
 ```
 #### Hint
 观察给出的`main`函数，实现`point`
+
+#### Provided: main.cpp
+```cpp
+#include "point.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x, y;
+    cin >> x >> y;
+    point p1(x, y);
+    p1.print();
+    cout << point::count << endl;
+    cin >> x >> y;
+    point p2(x, y);
+    cin >> x >> y;
+    point p3(x, y);
+    if (p1.judge(p2, p3)) {
+        cout << "True" << endl;
+    } else {
+        cout << "False" << endl;
+    }
+    cout << point::count << endl;
+    return 0;
+}
+```
+
+#### Answer: point.h
+
+```cpp
+#include <iostream>
+
+class point {
+public:
+    static int count;
+    double x = 0, y = 0;
+    point(double x, double y) {
+        this->x = x;
+        this->y = y;
+        count++;
+    }
+    ~point() {
+        // count--;
+    }
+    int judge(point a, point b) {
+        return ((this->y - a.y) / (this->x - a.x) == (a.y - b.y) / (a.x - b.x)) ? 1 : 0;
+    }
+    void print(void) {
+        std::cout << '(' << this->x << ',' << this->y << ')' << std::endl;
+    }
+};
+int point::count = 0;
+```
+
+对于非静态数据成员，每个类对象都有自己的拷贝。而静态数据成员被当作是类的成员。无论这个类的对象被定义了多少个，静态数据成员在程序中也只有一份拷贝，由该类型的所有对象共享访问。也就是说，静态数据成员是该类的所有对象所共有的。对该类的多个对象来说，静态数据成员只分配一次内存，供所有对象共用。所以，静态数据成员的值对每个对象都是一样的，它的值可以更新；静态数据成员存储在全局数据区。静态数据成员定义时要分配空间，所以不能在类声明中定义。
+静态数据成员和普通数据成员一样遵从`public`,`protected`,`privae`访问规则；
+因为静态数据成员在全局数据区分配内存，属于本类的所有对象共享，所以，它不属于特定的类对象，在没有产生类对象时其作用域就可见，即在没有产生类的实例时，我们就可以操作它；静态数据成员初始化与一般数据成员初始化不同。静态数据成员初始化的格式为：
+
+```
+<数据类型><类名>::<静态数据成员名>=<值>
+```
+类的静态数据成员有两种访问形式：
+
+```
+<类对象名>.<静态数据成员名> 或 <类类型名>::<静态数据成员名>
+```
+如果静态数据成员的访问权限允许的话（即`public`的成员），可在程序中，按上述格式来引用静态数据成员。
+
+静态数据成员主要用在各个对象都有相同的某项属性的时候。
+
+同全局变量相比，使用静态数据成员有两个优势：
+1. 静态数据成员没有进入程序的全局名字空间，因此不存在与程序中其它全局名字冲突的可能性；
+2. 可以实现信息隐藏。静态数据成员可以是`private`成员，而全局变量不能；
+
