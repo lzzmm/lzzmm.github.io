@@ -976,7 +976,8 @@ int Object::count = 0;
 ```
 #### Output
 Output should just be produced by the constructor and destructor of the Object class.
-## Sample Output
+
+#### Sample Output
 ```
 Object 1 is created, we've got 1 object(s) now!
 Object 2 is created, we've got 2 object(s) now!
@@ -1049,8 +1050,8 @@ protected:
 };
 ```
 
-```
 输出格式为：
+```
 1+2i
 -5-6i
 -5-6i
@@ -1087,19 +1088,19 @@ void COMPLEX::print(void) {
         cout << noshowpos << image << "i" << endl;
     }
 }
-COMPLEX COMPLEX::operator+(const COMPLEX &other) {
+COMPLEX COMPLEX::operator+(const COMPLEX &other) {  // 重载二元运算符+
     COMPLEX ret;
     ret.real = this->real + other.real;
     ret.image = this->image + other.image;
     return ret;
 }
-COMPLEX COMPLEX::operator-(const COMPLEX &other) {
+COMPLEX COMPLEX::operator-(const COMPLEX &other) {  // 重载二元运算符-
     COMPLEX ret;
     ret.real = this->real - other.real;
     ret.image = this->image - other.image;
     return ret;
 }
-COMPLEX COMPLEX::operator-() {
+COMPLEX COMPLEX::operator-() {      // 重载一元运算符-
     this->image = -this->image;
     this->real = -this->real;
     return *this;
@@ -1110,23 +1111,23 @@ COMPLEX COMPLEX::operator=(const COMPLEX &other) {
     return *this;
 }
 
-COMPLEX &COMPLEX::operator++() {    //重载前置++
+COMPLEX &COMPLEX::operator++() {    // 重载前置++，返回指针
     this->image++;
     this->real++;
     return *this;
 }
-COMPLEX COMPLEX::operator++(int) {  //重载后置++
+COMPLEX COMPLEX::operator++(int) {  // 重载后置++
     COMPLEX ret(*this);
     this->image++;
     this->real++;
     return ret;
 }
-COMPLEX &COMPLEX::operator--() {
+COMPLEX &COMPLEX::operator--() {    // 重载前置--，返回指针
     this->image--;
     this->real--;
     return *this;    
 }
-COMPLEX COMPLEX::operator--(int) {
+COMPLEX COMPLEX::operator--(int) {  // 重载后置--
     COMPLEX ret(*this);
     this->image--;
     this->real--;
