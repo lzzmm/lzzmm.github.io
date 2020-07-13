@@ -25,7 +25,7 @@ header-img-year:    {{site.header-img-year}}
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }} · {% if post.timecost %}{{ post.timecost }} to read {% endif %}
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}{% if post.timecost %} · {{ post.timecost }} to read {% endif %}
     </p>
 </div>
 <hr>
