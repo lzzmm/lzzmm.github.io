@@ -1061,7 +1061,7 @@ samp {
   .intro-header.style.black .site-heading,
   .intro-header.style.black .post-heading,
   .intro-header.style.black .page-heading {
-    padding: 150px 0;
+    padding: 85px 0 55px;
   }
 }
 .intro-header.style.black .site-heading {
