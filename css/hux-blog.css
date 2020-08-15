@@ -1206,7 +1206,7 @@ samp {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 85px 0 55px;
   }
 }
 .intro-header .site-heading {
