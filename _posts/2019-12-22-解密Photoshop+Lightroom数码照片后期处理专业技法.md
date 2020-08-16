@@ -8,6 +8,7 @@ author:     炸毛
 # header-img:  # img/post-bg-desk.jpg
 header-img-outchain:        true
 header-img:                 https://s1.ax1x.com/2020/03/18/8dGlIx.png
+header-img-credit-long:     true
 header-img-credit:          Yuhan Chen
 header-img-year:            2019
 catalog: true
