@@ -55,9 +55,15 @@
 {% endif %}
     <div class="header-mask"></div>
     {% if page.header-img-credit %}
+    {% if page.header-img-credit-long %}
     <div class="header-img-credit">
         Image by {{page.header-img-credit}}.   Copyright &copy; {{page.header-img-year}} All Rights Reserved.
     </div>
+    {% else %}
+    <div class="header-img-credit">
+        &copy; {{page.header-img-year}} {{page.header-img-credit}}
+    </div>
+    {% endif %}
     {% endif %}
     <div class="container">
         <div class="row">
