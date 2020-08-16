@@ -45,14 +45,16 @@ tags:
     - 优点：便宜长焦
     - 缺点：画质不太行
 
-#### 我的设备  
+#### 我的设备
+
 包括
-- iPhone SE BackCam 
+
+- iPhone SE BackCam (2020年8月突然有了个黑点)
     - 4K 30P
     - HD 120P
     - 720P 240P
     - 12MP 4000x3000
-    - 35 mm等效焦距：28mm
+    - 35mm 等效焦距：28mm
 - SONY ICLE-α6400 
     - 4K `30p 100M`/`25p 100M Super35mm` 果冻警告⚠
     - HD `120p 100M`/`60p 50M Super35mm`
