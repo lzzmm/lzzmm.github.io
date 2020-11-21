@@ -14,7 +14,15 @@
         "grunt-contrib-less": "~0.11.4",
         "grunt-contrib-watch": "~0.6.1",
         "grunt-banner": "~0.2.3",
-        "grunt-contrib-uglify": "~0.5.1"
+        "grunt-contrib-uglify": "~0.5.1",
+        "js-yaml": ">=3.13.1",
+        "qs": ">=6.0.4",
+        "request": ">=2.68.0",
+        "debug": ">=2.6.9",
+        "lodash": ">=4.17.12",
+        "cryptiles": ">=4.1.2",
+        "minimatch": ">=3.0.2",
+        "tunnel-agent": ">=0.6.0"
     },
     "scripts": {
         "start" : "jekyll serve -w -l --host 0.0.0.0 --port 4000",
