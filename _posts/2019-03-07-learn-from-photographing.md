@@ -6,9 +6,9 @@ date:       2019-12-22
 author:     炸毛
 # header-style: black
 header-img-outchain:        true
-header-img-credit-long:     true
+header-img-credit-long:     false
 header-img:                 https://s1.ax1x.com/2020/03/16/8YeQ9f.png
-header-img-credit:          Yuhan Chen
+header-img-credit:          Chen Yuhan
 header-img-year:            2020
 #header-img-credit-href：    # https://cleveryh.github.io/about/
 catalog: true
