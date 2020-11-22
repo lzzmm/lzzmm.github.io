@@ -19,7 +19,7 @@ header-img-year:    {{site.header-img-year}}
         {% endif %}
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:200 }}
+                {{ post.content | strip_html | truncate:240 }}
             {% else %}
                 {{ post.content | strip_html | truncate:120 }}
             {% endif %}
