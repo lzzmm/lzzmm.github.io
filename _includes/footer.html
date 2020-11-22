@@ -9,15 +9,15 @@
                 <p class="copyright text-muted">
                     Copyright &copy; 2019 - {{ site.time | date: '%Y' }} CleverYh / {{ site.title }}
                     <br>
-                    Running on <a href="https://github.com/CleverYh/cleveryh.github.io" target="_blank">CleverYh</a> | 
-                    <iframe
-                        style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px; opacity: 0.6;"
+                    Running on <a href="https://github.com/CleverYh/cleveryh.github.io" target="_blank">CleverYh</a> |
+                    <iframe style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px; opacity: 0.6;"
                         frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true">
                     </iframe>
                     <!-- <iframe style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px;" src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&type=follow&count=true" frameborder="0" scrolling="0" width="170" height="20" title="GitHub"></iframe> -->
                     <text style="opacity: 0.8"><br>Powered by <a href="https://cleveryh.github.io/">炸毛的秘密基地</a><br>
-                    Improved from the theme by <a href="http://huangxuan.me/">Hux Blog</a></text>
+                        <text style="opacity: 0.8; font-size: 12px;">Improved from the theme by <a href="http://huangxuan.me/">Hux Blog</a></text>
+                    </text>
                 </p>
             </div>
         </div>
@@ -43,12 +43,12 @@
 <!-- async load function -->
 <script>
     function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
     }
 </script>
 
@@ -76,10 +76,10 @@
 {% if page.title == 'Archive' %}
 <!-- jquery.tagcloud.js -->
 <script>
-    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
+    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
         $.fn.tagcloud.defaults = {
             //size: {start: 1, end: 1, unit: 'em'},
-            color: {start: '#bbbbee', end: '#2f93b4'},
+            color: { start: '#bbbbee', end: '#2f93b4' },
         };
         $('#tag_cloud a').tagcloud();
     })
@@ -89,9 +89,9 @@
 
 <!--fastClick.js -->
 <script>
-    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
         var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
+        if ($nav) FastClick.attach($nav);
     })
 </script>
 
@@ -104,10 +104,12 @@
     var _gaDomain = '{{ site.ga_domain }}';
 
     // Originial
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', _gaId, _gaDomain);
     ga('send', 'pageview');
@@ -123,11 +125,11 @@
 
     // Originial
     var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?" + _baId;
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
     })();
 </script>
 {% endif %}
@@ -136,7 +138,7 @@
 <!-- Side Catalog -->
 {% if page.catalog %}
 <script type="text/javascript">
-    function generateCatalog (selector) {
+    function generateCatalog(selector) {
 
         // interop with multilangual 
         if ('{{ page.multilingual }}' == 'true') {
@@ -146,7 +148,7 @@
         }
 
         // init
-        var P = $(_containerSelector),a,n,t,l,i,c;
+        var P = $(_containerSelector), a, n, t, l, i, c;
         a = P.find('h1,h2,h3,h4,h5,h6');
 
         // clean
@@ -155,10 +157,10 @@
         // appending
         a.each(function () {
             n = $(this).prop('tagName').toLowerCase();
-            i = "#"+$(this).prop('id');
+            i = "#" + $(this).prop('id');
             t = $(this).text();
-            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
-            l = $('<li class="'+n+'_nav"></li>').append(c);
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);
         });
         return true;
@@ -167,7 +169,7 @@
     generateCatalog(".catalog-body");
 
     // toggle side catalog
-    $(".catalog-toggle").click((function(e){
+    $(".catalog-toggle").click((function (e) {
         e.preventDefault();
         $('.side-catalog').toggleClass("fold")
     }))
@@ -214,17 +216,17 @@
     }
 
     // handle render
-    function _render(){
+    function _render() {
         var lang = getLang()
         // en
-        if(lang == "en"){
+        if (lang == "en") {
             $select.selectedIndex = 1;
             $en.style.display = "block";
             $en.classList.add("active");
             $zh.style.display = "none";
             $zh.classList.remove("active");
-        // default to zh-cn
-        }else{
+            // default to zh-cn
+        } else {
             $select.selectedIndex = 0;
             $zh.style.display = "block";
             $zh.classList.add("active");
@@ -236,10 +238,10 @@
     }
 
     // handle select change
-    function onLanChange(index){
-        if(index == 0){
+    function onLanChange(index) {
+        if (index == 0) {
             lang = "zh"
-        }else{
+        } else {
             lang = "en"
         }
         setLang(lang)
