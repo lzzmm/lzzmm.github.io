@@ -14,13 +14,17 @@ header-img-year: {{site.header-img-year}}
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
-            {% if post.tags %}    
+            {% if post.tags %}
             <!-- TODO: beauty the tags -->
             {% for tag in post.tags %}
-            /  {{ tag }}  
+            / {{ tag }}
             {% endfor %}
             {% endif %}
         </h3>
+        {% elif post.tags %}/ 
+        {% for tag in post.tags %}
+        {{ tag }} / 
+        {% endfor %}
         {% endif %}
 
         <!--DONE: tags and reduce preview lines-->
