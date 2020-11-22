@@ -16,15 +16,7 @@ header-img-year: {{site.header-img-year}}
             {{ post.subtitle }}
         </h3>
         {% endif %}
-        {% if post.tags %}
-
-        <h3 class="post-subtitle">
-            {{ post.tags }}
-        </h3>
-
         {% endif %}
-        {% endif %}
-        <!--DONE: tags and reduce preview lines-->
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
             {{ post.content | strip_html | truncate:280 }}
