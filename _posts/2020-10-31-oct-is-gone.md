@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      十月过去了<br></br><br></br><br></br>
-subtitle:   
+title:      十月过去了
+subtitle:   <br></br><br></br>
 date:       2020-10-31
 author:     zhamao
 timecost:   
@@ -16,8 +16,8 @@ mathjax: false
 live2d:  true
 tags:
     - 漫谈
-    - 半个沃特咩冷
     - 随笔
+    - 半个沃特咩冷
 ---
 
 ## 01

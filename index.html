@@ -1,8 +1,8 @@
 ---
-layout:             page
-description:        "(o゜▽゜)o☆奇怪的知识增加了！"
-header-img-credit:  {{site.header-img-credit}}
-header-img-year:    {{site.header-img-year}}
+layout: page
+description: "(o゜▽゜)o☆奇怪的知识增加了！"
+header-img-credit: {{site.header-img-credit}}
+header-img-year: {{site.header-img-year}}
 ---
 
 {% for post in paginator.posts %}
@@ -15,18 +15,27 @@ header-img-year:    {{site.header-img-year}}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
         </h3>
-        <!--TODO: tags and reduce preview lines-->
         {% endif %}
+        {% if post.tags %}
+        <h3 class="post-subtitle">
+            {% for tag in post.tags %}
+            {{ tag }}
+        </h3>
+        {% endfor %}
+        {% endif %}
+        {% endif %}
+        <!--DONE: tags and reduce preview lines-->
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:280 }}
+            {{ post.content | strip_html | truncate:280 }}
             {% else %}
-                {{ post.content | strip_html | truncate:150 }}
+            {{ post.content | strip_html | truncate:150 }}
             {% endif %}
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}{% if post.timecost %} · {{ post.timecost }} to read {% endif %}
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on
+        {{ post.date | date: "%B %-d, %Y" }}{% if post.timecost %} · {{ post.timecost }} to read {% endif %}
     </p>
 </div>
 <hr>
@@ -49,10 +58,11 @@ header-img-year:    {{site.header-img-year}}
 {% endif %}
 
 <!-- CleverYh -->
-<script type="text/javascript" charset="utf-8"  src="https://cleveryh.github.io/js/L2Dwidget.0.min.js"></script>
-<script type="text/javascript" charset="utf-8"  src="https://cleveryh.github.io/js/L2Dwidget.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://cleveryh.github.io/js/L2Dwidget.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://cleveryh.github.io/js/L2Dwidget.min.js"></script>
 <script type="text/javascript">
-    L2Dwidget.init({"display": {
+    L2Dwidget.init({
+        "display": {
             "superSample": 2,
             "width": 128,
             "height": 256,
