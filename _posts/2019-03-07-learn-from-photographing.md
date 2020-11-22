@@ -4,6 +4,7 @@ title:      摄影笔记
 subtitle:   Learned from photographing
 date:       2019-12-22
 author:     炸毛
+timecost:   6 minutes
 # header-style: black
 header-img-outchain:        true
 header-img-credit-long:     false

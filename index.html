@@ -21,10 +21,12 @@ header-img-year: {{site.header-img-year}}
             {% endfor %}
             {% endif %}
         </h3>
-        {% elif post.tags %}/ 
+        {% else %}
+        {% if post.tags %}/
         {% for tag in post.tags %}
-        {{ tag }} / 
+        {{ tag }} /
         {% endfor %}
+        {% endif %}
         {% endif %}
 
         <!--DONE: tags and reduce preview lines-->
