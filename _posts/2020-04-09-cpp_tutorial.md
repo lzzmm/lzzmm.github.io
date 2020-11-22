@@ -4,7 +4,7 @@ title:      Object-Oriented Programming!
 subtitle:   Learning C++
 date:       2020-04-09
 author:     蒟蒻炸毛
-timecost:   5 minutes
+timecost:   15 minutes
 # header-style: black
 # header-mask: 0.01
 # header-img-credit:      Yuhan Chen
