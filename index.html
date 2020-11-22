@@ -16,14 +16,16 @@ header-img-year: {{site.header-img-year}}
             {{ post.subtitle }}
             {% if post.tags %}
             <!-- TODO: beauty the tags -->
+            <h3 style = "color: #389ad3;">
             {% for tag in post.tags %}
             / {{ tag }}
             {% endfor %}
+            </h3>
             {% endif %}
         </h3>
         {% else %}
         {% if post.tags %}/
-        <h3 class="post-subtitle">
+        <h3 class="post-subtitle" style = "color: #389ad3;">
             {% for tag in post.tags %}
             {{ tag }} /
             {% endfor %}
