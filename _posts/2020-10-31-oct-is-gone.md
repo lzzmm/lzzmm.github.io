@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      十月过去了
-subtitle:   十一月到了
+title:      十月过去了                                               
+subtitle:                 
 date:       2020-10-31
 author:     zhamao
 timecost:   
