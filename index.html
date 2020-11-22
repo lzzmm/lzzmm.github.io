@@ -18,9 +18,9 @@ header-img-year: {{site.header-img-year}}
         {% endif %}
         {% if post.tags %}
         
-        <h3 class="tags">
-            {% for tag in post.tags %}
-            <h3 class="tag">{{ tag }}</h3>
+        <h3 class="post-subtitle">
+            | {% for tag in post.tags %}
+            {{ tag }} | 
             {% endfor %}
         </h3>
         
