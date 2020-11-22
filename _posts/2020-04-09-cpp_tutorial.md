@@ -939,7 +939,7 @@ foo(&s, 1, 2); // constructor will be called in foo
     d. 调用方再把临时对象拷贝给返回值。
 
 
-参考：https://www.cnblogs.com/weijiaen/p/3983492.html
+参考：<https://www.cnblogs.com/weijiaen/p/3983492.html>
 
 *******************************
 
