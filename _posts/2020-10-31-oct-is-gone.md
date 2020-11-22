@@ -4,7 +4,7 @@ title:      十月过去了<br></br><br></br>
 subtitle:   
 date:       2020-10-31
 author:     zhamao
-timecost:   
+timecost:   20 minutes
 # header-style: black
 # header-mask: 0.01
 header-img-credit:      Chen Yuhan
