@@ -4,7 +4,7 @@ title:      去北京
 subtitle:   International Competition of Autonomous Running Robots 2020
 date:       2020-10-19
 author:     划水炸毛
-timecost:   
+timecost:   15 minutes
 # header-style: black
 # header-mask: 0.01
 header-img-credit:      Chen Yuhan
