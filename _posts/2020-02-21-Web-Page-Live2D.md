@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Live2D! Poster Girl!
+title:      Live2D
 subtitle:   Deploy dynamic poster girl with Live2D on web page
 date:       2020-02-21
 author:     炸毛
@@ -23,7 +23,7 @@ tags:
 > Live2D是一种应用于电子游戏的绘图渲染技术，技术由日本[Cybernoids](https://www.live2d.com/)公司开发。通过一系列的连续图像和人物建模来生成一种类似三维模型的二维图像，对于以动画风格为主的冒险游戏来说非常有用.Live 2D人物无法大幅度转身，开发商正设法让该技术可显示360度图像。  
 —— 百度百科
 
-具体看左下角。  
+具体效果请看左下角。  
 
 # 添加JS代码到网页
 
