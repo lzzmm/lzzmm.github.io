@@ -1,7 +1,7 @@
 # Site settings
 title: 炸毛的秘密基地
 SEOTitle: 炸毛的秘密基地 | YH's Blog
-header-img: img/index-bg.jpg # img/home-bg-star_track.jpg
+header-img: img/index-bg.jpg            # img/home-bg-star_track.jpg
 header-img-credit:      Yuhan Chen
 header-img-year:        2019
 email_1: chenyh369@mail2.sysu.edu.cn
@@ -124,7 +124,7 @@ friends: [
         title: "HH",
         href: "https://whaohan.github.io"
     },{
-        title: "阿萧哥",
+        title: "济总",
         href: "https://www.cnblogs.com/axiao918/"
     },{
         title: "花降",
