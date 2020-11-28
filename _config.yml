@@ -18,7 +18,7 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     CleverYh    # 查看自己主页网址，可以在设置里自定义网址
+# weibo_username:     CleverYh    # 查看自己主页网址，可以在设置里自定义网址
 zhihu_username:     cyhhh-81
 github_username:    CleverYh
 #twitter_username:   
