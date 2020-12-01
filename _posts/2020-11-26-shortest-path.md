@@ -7,15 +7,16 @@ author:     zhamao
 timecost:   5 minutes
 # header-style: text
 # header-mask: 0.01
+nav-style:      invert
 header-img-credit:      Chen Yuhan
 header-img-year:        2020
-header-img-outchain:    true
-header-img: https://s3.ax1x.com/2020/11/22/D8TLJe.png
+header-img-outchain:    false
+header-img: img/post-bg-unix-linux.jpg
 catalog: true
 mathjax: false
 live2d:  false
 tags:
-    - CS Master
+    - Matrix
     - Haiyan's New Trick
 ---
 
@@ -161,8 +162,10 @@ vector<Weight> dijkstra(Graph g, Vertex source) {
 
         known[v] = true;
         for (size_t i = 0; i < n; i++) {
-            if (!known[i] && (g[v][i] < INFINITY)) // or dist + cvw will overflow
-                if (dist[v] + g[v][i] < dist[i]) dist[i] = dist[v] + g[v][i];
+            if (!known[i] && (g[v][i] < INFINITY)) { // or dist + cvw will overflow
+                if (dist[v] + g[v][i] < dist[i])
+                    dist[i] = dist[v] + g[v][i];
+            }
         }
     }
     return dist;
@@ -172,7 +175,7 @@ vector<Weight> dijkstra(Graph g, Vertex source) {
 void print(vector<Weight> d, Vertex source) {
     for (size_t i = 0; i < d.size(); i++)
         if (d[i] < INFINITY)
-            cout << source - 1 << "-" << (i + 1) << ":" << d[i] << endl;
+            cout << source << "-" << (i + 1) << ":" << d[i] << endl;
 }
 
 void shortest_path() {
@@ -189,5 +192,4 @@ int main() {
     while (T--) shortest_path();
     return 0;
 }
-
 ```

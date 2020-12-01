@@ -11,6 +11,7 @@ header-img:                 https://s1.ax1x.com/2020/03/18/8dGlIx.png
 header-img-credit-long:     false
 header-img-credit:          Chen Yuhan
 header-img-year:            2019
+nav-style: invert
 catalog: true
 live2d:  false
 tags:

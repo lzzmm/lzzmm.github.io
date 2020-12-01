@@ -6,6 +6,7 @@ date:       2020-02-29
 author:     Programmer ZHAMAO
 timecost:   1 minute
 header-img: img/home-bg.jpg
+nav-style: invert
 catalog: true
 mathjax: true
 live2d:  true
