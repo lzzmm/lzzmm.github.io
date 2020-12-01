@@ -7,7 +7,7 @@ author:     zhamao
 timecost:   5 minutes
 # header-style: text
 # header-mask: 0.01
-nav-style:      invert
+# nav-style:      invert
 header-img-credit:      Chen Yuhan
 header-img-year:        2020
 header-img-outchain:    false
