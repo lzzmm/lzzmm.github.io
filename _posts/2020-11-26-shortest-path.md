@@ -24,7 +24,7 @@ tags:
 # Shortest Path (Dijkstra's Algorithm)
 
 - 1000 ms / 32 MB
-- By 乔海燕 (qiaohy@mail.sysu.edu.cn)
+- By 乔海燕 (<qiaohy@mail.sysu.edu.cn>)
 
 ## Problem
 
