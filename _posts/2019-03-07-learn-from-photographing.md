@@ -12,7 +12,7 @@ header-img:                 https://s1.ax1x.com/2020/03/16/8YeQ9f.png
 header-img-credit:          Chen Yuhan
 header-img-year:            2020
 #header-img-credit-href：    # https://cleveryh.github.io/about/
-nav-style: invert
+# nav-style: invert
 catalog: true
 live2d:  false
 tags:

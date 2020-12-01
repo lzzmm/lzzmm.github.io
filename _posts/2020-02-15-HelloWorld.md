@@ -7,7 +7,7 @@ author:     炸毛
 timecost:   2 minutes
 header-img-outchain:    true
 header-img: https://s1.ax1x.com/2020/03/16/8YCKhQ.png
-nav-style: invert
+# nav-style: invert
 catalog: true
 live2d:  false
 tags:
