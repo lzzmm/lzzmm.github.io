@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Procreate
+title:      Create With Procreate®
 subtitle:   
 date:       2020-12-05
 author:     zhamao
@@ -62,5 +62,6 @@ iPad 版 Procreate 的当前版本为 `5X 4 (5.1.4)`
 
 ## References
 
-<https://procreate.art/cn/handbook/5.1>
-<https://procreate.art/cn/faq>
+<a href = "https://procreate.art/cn/handbook/5.1" target="_blank">
+
+<a href = "https://procreate.art/cn/faq" target="_blank">
