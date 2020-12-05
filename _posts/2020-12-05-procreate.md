@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Procreate
-subtitle:   可以让我的 iPad 更 Pro 一点吗
+subtitle:   可以让我的 iPad Pro 更 Pro 一点吗
 date:       2020-12-05
 author:     zhamao
 timecost:   
@@ -24,7 +24,7 @@ tags:
 
 iPad 版 Procreate 的当前版本为 `5X 4 (5.1.4)`
 
-### Procreate 学习笔记
+## Procreate 学习笔记
 
 ### 高级设置
 
@@ -42,7 +42,7 @@ iPad 版 Procreate 的当前版本为 `5X 4 (5.1.4)`
 
 `Palm Support™` 是 Procreate 内建的手掌防误触功能，它可配合常规的电容式触控笔，甚至你的手指来使用。
 
-启用 `Palm Support™` 让你在手掌置于屏幕上时依然能顺利创作，Procreate 将忽略你的手掌动作并只识别你的笔划；你也能够直接禁用 Palm Support™ 或调整为 `标准` 模式（适合较大尺寸的手）或 `精细模式`（适合较小尺寸的手）。
+启用 `Palm Support™` 让你在手掌置于屏幕上时依然能顺利创作，Procreate 将忽略你的手掌动作并只识别你的笔划；你也能够直接禁用 `Palm Support™` 或调整为 `标准` 模式（适合较大尺寸的手）或 `精细模式`（适合较小尺寸的手）。
 
 如果你的设备支持 Apple Pencil，其中的自带手掌防误触功能对于大多数用户而言都很好用，故默认设置禁用。
 
@@ -60,8 +60,12 @@ iPad 版 Procreate 的当前版本为 `5X 4 (5.1.4)`
 
 此选项决定在 `速度` 回报为 100% 前所需一个笔划的行进距离；如果你觉得与速度设置相关的笔刷在使用时表现太突兀或太缓慢，可以尝试调节此设置。
 
+### 手势快捷
+
+https://procreate.art/cn/handbook/5.1/interface-gestures/gestures/
+
 ## References
 
-<a href = "https://procreate.art/cn/handbook/5.1" target="_blank">
+<a href = "https://procreate.art/cn/handbook/5.1" target="_blank"></a>
 
-<a href = "https://procreate.art/cn/faq" target="_blank">
+<a href = "https://procreate.art/cn/faq" target="_blank"></a>
