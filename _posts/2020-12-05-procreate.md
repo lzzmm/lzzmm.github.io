@@ -62,7 +62,7 @@ iPad 版 Procreate 的当前版本为 `5X 4 (5.1.4)`
 
 ### 手势快捷
 
-https://procreate.art/cn/handbook/5.1/interface-gestures/gestures/
+[interface-gestures](https://procreate.art/cn/handbook/5.1/interface-gestures/gestures/)
 
 ## References
 
