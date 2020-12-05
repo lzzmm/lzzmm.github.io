@@ -15,8 +15,8 @@ header-img-year:            2019
 catalog: true
 live2d:  false
 tags:
-    - 摄影
-    - 读书笔记
+    - Photography
+    - Notes
     - 不适合阅读
 ---
 
