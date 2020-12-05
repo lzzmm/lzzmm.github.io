@@ -66,6 +66,6 @@ https://procreate.art/cn/handbook/5.1/interface-gestures/gestures/
 
 ## References
 
-<a href = "https://procreate.art/cn/handbook/5.1" target="_blank"></a>
+<a href = "https://procreate.art/cn/handbook/5.1" target="_blank">Procreate 使用手册</a>
 
-<a href = "https://procreate.art/cn/faq" target="_blank"></a>
+<a href = "https://procreate.art/cn/faq" target="_blank">Procreate FAQ</a>
