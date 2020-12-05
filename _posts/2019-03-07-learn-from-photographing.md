@@ -16,7 +16,7 @@ header-img-year:            2020
 catalog: true
 live2d:  false
 tags:
-    - 摄影
+    - Photography
     - 经验
     - 不适合阅读
 ---
