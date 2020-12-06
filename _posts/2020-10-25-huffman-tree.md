@@ -5,12 +5,12 @@ subtitle:   Compress And Decompress
 date:       2020-10-26
 author:     zhamao
 timecost:   6 minutes
-# header-style: black
+header-style: text
 # header-mask: 0.01
-header-img-credit:      Chen Yuhan
-header-img-year:        2020
-header-img-outchain:    true
-header-img: https://s3.ax1x.com/2020/11/22/D8TLJe.png
+# header-img-credit:      Chen Yuhan
+# header-img-year:        2020
+# header-img-outchain:    true
+# header-img: https://s3.ax1x.com/2020/11/22/D8TLJe.png
 # nav-style: invert
 catalog: true
 mathjax: false
@@ -19,6 +19,8 @@ tags:
     - Haiyan's New Trick
     - C++
 ---
+
+Code repository at <https://github.com/CleverYh/HuffmanTree>
 # TBD
 
 compress and decompress other files.
