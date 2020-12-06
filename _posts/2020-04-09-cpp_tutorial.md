@@ -18,7 +18,6 @@ live2d:  false
 tags:
     - C++
     - Coding
-    - Matrix
 ---
 
 # Week1 Basic iostream

@@ -18,7 +18,6 @@ live2d:  false
 tags:
     - C
     - Coding
-    - Matrix
 ---
 
 # 8658 Day20 STA的愤慨 (STA的分裂)
