@@ -895,13 +895,13 @@ samp {
 .post-container h5 {
   font-size: 22px;
   font-weight: 600;
-  color: gray;
+  color: #323232;
 }
 
 .post-container h6 {
   font-size: 20px;
-  font-weight: 500;
-  color: #323232;
+  font-weight: 600;
+  color: #3f3f3f;
 }
 
 .post-container h5+p,
