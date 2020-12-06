@@ -106,18 +106,6 @@ class cmp; 					// compare in priority_queue
 
 ```
 
-  
-
-```mermaid
-graph TD
-huffmanTree.h-->fileCompress.h
-huffmanTree.h-->fileDecompress.h
-fileCompress.h-->main.cpp
-fileDecompress.h-->main.cpp
-```
-
-​	
-
 ## 程序使用和测试说明
 
 使用 `g++` 编译
@@ -130,7 +118,7 @@ g++ .\main.cpp -o mian.exe
 
 ```powershell
 .\main.exe argv[1] inputFile outputFile
-argv[1] 可以是:encode,decode,compress,decompress.
+argv[1] could be: encode, decode, compress or decompress.
 ```
 
 调试时可以打开宏定义的 `DEBUG` 为 `true` 
