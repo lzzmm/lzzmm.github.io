@@ -8,8 +8,8 @@ timecost:   5 minutes
 # header-style: text
 # header-mask: 0.01
 # nav-style:      invert
-header-img-credit:      Chen Yuhan
-header-img-year:        2020
+# header-img-credit:      Chen Yuhan
+# header-img-year:        2020
 header-img-outchain:    false
 header-img: img/post-bg-unix-linux.jpg
 catalog: true

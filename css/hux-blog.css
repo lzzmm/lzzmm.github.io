@@ -720,16 +720,20 @@ samp {
 .post-container h4 {
   font-size: 22px;
   font-weight: 600;
-  color: gray;
+  color: #323232;
 }
 .post-container h4 + p {
   margin-top: 10px;
 }
-.post-container h5,
-.post-container h6 {
+.post-container h5 {
   font-size: 20px;
   font-weight: 600;
   color: gray;
+}
+.post-container h6 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #323232;
 }
 .post-container h5 + p,
 .post-container h6 + p {
