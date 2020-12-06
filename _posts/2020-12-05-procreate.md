@@ -5,12 +5,12 @@ subtitle:   可以让我的 iPad Pro 更 Pro 一点吗
 date:       2020-12-05
 author:     zhamao
 timecost:   
-# header-style: black
+header-style: text # TODO:img
 # header-mask: 0.01
-header-img-credit:      Chen Yuhan
-header-img-year:        2020
-header-img-outchain:    true
-header-img: https://s3.ax1x.com/2020/11/22/D8TLJe.png
+# header-img-credit:      Chen Yuhan
+# header-img-year:        2020
+# header-img-outchain:    true
+# header-img: https://s3.ax1x.com/2020/11/22/D8TLJe.png
 # nav-style: invert
 catalog: true
 mathjax: false
