@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Resolve Inline $Math$ in Typora
+title:      Resolve $Inline$ $Math$ in Typora
 subtitle:   
 date:       2020-10-17
 author:     zhamao
