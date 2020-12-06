@@ -13,7 +13,7 @@ header-style: text
 # header-img: https://s3.ax1x.com/2020/11/22/D8TLJe.png
 # nav-style: invert
 catalog: true
-mathjax: false
+mathjax: true
 live2d:  false
 tags:
     - Markdown
