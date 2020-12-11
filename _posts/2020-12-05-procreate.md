@@ -164,6 +164,8 @@ Procreate 官方B站帐号直播
 
 ## References
 
-<a href = "https://procreate.art/cn/handbook/5.1" target="_blank">Procreate 使用手册</a>  
-<a href = "https://procreate.art/cn/faq" target="_blank">Procreate FAQ</a>  
+<a href = "https://procreate.art/cn/handbook/5.1" target="_blank">Procreate 使用手册</a>
+
+<a href = "https://procreate.art/cn/faq" target="_blank">Procreate FAQ</a>
+
 <a href = "https://sspai.com/post/57115" target="_blank">如何用 iPad 画一幅好看的画？我的 Procreate 使用经验分享</a>
