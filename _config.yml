@@ -26,7 +26,7 @@ github_username:    CleverYh
 #linkedin_username:             # firstname-lastname-idxxxx
 
 # Gray
-grayscale: false
+grayscale: true
 
 #bg-animation
 bg-animate: true
