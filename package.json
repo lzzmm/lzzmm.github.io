@@ -29,9 +29,9 @@
         "mime": ">=1.4.1"
     },
     "scripts": {
-        "start" : "jekyll serve -w -l --host 0.0.0.0 --port 4000",
-        "dev"   : "grunt watch & npm run start",
-        "boil"  : "git push boilerplate boilerplate:master",
-        "push"  : "git push origin master --tag"
+        "start": "jekyll serve -w -l --host 0.0.0.0 --port 4000",
+        "dev": "grunt watch & npm run start",
+        "boil": "git push boilerplate boilerplate:master",
+        "push": "git push origin master --tag"
     }
 }
