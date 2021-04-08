@@ -98,7 +98,7 @@ tags:
 
 好在出发前两天到了。
 
-在这时认识了上交的热心老哥，具体可以跳转到[这里](https://cleveryh.github.io/2020/10/31/oct-is-gone/#04)查看。
+在这时认识了上交的热心老哥，具体可以跳转到~~[这里](https://cleveryh.github.io/2020/10/31/oct-is-gone/#04)查看。~~
 
 ## 10-16
 
