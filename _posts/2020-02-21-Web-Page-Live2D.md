@@ -12,7 +12,6 @@ header-style:   black
 nav-style:      invert
 header-img:     img/post-bg-live2d.jpg
 tags:
-    - JavaScript
     - Web
     - GitHub Pages
 ---

@@ -21,9 +21,9 @@ tags:
 
 Inline $math$ $expression$ is the externed syntax of  $\LaTeX$ but not the generic standard of Markdown. So the inline math expression won't be  resolved by Typora in default.
 
-All we should do is go to 
+All we should do is go to
 
-```
+```shell
 File -> Preferances -> Markdown -> Syntax Support
 ```
 

@@ -11,8 +11,6 @@ catalog: true
 mathjax: true
 live2d:  true
 tags:
-    - C
-    - Coding
 ---
 
 #### C
