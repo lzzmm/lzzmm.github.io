@@ -89,8 +89,8 @@ gitalk:
 ba_track_id: c7c6e07d8c4af60ce3143894898b897d
 
 # Google Analytics
-# ga_track_id: 'UA-158666159-1'            # Format: UA-xxxxxx-xx
-# ga_domain: auto
+ga_track_id: 'UA-158666159-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
 
 
 
