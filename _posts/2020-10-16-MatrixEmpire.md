@@ -16,8 +16,6 @@ catalog: true
 mathjax: false
 live2d:  true
 tags:
-    - 漫谈
-    - 经验
 ---
 
 # 起因

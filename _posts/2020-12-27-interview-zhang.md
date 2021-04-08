@@ -15,7 +15,6 @@ catalog: false
 mathjax: false
 live2d:  false
 tags:
-    - 社会
 ---
 
 ## 我的记录
