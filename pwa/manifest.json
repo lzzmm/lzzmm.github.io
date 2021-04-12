@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "Yh's Blog",
+  "short_name": "Yh's Blog",
+  "description": "计算机科学、深度学习、机器人、奇奇怪怪的想法和平淡的生活。",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
