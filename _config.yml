@@ -21,12 +21,14 @@ RSS: false
 # weibo_username:     CleverYh    # 查看自己主页网址，可以在设置里自定义网址
 zhihu_username:     cyhhh-81
 github_username:    CleverYh
+jike_username:      D5560B5D-7448-4E1A-B43A-EC2D2C9AB7EC
+bilibili_username:  81640939
 #twitter_username:   
 #facebook_username:  
 #linkedin_username:             # firstname-lastname-idxxxx
 
 # Gray
-grayscale: true 
+grayscale: false
 
 #bg-animation
 bg-animate: true
@@ -129,35 +131,5 @@ friends: [
     },{
         title: "花降",
         href: "https://755328872.github.io/"
-    #},{
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-    #    title: "乱序",
-    #    href: "http://mida.re/"
-    #},{
-    #    title: "Sherry Wu",
-    #    href: "https://xuechundesign.github.io"
-    #},{
-    #    title: "Luke 的自留地",
-    #    href: "http://hmqk1995.github.io"
-    #},{
-    #    title: "Ebn's Blog",
-    #    href: "http://ebnbin.com/"
-    #},{
-    #    title: "SmdCn's Blog",
-    #    href: "http://blog.smdcn.net"
-    #},{
-    #    title: "JiyinYiyong",
-    #    href: "http://tiye.me/"
-    #},{
-    #    title: "David's Game",
-    #    href: "https://www.ruoyaowu.com/"
-    #},{
-    #    title: "DHong Say",
-    #    href: "http://dhong.co"
-    #},{
-    #    title: "尹峰以为",
-    #    href: "http://ingf.github.io/"
     }
 ]
