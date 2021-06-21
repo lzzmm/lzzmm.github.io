@@ -6,7 +6,7 @@ header-img-credit:      Yuhan Chen
 header-img-year:        2019
 email_1: chenyh369@mail2.sysu.edu.cn
 email_2: cleveryh@qq.com
-description: "炸毛的秘密基地 | 计算机科学、深度学习、机器人、奇奇怪怪的想法和平淡的生活" # "炸毛的秘密基地 | 计算机科学、Web、ML和嵌入式"
+description: "炸毛的秘密基地  | 计算机科学、高性能计算、                   深度学习、机器人、奇奇怪怪的想法和平淡的生活" # "炸毛的秘密基地 | 计算机科学、Web、ML和嵌入式"
 keyword: "炸毛, CleverYh, Yh, 炸毛的秘密基地, 炸毛的博客, Yh的博客" 
 url: "http://cleveryh.github.io"        # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
