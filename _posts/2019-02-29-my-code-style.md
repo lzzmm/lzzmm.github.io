@@ -10,6 +10,7 @@ header-img: img/home-bg.jpg
 catalog: true
 mathjax: true
 live2d:  true
+do-not-show-in-index: true
 tags:
 ---
 

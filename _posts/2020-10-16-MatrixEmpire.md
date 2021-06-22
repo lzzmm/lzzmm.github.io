@@ -15,6 +15,7 @@ header-img: https://s3.ax1x.com/2020/11/22/D8hRTe.jpg
 catalog: true
 mathjax: false
 live2d:  true
+do-not-show-in-index: true
 tags:
 ---
 
