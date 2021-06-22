@@ -15,6 +15,7 @@ header-style: text
 catalog: false
 mathjax: true
 live2d:  false
+byncsa:  true
 tags:
     - Markdown
 ---
