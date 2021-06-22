@@ -14,6 +14,7 @@ header-img-year:            2019
 # nav-style: invert
 catalog: true
 live2d:  false
+do-not-show-in-index: true
 tags:
     - Photography
     - Notes

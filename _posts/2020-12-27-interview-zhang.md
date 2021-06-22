@@ -14,6 +14,7 @@ header-style: text
 catalog: false
 mathjax: false
 live2d:  false
+do-not-show-in-index: true
 tags:
 ---
 

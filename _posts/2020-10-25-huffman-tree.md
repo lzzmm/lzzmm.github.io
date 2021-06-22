@@ -15,6 +15,7 @@ header-style: text
 catalog: true
 mathjax: false
 live2d:  false
+do-not-show-in-index: true
 tags:
     - Haiyan's New Trick
     - C++
