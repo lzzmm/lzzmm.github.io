@@ -5,18 +5,50 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <!-- SNS Link -->
                 {% include sns-links.html center=true %}
+                <div>
+                    <span>本博客已经开心地生活了</span><span id="display_live_time"></span><span class="moe-text">啦(●'◡'●)</span>
+                    <script>function blog_live_time() {
+                            window.setTimeout(blog_live_time, 1000);
+                            const start = new Date('2020-11-14T00:00:00');
+                            const now = new Date();
+                            const timeDiff = (now.getTime() - start.getTime());
+                            const msPerMinute = 60 * 1000;
+                            const msPerHour = 60 * msPerMinute;
+                            const msPerDay = 24 * msPerHour;
+                            const passDay = Math.floor(timeDiff / msPerDay);
+                            const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+                            const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+                            const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+                            display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+                        }
+                        blog_live_time();
+                    </script>
+                </div>
+                <!-- </footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-arrow-up-s-line"></use>
+    </svg><svg class="progress-circle-container" viewBox="0 0 100 100">
+        <circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#6200ee"
+            stroke-width="2" stroke-linecap="round"></circle>
+    </svg></a></div>
+<script defer src="https://cdn.jsdelivr.net/gh/755328872/755328872.github.io@latest/js/utils.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/755328872/755328872.github.io@latest/js/hexo-theme-yun.js"></script>
+</body>
 
+</html> -->
                 <p class="copyright text-muted">
-                    <text style="opacity: 1; color: #007799;">&copy; 2019 - {{ site.time | date: '%Y' }}  <a href="https://cleveryh.github.io/">{{ site.title }}</a>
+                    <text style="opacity: 1; color: #007799;">&copy; 2019 - {{ site.time | date: '%Y' }} <a
+                            href="https://cleveryh.github.io/">{{ site.title }}</a>
                     </text><br>
-                    <text style="opacity: 0.66; color: #0099bb;">Powered by <a href="https://github.com/CleverYh/cleveryh.github.io" target="_blank">CleverYh</a> |
-                    <iframe style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px; opacity: 0.55;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true">
-                    </iframe></text><br>
+                    <text style="opacity: 0.66; color: #0099bb;">Powered by <a
+                            href="https://github.com/CleverYh/cleveryh.github.io" target="_blank">CleverYh</a> |
+                        <iframe style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px; opacity: 0.55;"
+                            frameborder="0" scrolling="0" width="100px" height="20px"
+                            src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true">
+                        </iframe></text><br>
                     <!-- <iframe style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px;" src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&type=follow&count=true" frameborder="0" scrolling="0" width="170" height="20" title="GitHub"></iframe> -->
                     <!-- <text style="opacity: 0.8"><br>Powered by <a href="https://cleveryh.github.io/">炸毛的秘密基地</a><br> -->
-                        <text style="opacity: 0.6; font-size: 12px;">Improved from the theme by <a href="http://huangxuan.me/" target="_blank">Hux Blog</a></text>
+                    <text style="opacity: 0.6; font-size: 12px;">Improved from the theme by <a
+                            href="http://huangxuan.me/" target="_blank">Hux Blog</a></text>
                     <!-- </text> -->
                 </p>
             </div>
@@ -25,19 +57,19 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Service Worker -->
 {% if site.service-worker %}
-<script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/sw-registration.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/snackbar.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/sw-registration.js " | prepend: site.baseurl }}"></script>
 {% endif %}
 
 <!-- async load function -->
@@ -202,7 +234,7 @@
 <!-- Handle Language Change -->
 <script type="text/javascript">
     // get nodes
-    var $  = document.querySelector(".zh");
+    var $ = document.querySelector(".zh");
     var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
 
