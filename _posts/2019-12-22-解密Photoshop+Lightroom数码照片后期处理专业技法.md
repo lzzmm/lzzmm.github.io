@@ -18,7 +18,6 @@ do-not-show-in-index: true
 tags:
     - Photography
     - Notes
-    - 不适合阅读
 ---
 
 

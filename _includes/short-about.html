@@ -1,28 +1,29 @@
 <section class="visible-md visible-lg">
-  <hr>
-  <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
-  <div class="short-about">
-    {% if site.sidebar-avatar %}
-    <img src="{{site.sidebar-avatar}}" />
-    {% endif %}
-    {% if site.sidebar-about-description %}
-    <p>{{site.sidebar-about-description}}</p>
-    {% endif %}
-    <!-- SNS Link -->
-    {% include sns-links.html %}
-    <p>
-      {% if site.email_1 %}
-          <a href="mailto:{{site.email_1}}">✉️  {{site.email_1}}</a><br>
-      {% endif %}
-      {% if site.email_2 %}
-          <a href="mailto:{{site.email_2}}">✉️  {{site.email_2}}</a>
-      {% endif %}
-    </p>
-    
-    <!-- 简繁切换 -->
-    <a href="javascript:translatePage();">简繁切换(beta)</a>
-    <script type="text/javascript" src="https://wenhairu.com/static/tw_cn.js"></script>
+    <hr>
+    <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+    <div class="short-about">
+        {% if site.sidebar-avatar %}
+        <img src="{{site.sidebar-avatar}}" />
+        {% endif %}
+        {% if site.sidebar-about-description %}
+        <p>{{site.sidebar-about-description}}</p>
+        {% endif %}
+        <!-- SNS Link -->
+        {% include sns-links.html %}
+        <p>
+            {% if site.email_1 %}
+            <a href="mailto:{{site.email_1}}">✉️ {{site.email_1}}</a><br>
+            {% endif %}
+            {% if site.email_2 %}
+            <a href="mailto:{{site.email_2}}">✉️ {{site.email_2}}</a>
+            {% endif %}
+        </p>
 
-  </div>
+        <!-- 简繁切换 -->
+        <a href="javascript:translatePage();">简繁切换(beta)</a>
+        <script type="text/javascript" src="https://wenhairu.com/static/tw_cn.js"></script>
+
+    </div>
+    <hr>
     <h5><a href="{{'/2002/03/01/Projects/' | prepend: site.baseurl }}">PROJECTS</a></h5>
 </section>

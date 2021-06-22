@@ -12,14 +12,12 @@ header-img-year:        2019
 header-img-outchain:    true
 header-img: https://s1.ax1x.com/2020/08/16/dVG2gH.jpg
 # nav-style: invert
-catalog: true
+catalog: false
 mathjax: false
 live2d:  false
 do-not-show-in-index: true
 tags:
     - 漫谈
-    - 随笔
-    - 半个沃特咩冷
 ---
 
 > ~~原载于公众号 半个沃特咩冷 作者是我自己~~ 现已删除
