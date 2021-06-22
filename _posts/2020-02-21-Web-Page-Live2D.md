@@ -13,7 +13,6 @@ nav-style:      invert
 header-img:     img/post-bg-live2d.jpg
 tags:
     - Web
-    - GitHub Pages
 ---
 
 # 简单部署看板娘到网页

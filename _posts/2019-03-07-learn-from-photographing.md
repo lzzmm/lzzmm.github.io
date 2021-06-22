@@ -19,7 +19,6 @@ do-not-show-in-index: true
 tags:
     - Photography
     - 经验
-    - 不适合阅读
 ---
 
 ## Sony 变焦和清晰影像缩放
