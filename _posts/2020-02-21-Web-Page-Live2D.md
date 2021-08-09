@@ -11,6 +11,7 @@ timecost:   2 minutes
 header-style:   black
 nav-style:      invert
 header-img:     img/post-bg-live2d.jpg
+byncsa: true
 tags:
     - Web
 ---
