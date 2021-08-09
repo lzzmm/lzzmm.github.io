@@ -2,7 +2,7 @@
 layout:     post
 title:      Colorblind
 subtitle:   
-date:       2021-08-26
+date:       2021-06-13
 author:     zhamao
 timecost:   6 minutes
 header-style: text
@@ -19,3 +19,4 @@ do-not-show-in-index: true
 byncsa:  true
 tags:
 ---
+
