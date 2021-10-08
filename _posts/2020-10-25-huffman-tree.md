@@ -17,7 +17,7 @@ mathjax: false
 live2d:  false
 do-not-show-in-index: true
 tags:
-    - C++
+    - C/C++
     # - Haiyan's New Trick
 ---
 
