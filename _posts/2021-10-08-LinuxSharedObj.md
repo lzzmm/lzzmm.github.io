@@ -10,7 +10,7 @@ timecost:   5 minutes
 # header-img-credit:      Yuhan Chen
 # header-img-year:        2019 
 header-img-outchain: false
-header-img: img/bg/sunrise.jpg
+header-img: img/bg/guoba.jpg
 # nav-style: invert
 catalog: true
 mathjax: true
