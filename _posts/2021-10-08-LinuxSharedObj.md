@@ -4,13 +4,13 @@ title:      Linux环境下构造动态链接库
 subtitle:   以矩阵乘法函数为例
 date:       2021-10-08
 author:     炸毛
-timecost:   10 mins
+timecost:   5 minutes
 # header-style: black
 # header-mask: 0.01
 # header-img-credit:      Yuhan Chen
 # header-img-year:        2019 
-header-img-outchain:    true
-header-img: https://s1.ax1x.com/2020/03/16/8JDyPP.jpg
+header-img-outchain: false
+header-img: img/bg/sunrise.jpg
 # nav-style: invert
 catalog: true
 mathjax: true
@@ -45,7 +45,7 @@ lib是前缀，这是一个约定俗成的规则。x为主版本号（Major Vers
 
 使用GCC编译链接时，有两个参数需要注意，一个是`-l`（小写的L），一个是`-L`（大写的L）。我们前面曾提到，Linux有个约定俗成的规则，假如库名是name，那么动态链接库文件名就是`libname.so`。在使用GCC编译链接时，`-lname`来告诉GCC使用哪个库。链接时，GCC的链接器`ld`就会前往`LD_LIBRARY_PATH`环境变量、`/etc/ld.so.cache`缓存文件和`/usr/lib`和`/lib`目录下去查找`libname.so`。我们也可以用`-L/path/to/library`的方式，让链接器`ld`去`/path/to/library`路径下去找库文件。
 
-## 编写 `matrix_multiply.h` 和 `matrix_multiply.c` 
+## 编写 `matrix_multiply.h` 和 `matrix_multiply.c`
 
 根据要求，我将Lab1的函数移植过来，其中分为单精度浮点和双精度浮点两个函数。本来打算参数是三个矩阵，但是找不到查询指针所指内存块的大小的方法，所以只能把矩阵大小也传入了。并且需要矩阵行列都是8的倍数。
 
@@ -57,7 +57,7 @@ size_t _msize(
 );
 ```
 
-https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/msize?redirectedfrom=MSDN&view=msvc-160
+[c-runtime-library/reference/msize](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/msize?redirectedfrom=MSDN&view=msvc-160)
 
 这不是标准函数，在我的环境下不适用。
 
@@ -102,7 +102,7 @@ g++ -shared -o libmatrix_multiply.so matrix_multiply.o
 
 可以看到生成了.o和.so文件。
 
-![image-20211008231006292](img/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_lab2/image-20211008231006292.png)
+![image-20211008231006292](../img/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_lab2/image-20211008231006292.png)
 
 ## 调用.so文件
 
@@ -134,7 +134,7 @@ g++ -o a a.o -L. -lmatrix_multiply
 1. -L.：在当前路径寻找so文件
 2. -lmatrix_multiply: 链接libmatrix_multiply.so这个库文件
 
-![image-20211008231743882](img/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_lab2/image-20211008231743882.png)
+![image-20211008231743882](../img/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_lab2/image-20211008231743882.png)
 
 可以看到运行结果没有问题。
 
@@ -148,16 +148,16 @@ CC = g++
 SO = libmatrix_multiply.so
 
 $(SO): matrix_multiply.o
-	$(CC) -shared -o $(SO) matrix_multiply.o
+    $(CC) -shared -o $(SO) matrix_multiply.o
 matrix_multiply.o: matrix_multiply.c matrix_multiply.h
-	$(CC) -Wall -g -fPIC -mavx -o matrix_multiply.o -c matrix_multiply.c
+    $(CC) -Wall -g -fPIC -mavx -o matrix_multiply.o -c matrix_multiply.c
 
 build_main:
-	$(CC) -Wall -g -o a.o -c main.cpp
-	$(CC) -o a a.o -L. -lmatrix_multiply
+    $(CC) -Wall -g -o a.o -c main.cpp
+    $(CC) -o a a.o -L. -lmatrix_multiply
 clean:
-	rm -f matrix_multiply.o a.o
-	rm -f core*
+    rm -f matrix_multiply.o a.o
+    rm -f core*
 ```
 
 ## 存在的问题
@@ -165,6 +165,6 @@ clean:
 1. 需要传入矩阵大小作为参数（采用数组或者结构体传入或许好看许多）
 2. 矩阵行列大小需要满足某些倍数（可否通过在函数中realloc，计算完后再返回左上角呢？）
 
-##  REFERENCES
+## REFERENCES
 
 [浅析Linux动态链接库](https://zhuanlan.zhihu.com/p/235551437)
