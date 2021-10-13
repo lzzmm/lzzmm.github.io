@@ -15,6 +15,7 @@ header-img: img/bg/guoba.jpg
 catalog: true
 mathjax: true
 live2d:  false
+byncsa:  true
 do-not-show-in-index: false
 tags:
     - C/C++
@@ -104,7 +105,7 @@ g++ -shared -o libmatrix_multiply.so matrix_multiply.o
 
 可以看到生成了.o和.so文件。
 
-![image-20211008231006292](../img/in-post/hpc_lab2/image-20211008231006292.png)
+![image-20211008231006292](/img/in-post/hpc_lab2/image-20211008231006292.png)
 
 ## 调用.so文件
 
@@ -136,7 +137,7 @@ g++ -o a a.o -L. -lmatrix_multiply
 1. -L.：在当前路径寻找so文件
 2. -lmatrix_multiply: 链接libmatrix_multiply.so这个库文件
 
-![image-20211008231743882](../img/in-post/hpc_lab2/image-20211008231743882.png)
+![image-20211008231743882](/img/in-post/hpc_lab2/image-20211008231743882.png)
 
 可以看到运行结果没有问题。
 
