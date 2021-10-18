@@ -2,7 +2,7 @@
 layout:     post
 title:      为Windows Terminal开启透明背景
 subtitle:   
-date:       2021-09-21
+date:       2021-10-18
 author:     炸毛
 timecost:   5 minutes
 # header-style: black
@@ -71,7 +71,7 @@ sudo apt install screenfetch
 screenfetch
 ```
 
-![screenfetch](img/in-post/windowsTerminal.png)
+![screenfetch](/img/in-post/windowsTerminal.png)
 
 To Be Continued...
 
