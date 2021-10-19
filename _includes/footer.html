@@ -10,8 +10,8 @@
                     <text style="opacity: 1; color: #007799;">&copy; 2019 - {{ site.time | date: '%Y' }} <a
                             href="https://cleveryh.github.io/">{{ site.title }}</a>
                     </text><br>
-                    <span style="opacity: 0.77; color: #007799;">
-                    <span>已经运行</span><span id="display_live_time"></span><span>啦(～￣▽￣)～</span>
+                    <span style="opacity: 0.88; color: #007799;">
+                    <span>Uptime:</span><span id="display_live_time"></span><span>(～￣▽￣)～</span>
                     <script>function blog_live_time() {
                             window.setTimeout(blog_live_time, 1000);
                             const start = new Date('2020-02-16T14:37:00');
@@ -24,7 +24,7 @@
                             const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
                             const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
                             const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
-                            display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒 ";
+                            display_live_time.innerHTML = " " + passDay + "d " + passHour + "h " + passMinute + "m " + passSecond + "s ";
                         }
                         blog_live_time();
                     </script></span><br>
