@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      为Windows Terminal开启透明背景
-subtitle:   
+subtitle:   Acrylic Background for Windows Terminal
 date:       2021-10-18
 author:     炸毛
 timecost:   5 minutes
@@ -18,7 +18,7 @@ live2d:  false
 byncsa:  true
 do-not-show-in-index: false
 tags:
-    - 经验
+    - 花里胡哨
 ---
 
 ## 一种更加简易的方法
@@ -82,7 +82,7 @@ screenfetch
 
 ## 安装 oh-my-posh
 
-> Oh my Posh is a custom prompt engine for any shell that has the ability to adjust the prompt string with a function or variable.  - https://ohmyposh.dev/docs/
+> Oh my Posh is a custom prompt engine for any shell that has the ability to adjust the prompt string with a function or variable.  - [https://ohmyposh.dev/docs/](https://ohmyposh.dev/docs/)
 
 ```bash
 Install-Module oh-my-posh -Scope CurrentUser
@@ -122,3 +122,5 @@ Set-PoshPrompt -Theme agnosterplus
 ```
 
 保存并退出。重启Windows Terminal，可以发现oh-my-posh正常运行。
+
+![ohmyposh](/img/in-post/ohmyposh.png)
