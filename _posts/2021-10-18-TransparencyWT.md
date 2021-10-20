@@ -151,7 +151,7 @@ chsh -s /bin/zsh
 sudo apt-get install git
 ```
 
-### 安装oh-my-zsh
+### 安装 oh-my-zsh
 
 使用 `wget`
 
