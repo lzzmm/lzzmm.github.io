@@ -149,23 +149,25 @@ layout: default
 {% endif %}
 
 <!-- CleverYh -->
-{% if page.live2d && site.live2d %}
-<!-- Live2D start -->
-<script type="text/javascript" charset="utf-8" src="{{ site.baseurl }}/js/L2Dwidget.0.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ site.baseurl }}/js/L2Dwidget.min.js"></script>
-<script type="text/javascript">
-    L2Dwidget.init({
-        "display": {
-            "superSample": 2,
-            "width": 128,
-            "height": 256,
-            "position": "left",
-            "hOffset": 0,
-            "vOffset": 0
-        }
-    });
-</script>
-<!-- Live2D end -->
+{% if site.live2d %}
+    {% if page.live2d %}
+    <!-- Live2D start -->
+    <script type="text/javascript" charset="utf-8" src="{{ site.baseurl }}/js/L2Dwidget.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ site.baseurl }}/js/L2Dwidget.min.js"></script>
+    <script type="text/javascript">
+        L2Dwidget.init({
+            "display": {
+                "superSample": 2,
+                "width": 128,
+                "height": 256,
+                "position": "left",
+                "hOffset": 0,
+                "vOffset": 0
+            }
+        });
+    </script>
+    <!-- Live2D end -->
+    {% endif %}
 {% endif %}
 <!-- End CleverYh -->
 
