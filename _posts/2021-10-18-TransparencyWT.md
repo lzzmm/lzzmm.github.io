@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      为Windows Terminal开启透明背景
-subtitle:   Acrylic Background for Windows Terminal
+title:      为Windows Terminal开启透明背景等
+subtitle:   Acrylic Background for Windows Terminal and more
 date:       2021-10-18
 author:     炸毛
 timecost:   5 minutes
@@ -124,3 +124,57 @@ Set-PoshPrompt -Theme agnosterplus
 保存并退出。重启Windows Terminal，可以发现oh-my-posh正常运行。
 
 ![ohmyposh](/img/in-post/ohmyposh.png)
+
+## 安装 oh-my-zsh
+
+Bash是最常见的Linux Shell，Zsh与Bash类似，是另一个很棒的shell，它比Bash更快，更可自定义。关于Zsh的最酷的事情之一是颜色自定义，你只需使用名为[Oh My Zsh](https://ohmyz.sh/)的框架即可更改shell的主题和颜色。想知道你的系统有哪些shell，可以通过以下命令查看：
+
+```shell
+cat /etc/shells
+```
+
+### 安装 zsh 和 git (若已有可跳至[安装oh-my-zsh](#安装oh-my-zsh)) <!--https://lzzmm.github.io/2021/10/19/oh-my-zsh/-->
+
+```shell
+sudo apt-get install zsh
+```
+
+安装完成后设置当前用户使用zsh
+
+```shell
+chsh -s /bin/zsh
+```
+
+安装 git
+
+```shell
+sudo apt-get install git
+```
+
+### 安装oh-my-zsh
+
+使用 `wget`
+
+```shell
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+安装完成会出现 "oh my zsh" 字样
+
+![omz](/img/in-post/omz.png)
+
+### 设置主题
+
+> All the current themes can be found in the `themes/` directory in the oh-my-zsh distribution. In order to enable a theme, set `ZSH_THEME` to the name of the theme in your `~/.zshrc`, before sourcing Oh My Zsh; for example: `ZSH_THEME=robbyrussell` If you do not want any theme enabled, just set `ZSH_THEME` to blank: `ZSH_THEME=""`
+
+默认主题是[robbyrussell](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)，我用的是与Powershell主题差不多的[agnoster](https://github.com/agnoster/agnoster-zsh-theme)。这个主题在Ubuntu系统中推荐安装[powerline](https://github.com/powerline/fonts)。
+
+```shell
+sudo apt-get install fonts-powerline
+```
+
+在终端中更改字体。
+
+效果如下
+
+![agnoster](/img/in-post/agnoster.png)
