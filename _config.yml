@@ -33,6 +33,9 @@ grayscale: false
 #bg-animation
 bg-animate: true
 
+# live 2d
+live2d: false
+
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
