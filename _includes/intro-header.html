@@ -27,6 +27,7 @@
         {% endif %}
     </style>
     {% else %}
+    {% if page.header-img %}
     <style type="text/css">
         header.intro-header{
             position: relative;
@@ -43,6 +44,27 @@
         }
         {% endif %}
     </style>
+    {% else %}
+    <script type="text/javascript">
+        window.onload = getCSS();
+    </script>
+    <style type="text/css">
+        header.intro-header{
+            position: relative;
+            /* background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); */
+            background: {{ page.header-bg-css }};
+        }
+
+        {% if page.header-mask %}
+        header.intro-header .header-mask{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(0,0,0, {{ page.header-mask }});
+        }
+        {% endif %}
+    </style>
+    {% endif %}
     {% endif %}
 {% if page.header-style == 'text' %}
 <header class="intro-header style-text" >
