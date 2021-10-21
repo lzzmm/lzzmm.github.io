@@ -78,14 +78,14 @@
             datetoday.setTime(timenow);
             thehour = datetoday.getHours();
             if (thehour < 18 && thehour >= 6)
-                display = "{{ site.baseurl }}/{{ site.header-img }}";
+                display = "{{ site.header-img }}";
             else if (thehour >= 18 || thehour < 6)
-                display = "{{ site.baseurl }}/{{ site.header-img-night }}";
+                display = "{{ site.header-img-night }}";
             else
-                display = "{{ site.baseurl }}/{{ site.header-img }}";
+                display = "{{ site.header-img }}";
 
             var css = '<style type="text/css">';
-            css += 'header.intro-header{background-image: url(\'' + display + '\');}';
+            css += 'header.intro-header{background-image: url(\'{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}' + display + '{% endif %}\');}';
             css += '</style>';
             document.write(css);
         }
