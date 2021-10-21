@@ -51,6 +51,10 @@ $$
 \end{aligned}
 \end{equation}
 
+$$
+
+$$
+
 \begin{equation}
 \begin{aligned}
     [a]={x\in X|x \sim a}
