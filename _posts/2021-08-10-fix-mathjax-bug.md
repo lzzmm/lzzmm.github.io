@@ -11,11 +11,12 @@ timecost:   6 minutes
 # header-img-year:        2020
 # header-img-outchain:    true
 # nav-style: invert
-header-img: 
+header-img: img/bg/paimon_dying.jpg
 catalog: true
 mathjax: true
 live2d:  false
-do-not-show-in-index: false
+do-not-show-in-index:   false
+do-not-show-preview:    true
 byncsa:  true
 tags:
 ---
