@@ -18,7 +18,7 @@ live2d:  false
 do-not-show-in-index:   false
 do-not-show-preview:    true
 byncsa:  true
-tags:
+# tags:x
 ---
 
 mathjax 渲染多行公式的问题困扰了我很久，之前魔改主页的时候不知道动了啥导致渲染的时候会被多一层 `\[` 和 `\]` 包围。
