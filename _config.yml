@@ -84,8 +84,8 @@ netease_comment: false
 # Gitalk
 gitalk:
   enable: true #是否开启Gitalk评论
-  clientID: 7fffbe4c3b1dd09438df #生成的clientID
-  clientSecret: 31af50fecf6080208cea63ddb5a889340ae1259e #生成的clientSecret
+  clientID: c13966f40c081a08bd16 #7fffbe4c3b1dd09438df #生成的clientID
+  clientSecret: 8dd91b525b0224e0b6415d5199cafb73f6f19589 #31af50fecf6080208cea63ddb5a889340ae1259e #生成的clientSecret TODO:
   repo: lzzmm.github.io #仓库名称
   owner: lzzmm #GitHub用户名
   admin: lzzmm
