@@ -13,7 +13,7 @@ timecost:   6 minutes
 # nav-style: invert
 header-img: 
 catalog: true
-mathjax: false
+mathjax: true
 live2d:  false
 do-not-show-in-index: false
 byncsa:  true
