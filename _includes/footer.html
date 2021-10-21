@@ -271,25 +271,3 @@
 </script>
 {% endif %}
 
-<script type="text/javascript">
-
-function diffBackground() {
-    datetoday = new Date();
-    timenow = datetoday.getTime();
-    datetoday.setTime(timenow);
-    thehour = datetoday.getHours();
-    if (thehour < 18 && thehour >= 6)
-        display = "{{ site.baseurl }}/{{ site.header-img }}";
-    else if (thehour >= 18 || thehour < 6)
-        display = "{{ site.baseurl }}/{{ site.header-img-night }}";
-    else
-        display = "{{ site.baseurl }}/{{ site.header-img }}";
-    //（...想要更多再加即可...）
-
-    var css = '<style type="text/css">';
-    css += 'header.intro-header{background-image: url(\''+display+'\');}';
-    css += '</style>';
-    document.write(css);
-}
-
-</script>
