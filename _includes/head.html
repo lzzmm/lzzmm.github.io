@@ -69,5 +69,26 @@
     <![endif]-->
 
     <!-- ga & ba script hoook -->
-    <script></script>
+    
+    <!-- diffBackground -->
+    <script type="text/javascript">
+        function diffBackground() {
+            datetoday = new Date();
+            timenow = datetoday.getTime();
+            datetoday.setTime(timenow);
+            thehour = datetoday.getHours();
+            if (thehour < 18 && thehour >= 6)
+                display = "{{ site.baseurl }}/{{ site.header-img }}";
+            else if (thehour >= 18 || thehour < 6)
+                display = "{{ site.baseurl }}/{{ site.header-img-night }}";
+            else
+                display = "{{ site.baseurl }}/{{ site.header-img }}";
+
+            var css = '<style type="text/css">';
+            css += 'header.intro-header{background-image: url(\'' + display + '\');}';
+            css += '</style>';
+            document.write(css);
+        }
+    </script>
+
 </head>
