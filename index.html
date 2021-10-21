@@ -36,10 +36,14 @@ header-img-year: {{site.header-img-year}}
 
         <!--DONE: tags and reduce preview lines-->
         <div class="post-content-preview">
+            <!-- DONE: preview 自定义是否显示 -->
+            {% if post.do-not-show-preview %}
+            {% else %}
             {% if post.lang == 'en' %}
             {{ post.content | strip_html | truncate:300 }}
             {% else %}
             {{ post.content | strip_html | truncate:160 }}
+            {% endif %}
             {% endif %}
         </div>
     </a>
