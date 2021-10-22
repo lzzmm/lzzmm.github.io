@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Linux环境下构造动态链接库
-subtitle:   以矩阵乘法函数为例
+title:      Linux 环境下构造动态链接库
+subtitle:   Generate Dynamic Link Libraries on Linux
 date:       2021-10-08
 author:     炸毛
 timecost:   5 minutes
