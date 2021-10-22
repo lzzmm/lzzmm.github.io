@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      为Windows Terminal开启透明背景等
-subtitle:   Acrylic Background for Windows Terminal and more
+title:      为Windows Terminal开启透明背景
+subtitle:   还有 screenfetch 和 oh my zsh
 date:       2021-10-18
 author:     炸毛
 timecost:   5 minutes
