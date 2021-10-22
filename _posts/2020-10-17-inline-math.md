@@ -18,6 +18,7 @@ live2d:  false
 byncsa:  true
 tags:
     - Markdown
+    - 经验
 ---
 
 Inline $math$ $expression$ is the externed syntax of  $\LaTeX$ but not the generic standard of Markdown. So the inline math expression won't be  resolved by Typora in default.
