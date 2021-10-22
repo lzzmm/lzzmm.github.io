@@ -2,7 +2,7 @@
 layout:     post
 title:      修复 mathjax 渲染多行公式出现的错误
 subtitle:   
-date:       2021-08-10
+date:       2021-10-22
 author:     zhamao
 timecost:   6 minutes
 # header-style: text
@@ -18,7 +18,8 @@ live2d:  false
 do-not-show-in-index:   false
 do-not-show-preview:    true
 byncsa:  true
-tags: false
+tags:
+    - 经验
 ---
 
 mathjax 渲染多行公式的问题困扰了我很久，之前魔改主页的时候不知道动了啥导致渲染的时候会被多一层 `\[` 和 `\]` 包围。
@@ -58,7 +59,7 @@ $$
 
 \begin{equation}
 \begin{aligned}
-    [a]={x\in X|x \sim a}
+    \\[a\\]={x\in X|x \sim a}
 \end{aligned}
 \end{equation}
 

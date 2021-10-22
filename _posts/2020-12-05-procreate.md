@@ -15,6 +15,7 @@ header-style: text # TODO:img
 catalog: true
 mathjax: false
 live2d:  false
+do-not-show-in-index: true
 tags:
     - Procreate
     - Notes
