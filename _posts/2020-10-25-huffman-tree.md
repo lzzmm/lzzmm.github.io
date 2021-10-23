@@ -21,7 +21,8 @@ tags:
     # - Haiyan's New Trick
 ---
 
-Code repository at <https://github.com/CleverYh/HuffmanTree>
+Code repository at <https://github.com/lzzmm/HuffmanTree>
+
 # TBD
 
 compress and decompress other files.
