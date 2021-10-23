@@ -3,12 +3,12 @@
     "title": "Yh Blog",
     "author": "Yh <cleveryh@qq.com>",
     "version": "1.8.2",
-    "homepage": "https://cleveryh.github.io/",
+    "homepage": "https://lzzmm.github.io/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/CleverYh/cleveryh.github.io"
+        "url": "https://github.com/lzzmm/lzzmm.github.io"
     },
-    "bugs": "https://github.com/CleverYh/cleveryh.github.io/issues",
+    "bugs": "https://github.com/lzzmm/lzzmm.github.io/issues",
     "devDependencies": {
         "grunt": ">=1.3.0",
         "grunt-contrib-less": ">=0.11.4",
