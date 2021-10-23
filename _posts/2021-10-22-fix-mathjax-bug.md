@@ -45,11 +45,31 @@ mathjax 渲染多行公式的问题困扰了我很久，之前魔改主页的时
 </script>
 ```
 
+使用 $\LaTeX$ 的 $\left[\right]$ 的时候记得使用 `\left[\right]`。
+
+```latex
+$$
+\begin{equation}
+\begin{aligned}
+\displaystyle\lim_{n \to \infty}\frac{2n^2+1}{n^2+n-2}=2
+\end{aligned}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{aligned}
+    \left[a\right]=\left{x\in X|x \sim a\right}
+\end{aligned}
+\end{equation}
+$$
+```
+
 $$
 
 \begin{equation}
 \begin{aligned}
-    A = \{ \langle G \rangle \vert G \text{ is a connected undirected graph}\}
+\displaystyle\lim_{n \to \infty}\frac{2n^2+1}{n^2+n-2}=2
 \end{aligned}
 \end{equation}
 
@@ -59,7 +79,7 @@ $$
 
 \begin{equation}
 \begin{aligned}
-    \left[a\right]={x\in X|x \sim a}
+    \left[a\right]=\left{x\in X|x \sim a\right}
 \end{aligned}
 \end{equation}
 

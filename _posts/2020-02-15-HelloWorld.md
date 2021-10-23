@@ -13,13 +13,12 @@ live2d:  false
 tags:
     - 漫谈
 ---
-# HELLO_WORLD!
 
 >这是我的第一篇博客，从今以后我会在这里记录我自己。
 
-# 关于炸毛
+## 关于炸毛
 
-在下炸毛，目前~~17~~~~18岁~~19岁，爱好广泛，包括摄影，电子游戏，编程，游泳，看电影，看书，听音乐等。性格非常懒惰。最喜欢睡觉，但是半夜时常睡不着。非常擅长幻想和回忆。废话很多。重度拖延症。
+在下炸毛，目前~~17~~~~18岁~~19岁，单身。爱好广泛，包括摄影，电子游戏，编程，游泳，看电影，看书，听音乐等。性格非常懒惰。最喜欢睡觉，但是半夜时常睡不着。非常擅长幻想和回忆。重度拖延症。
 
 <!-- - **阅读兴趣**
   1. 课内书。
@@ -31,8 +30,6 @@ tags:
   1. [OVERWATCH](https://ow.blizzard.cn/home) (也关注[OWL](https://www.overwatchleague.cn/zh-cn))
   2. 炉石传说酒馆战旗
   3. 其他奇奇怪怪的游戏 -->
-
-
 
 ## 学习方向
 
@@ -63,12 +60,14 @@ tags:
 
 ### 其他
 
-B 站账户[ CORTEX炸毛 ](https://space.bilibili.com/81640939/video) 曾经立志当一名努力的up主，目前还在努力。可能发布自己拍的东西，可能发布自己某些视频的备份，可能发布游戏视频。   
+Bilibili 账户[ CORTEX炸毛 ](https://space.bilibili.com/81640939/video) 曾经立志当一名努力的up主，目前还在努力。可能发布自己拍的东西，可能发布自己某些视频的备份，可能发布游戏视频。
 
-微博账户[ 一只炸毛毛毛 ](https://weibo.com/5843078173/profile?topnav=1&wvr=6&is_all=1&sudaref=account.weibo.com&display=0&retcode=6102) 不怎么用。
+<!-- 微博账户[ 一只炸毛毛毛 ](https://weibo.com/5843078173/profile?topnav=1&wvr=6&is_all=1&sudaref=account.weibo.com&display=0&retcode=6102) 不怎么用。 -->
 
-知乎账户[ cortex cyh ](https://www.zhihu.com/people/cyhhh-81) 用来看大家治理学校。现在也不怎么用。
+<!-- 知乎账户[ cortex cyh ](https://www.zhihu.com/people/cyhhh-81) 用来看大家治理学校。现在也不怎么用。 -->
 
-# 新年快乐！以后请多关照！
+<!-- # 新年快乐！以后请多关照！ -->
 
-# ヽ(✿ﾟ▽ﾟ)ノ
+<!-- # ヽ(✿ﾟ▽ﾟ)ノ -->
+
+以后请多关照！
