@@ -50,7 +50,7 @@ lib是前缀，这是一个约定俗成的规则。x为主版本号（Major Vers
 
 ## 编写 `matrix_multiply.h` 和 `matrix_multiply.c`
 
-根据要求，我将Lab1的函数移植过来，其中分为单精度浮点和双精度浮点两个函数。本来打算参数是三个矩阵，但是找不到查询指针所指内存块的大小的方法，所以只能把矩阵大小也传入了。并且需要矩阵行列都是8的倍数。
+根据要求，我将 [Lab1](https://lzzmm.github.io/2021/09/10/GEMM/#%E5%8D%95%E7%B2%BE%E5%BA%A6%E7%9A%84%E5%AE%9E%E7%8E%B0) 的函数移植过来，其中分为单精度浮点和双精度浮点两个函数。本来打算参数是三个矩阵，但是找不到查询指针所指内存块的大小的方法，所以只能把矩阵大小也传入了。并且需要矩阵行列都是8的倍数。
 
 若是MSVC编译器则可使用 **_msize** returns the size (in bytes) as an unsigned integer.
 
