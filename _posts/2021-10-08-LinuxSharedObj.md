@@ -22,7 +22,7 @@ tags:
     - Linux
 ---
 
-> 高性能计算程序设计基础 *2021学年秋季学期*
+> DCS293 - High Performance Computing 2021 Fall
 
 ## 动态链接库
 
