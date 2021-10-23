@@ -59,7 +59,7 @@ $$
 
 \begin{equation}
 \begin{aligned}
-    \[a\]={x\in X|x \sim a}
+    \left[a\right]={x\in X|x \sim a}
 \end{aligned}
 \end{equation}
 
