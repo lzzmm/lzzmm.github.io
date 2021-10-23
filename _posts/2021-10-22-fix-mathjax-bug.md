@@ -59,7 +59,7 @@ $$
 $$
 \begin{equation}
 \begin{aligned}
-    \left[a\right]=\left{x\in X|x \sim a\right}
+    \left[a\right]=\left\{x\in X|x \sim a\right\}
 \end{aligned}
 \end{equation}
 $$
@@ -79,7 +79,7 @@ $$
 
 \begin{equation}
 \begin{aligned}
-    \left[a\right]=\left{x\in X|x \sim a\right}
+    \left[a\right]=\left\{x\in X|x \sim a\right\}
 \end{aligned}
 \end{equation}
 
