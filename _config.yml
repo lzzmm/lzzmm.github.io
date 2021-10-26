@@ -1,10 +1,6 @@
 # Site settings
 title: 炸毛的秘密基地
 SEOTitle: 炸毛的秘密基地 | YH's Blog
-header-img: img/index-bg.jpg # img/home-bg-star_track.jpg
-header-img-night: img/index-bg-night.jpg
-header-img-credit: Yuhan Chen
-header-img-year: 2019
 email_1: chenyh369@mail2.sysu.edu.cn
 email_2: cleveryh@qq.com
 description: "炸毛的秘密基地  | 计算机科学、高性能计算、深度学习、机器人、奇奇怪怪的想法和平淡的生活"
@@ -13,6 +9,14 @@ url: "https://lzzmm.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 github_repo: "https://github.com/lzzmm/lzzmm.github.io" # your code repository
+
+header-img: img/index-bg.jpg # img/home-bg-star_track.jpg
+header-img-morning: img/index-bg-morning.jpg
+header-img-night: img/index-bg-night.jpg
+header-img-quarter-moon: img/index-bg-quarter-moon.jpg
+header-img-full-moon: img/index-bg-full-moon.jpg
+header-img-credit: Yuhan Chen
+header-img-year: 2019
 
 # Publish posts or collection documents with a future date.
 future: true
