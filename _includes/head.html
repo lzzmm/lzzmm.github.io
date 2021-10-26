@@ -77,10 +77,20 @@
             timenow = datetoday.getTime();
             datetoday.setTime(timenow);
             thehour = datetoday.getHours();
-            if (thehour < 18 && thehour >= 6)
+            if (thehour < 18 && thehour >= 15)
                 display = "{{ site.header-img }}";
-            else if (thehour >= 18 || thehour < 6)
+            else if (thehour >= 18 && thehour < 21)
                 display = "{{ site.header-img-night }}";
+            else if (thehour >= 21 && thehour < 24)
+                display = "{{ site.header-img-quarter-moon }}";
+            else if (thehour >= 0 && thehour < 4)
+                display = "{{ site.header-img-full-moon }}";
+            else if (thehour >= 4 && thehour < 6)
+                display = "{{ site.header-img-night }}";
+            else if (thehour >= 6 && thehour < 8)
+                display = "{{ site.header-img }}";
+            else if (thehour >= 8 && thehour < 15)
+                display = "{{ site.header-img-morning }}";
             else
                 display = "{{ site.header-img }}";
 
