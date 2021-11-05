@@ -10,7 +10,7 @@ timecost:   10 minutes
 # header-img-credit:      Yuhan Chen
 # header-img-year:        2021 
 header-img-outchain: false
-header-img: img/bg/colorful_kazuha.png
+header-img: img/bg/sitting.png
 # nav-style: invert
 catalog: true
 mathjax: true
