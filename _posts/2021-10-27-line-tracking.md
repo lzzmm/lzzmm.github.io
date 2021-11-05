@@ -1,14 +1,14 @@
 ---
 layout:     post
 title:      视觉巡线小车
-subtitle:   
+subtitle:   Visual Line-tracking Car
 date:       2021-10-27
 author:     炸毛
 timecost:   5 minutes
 # header-style: black
 # header-mask: 0.01
-header-img-credit:      Yuhan Chen
-header-img-year:        2021 
+# header-img-credit:      Yuhan Chen
+# header-img-year:        2021 
 header-img-outchain: false
 header-img: img/bg/r_and_m.png
 # nav-style: invert
