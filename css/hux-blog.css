@@ -835,7 +835,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Consolas, "Fira Code", Menlo, Monaco, "Courier New", monospace;
+  font-family: 'CamingoCodeRegular', Consolas, "Fira Code", Menlo, Monaco, "Courier New", monospace;
 }
 
 .postlist-container {
