@@ -4,6 +4,7 @@
 {% include head.html %}
 
 <!-- hack iOS CSS :active style -->
+
 <body ontouchstart="">
 
     {% include nav.html %}
@@ -13,10 +14,26 @@
     {% include footer.html %}
 
 
-<!-- Image to hack wechat -->
-<img src="/img/icon_wechat.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
-
+    <!-- Image to hack wechat -->
+    <img src="/img/icon_wechat.png" width="0" height="0" />
+    <!-- Migrate from head to bottom, no longer block render and still work -->
+    <!-- Default Statcounter code for lzzmm https://lzzmm.github.io/ -->
+    <script type="text/javascript">
+        var sc_project = 12680417;
+        var sc_invisible = 0;
+        var sc_security = "74b5722d";
+        var scJsHost = "https://";
+        document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript>
+        <div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                    src="https://c.statcounter.com/12680417/0/74b5722d/0/" alt="Web Analytics Made Easy - Statcounter"
+                    referrerPolicy="no-referrer-when-downgrade"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+    <a href="https://statcounter.com/p12680417/?guest=1">View My Stats</a>
 </body>
 
 </html>
