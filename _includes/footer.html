@@ -5,12 +5,15 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <!-- SNS Link -->
                 {% include sns-links.html center=true %}
-                
+
                 <p class="copyright text-muted">
                     <text style="opacity: 1; color: #007799;">&copy; 2019 - {{ site.time | date: '%Y' }} <a
                             href="https://{{ site.github_username }}.github.io/">{{ site.title }}</a>
                     </text><br>
-                    <span style="opacity: 0.78; color: #007799;">
+                <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+                                            class="statcounter" src="https://c.statcounter.com/12680417/0/74b5722d/0/"
+                                            alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div>
+                <span style="opacity: 0.78; color: #007799;">
                     <span>Uptime:</span><span id="display_live_time"></span><span>(～￣▽￣)～</span>
                     <script>function blog_live_time() {
                             window.setTimeout(blog_live_time, 1000);
@@ -27,16 +30,18 @@
                             display_live_time.innerHTML = " " + passDay + "d " + passHour + "h " + passMinute + "m " + passSecond + "s ";
                         }
                         blog_live_time();
-                    </script></span><br>
-                    <text style="opacity: 0.66; color: #0099bb;">Powered by <a
-                            href="https://github.com/{{ site.github_username }}/{{ site.github_username }}.github.io" target="_blank">{{ site.github_username }}.github.io</a> |
-                        <iframe style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px; opacity: 0.55;"
-                            frameborder="0" scrolling="0" width="100px" height="20px"
-                            src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true">
-                        </iframe></text><br>
-                    <text style="opacity: 0.6; font-size: 13px;">Improved from the theme by <a
-                            href="http://huangxuan.me/" target="_blank">Hux Blog</a></text>
-                    <!-- </text> -->
+                    </script>
+                </span><br>
+                <text style="opacity: 0.66; color: #0099bb;">Powered by <a
+                        href="https://github.com/{{ site.github_username }}/{{ site.github_username }}.github.io"
+                        target="_blank">{{ site.github_username }}.github.io</a> |
+                    <iframe style="margin-left: 2px; margin-right: -20px; margin-bottom:-5px; opacity: 0.55;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true">
+                    </iframe></text><br>
+                <text style="opacity: 0.6; font-size: 13px;">Improved from the theme by <a href="http://huangxuan.me/"
+                        target="_blank">Hux Blog</a></text>
+                <!-- </text> -->
                 </p>
             </div>
         </div>
@@ -271,3 +276,21 @@
 </script>
 {% endif %}
 
+<!-- Default Statcounter code for lzzmm
+https://lzzmm.github.io -->
+<script type="text/javascript">
+    var sc_project = 12680417;
+    var sc_invisible = 0;
+    var sc_security = "74b5722d";
+    var sc_text = 2;
+    var scJsHost = "https://";
+    document.write("<sc" + "ript type='text/javascript' src='" +
+        scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<!-- <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+                class="statcounter" src="https://c.statcounter.com/12680417/0/74b5722d/0/" alt="Web Analytics"
+                referrerPolicy="no-referrer-when-downgrade"></a></div>
+</noscript> -->
+<!-- End of Statcounter Code -->
