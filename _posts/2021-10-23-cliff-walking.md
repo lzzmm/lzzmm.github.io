@@ -24,8 +24,6 @@ tags:
 
 > DCS245 - Reinforcement Learning and Game Theory 2021 Fall
 
-TBD
-
 # Cliff Walk
 
 ![img](/img/in-post/CW/152MwrYKyzQXuKZ88rqu70A.png)
