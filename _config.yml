@@ -11,10 +11,10 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/lzzmm/lzzmm.github.io" # your code repository
 
 header-img: img/index-bg.jpg # img/home-bg-star_track.jpg
-header-img-morning: img/index-bg-morning.jpg
+header-img-morning: img/index-bg.jpg # img/index-bg-morning.jpg
 header-img-night: img/index-bg-night.jpg
-header-img-quarter-moon: img/index-bg-quarter-moon.jpg
-header-img-full-moon: img/index-bg-full-moon.jpg
+header-img-quarter-moon: img/home-bg-star_track.jpg # img/index-bg-quarter-moon.jpg
+header-img-full-moon: img/home-bg-star_track.jpg # img/index-bg-full-moon.jpg
 header-img-credit: Yuhan Chen
 header-img-year: 2019
 
@@ -24,9 +24,9 @@ future: true
 # SNS settings
 RSS: false
 # weibo_username:     CleverYh    # 查看自己主页网址，可以在设置里自定义网址
-zhihu_username:  cyhhh-81
+# zhihu_username:  cyhhh-81
 github_username: lzzmm
-jike_username: D5560B5D-7448-4E1A-B43A-EC2D2C9AB7EC
+# jike_username: D5560B5D-7448-4E1A-B43A-EC2D2C9AB7EC
 bilibili_username: 81640939
 #twitter_username:
 #facebook_username:
