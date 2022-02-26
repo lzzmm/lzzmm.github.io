@@ -9,7 +9,9 @@ timecost:   3 minutes
 # nav-style: invert
 catalog: false
 mathjax: false
-live2d:  true
+live2d:  false
+byncsa:  true
+do-not-show-in-index: true
 tags:
     - 漫谈 
 ---
