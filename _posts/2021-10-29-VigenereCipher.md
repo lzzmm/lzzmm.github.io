@@ -24,8 +24,6 @@ tags:
 
 > DCS397 - Information Security Technology 2021 Fall
 
-TBD.
-
 ## 维吉尼亚密码加密与解密
 
 ### 背景
