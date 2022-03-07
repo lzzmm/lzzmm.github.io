@@ -95,13 +95,13 @@ string encrypt(string s, string key = "a", bool uppercase = true, bool delete_sp
 
 原文见 [`The_Communist_Manifesto.txt`](/downloads/The_Communist_Manifesto.txt)
 
-![image-20211031211710484](/img/in-post/vig/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_hw1/image-20211031211710484.png)
+![image-20211031211710484](/img/in-post/vig/image-20211031211710484.png)
 
 加密后：
 
 `Encrypted_The_Communist_Manifesto.txt`
 
-![image-20211031211729141](/img/in-post/vig/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_hw1/image-20211031211729141.png)
+![image-20211031211729141](/img/in-post/vig/image-20211031211729141.png)
 
 
 ### 解密
@@ -277,15 +277,15 @@ JANET
 
 对解密后的文字重新加密发现与原文相同。得出的文件在 `Decrypted.txt`
 
-![image-20211031205902834](/img/in-post/vig/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_hw1/image-20211031205902834.png)
+![image-20211031205902834](/img/in-post/vig/image-20211031205902834.png)
 
 ##### 2
 
 解密之前加密的共产党宣言：
 
-![image-20211031214113184](/img/in-post/vig/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_hw1/image-20211031214113184.png)
+![image-20211031214113184](/img/in-post/vig/image-20211031214113184.png)
 
-![image-20211031214131978](/img/in-post/vig/19335025_%E9%99%88%E7%A6%B9%E7%BF%B0_hw1/image-20211031214131978.png)
+![image-20211031214131978](/img/in-post/vig/image-20211031214131978.png)
 
 全部变成小写。得出的文件在 `Decrypted_The_Communist_Manifesto.txt` .
 
