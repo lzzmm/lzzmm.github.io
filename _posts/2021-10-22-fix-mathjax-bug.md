@@ -15,7 +15,7 @@ header-img: img/bg/paimon_dying.jpg
 catalog: true
 mathjax: true
 live2d:  false
-do-not-show-in-index:   false
+do-not-show-in-index:   true
 do-not-show-preview:    true
 byncsa:  true
 tags:
