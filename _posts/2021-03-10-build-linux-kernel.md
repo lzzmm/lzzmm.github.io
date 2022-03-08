@@ -71,7 +71,8 @@ tags:
 
    ![2021-03-07 00-36-49 的屏幕截图](/img/in-post/os/2021-03-07 00-36-49 的屏幕截图.png)
 
-   在打开的图像界面中依次选择 `Kernel hacking`、`Compile-time checks and compiler options`，最后在 `[ ] Compile the kernel with debug info` 输入 `Y` 勾选，保存退出。![2021-03-07 00-37-43 的屏幕截图](/img/in-post/os/2021-03-07 00-37-43 的屏幕截图.png)
+   在打开的图像界面中依次选择 `Kernel hacking`、`Compile-time checks and compiler options`，最后在 `[ ] Compile the kernel with debug info` 输入 `Y` 勾选，保存退出。
+   ![2021-03-07 00-37-43 的屏幕截图](/img/in-post/os/2021-03-07 00-37-43 的屏幕截图.png)
 
    编译内核。
 
