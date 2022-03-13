@@ -31,13 +31,15 @@ tags:
 - 运算符旁空格，指针运算符也没有
 - 命名大概是喜欢下划线也喜欢驼峰
 
-
-
 ## Visual Studio Code Clang Format Settings
 
 in VS Code settings search `clang`, set C_CPP:Clang_format_fallback Style.  
 in Visual Studio Code, currently supports: Visual Studio, LLVM, Google, Chromium, Mozilla, WebKit.   
 or Use "file" to load the style from a .clang-format file in the current or parent directory.
+
+```
+{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, AlignConsecutiveDeclarations: Consecutive, AlignConsecutiveAssignments: AcrossEmptyLinesAndComments, AlignConsecutiveMacros: Consecutive, TabWidth: 4, AllowShortIfStatementsOnASingleLine: true, AllowShortIfStatementsOnASingleLine: true,AllowShortLoopsOnASingleLine: true, IndentCaseLabels: true, PointerAlignment: Right, ColumnLimit: 0, AccessModifierOffset: -4 }
+```
 
 ###### 基于哪个配置文件
 BasedOnStyle: LLVM
