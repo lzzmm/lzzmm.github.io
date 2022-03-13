@@ -220,3 +220,7 @@ tags:
 ## 总结
 
 学会了搭建 os kernel 开发环境，使用 qemu 启动内核，制作 initramfs ，使内核启动时运行程序，编译启动 Busybox，使用 gdb 远程调试跟踪代码运行，克服了对 Linux 命令行的不熟悉，熟悉了常用的 Linux 命令，学会了 kill 进程。也了解了一点关于操作系统启动的知识。
+
+## 参考
+
+<https://gitee.com/nelsoncheung/sysu-2021-spring-operating-system/tree/main>
