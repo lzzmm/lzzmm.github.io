@@ -21,7 +21,7 @@
         "debug": ">=2.6.9",
         "lodash": ">=4.17.21",
         "cryptiles": ">=4.1.2",
-        "minimatch": ">=3.0.2",
+        "minimatch": ">=3.0.5",
         "tunnel-agent": ">=0.6.0",
         "underscore.string": ">=3.3.5",
         "clean-css": ">=4.1.11",
