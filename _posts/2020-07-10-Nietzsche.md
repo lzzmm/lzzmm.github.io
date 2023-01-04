@@ -11,7 +11,6 @@ header-style: text
 # header-img-credit:      Yuhan Chen
 # header-img-year:        2021 
 # header-img-outchain: false
-# header-img: img/bg/seaside_girl.png
 # nav-style: invert
 catalog: false
 mathjax: false
