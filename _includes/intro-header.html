@@ -32,7 +32,7 @@
             position: relative;
             background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
             background: {{ page.header-bg-css }};
-            {% if page.header-img-dark %} background-blend-mode: multiply; {% endif %}
+            background-blend-mode: multiply;
         }
 
         {% if page.header-mask %}
