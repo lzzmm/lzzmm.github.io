@@ -10,7 +10,7 @@ timecost:   10 minutes
 # header-img-credit:      Yuhan Chen
 # header-img-year:        2021 
 header-img-outchain: false
-header-img: /img/in-post/vig/bg/green_night.jpg
+header-img: img/bg/green_night.jpg
 # nav-style: invert
 catalog: true
 mathjax: true

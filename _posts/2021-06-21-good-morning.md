@@ -4,6 +4,9 @@ title:      重新遇见早晨
 subtitle:   「山川锦绣风帆扬 盛夏当远航」
 date:       2021-06-21
 author:     ZHAMAO
+header-img-credit:      Chen Yuhan
+header-img-year:        2020
+header-img-outchain:    false
 header-img: img/cat.jpg
 timecost:   3 minutes
 # nav-style: invert
