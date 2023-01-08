@@ -106,7 +106,7 @@ ga_domain: auto
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "日复一日 必有精进"
-sidebar-avatar: /img/CleverYh.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/lzzmm.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
