@@ -2,6 +2,7 @@
 layout:     post
 title:      Cliff Walking Implementation
 subtitle:   Using SARSA and Q-learning
+heading-font: CamingoCodeRegular
 date:       2021-10-24
 author:     炸毛
 timecost:   10 minutes

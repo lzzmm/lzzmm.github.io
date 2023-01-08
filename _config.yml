@@ -15,8 +15,8 @@ header-img-morning: img/index-bg.jpg # img/index-bg-morning.jpg
 header-img-night: img/index-bg-night.jpg
 header-img-quarter-moon: img/home-bg-star_track.jpg # img/index-bg-quarter-moon.jpg
 header-img-full-moon: img/home-bg-star_track.jpg # img/index-bg-full-moon.jpg
-header-img-credit: CHEN Yuhan
-header-img-year: 2019
+# header-img-credit: CHEN Yuhan
+# header-img-year: 2019
 
 # Publish posts or collection documents with a future date.
 future: true
