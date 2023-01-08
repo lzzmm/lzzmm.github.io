@@ -8,7 +8,7 @@ timecost:   10 minutes
 # header-style: black
 header-style: text
 # header-mask: 0.01
-# header-img-credit:      Yuhan Chen
+# header-img-credit:      CHEN Yuhan
 # header-img-year:        2021 
 # header-img-outchain: false
 # nav-style: invert
