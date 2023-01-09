@@ -136,6 +136,28 @@ std::size_t CTextBook::length() const {
 }
 ```
 
+然而，若把许多功能都同时放进 `const` 和 non-`const` 版本的成员函数中，代码会有很大的重复。所以在 `const` 成员函数做掉 non-`const` 版本的成员函数所应该做的一切而唯一不同只是返回类型多了个 `const` 修饰时，我们的 non-`const` 版本的成员函数只需要调用 `const` 成员函数并对返回值进行 casting 即可。
+
+```cpp
+class TextBook {
+public:
+    const char& operator[](std::size_t pos) const {
+        ...
+        return text[pos];
+    }
+    char& operator[](std::size_t pos) {
+        return const_cast<char&>(
+            static_cast<const TextBook&>(*this)[pos] // call const op[]
+        );
+    }
+}
+
+```
+
+首先使用了 `static_cast` 为 `*this` 添加 `const`，这样才可以调用 `const operator[]`，然后将返回值的 `const` 去掉，使用了 `const_cast`。
+
+注意，由 non-`const` 版本成员函数调用 `const` 版本成员函数的方法如上所述，但是反过来是不可以的，因为这违背了 `const` 成员函数不改变其对象逻辑状态的承诺。
+
 ## 4. Make sure that objects are initialized before they're used
 
 ## 5. Know what functions C++ sliently writes and calls
