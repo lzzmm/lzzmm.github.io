@@ -26,7 +26,7 @@ tags:
 
 ## 前言
 
-22年5月，同专业的关学姐毕业赠送此由侯捷翻译的《Effective C++》，我在夏天时粗浅读过一遍，但没有留下笔记。好书是值得反复总结和阅读的。相较于市面上广泛存在的各种各样 C++ 丛书，此书在有一定基础的情况下已经足够让自己进一步上手规范的 C++ 了。我认为读书不在多而在精，因此在这岁末之际，我想重读一遍此书并记下笔记，也作为自己真正使用 C++ 创造程序这一历程的开始。
+22年5月，同专业的关学姐毕业赠送此由 Scott Meyers 先生著，侯捷先生翻译的《Effective C++》，我在夏天时粗浅读过一遍，但没有留下笔记。好书是值得反复总结和阅读的。相较于市面上广泛存在的各种各样 C++ 丛书，此书在有一定基础的情况下可以让自己进一步上手规范的 C++。我认为读书不在多而在精，因此在这岁末之际，我想重读一遍此书并记下笔记，也作为自己真正使用 C++ 创造程序这一历程的开始。
 
 ## 1. View C++ as a federation of languages
 
@@ -73,8 +73,9 @@ C++ 的高效编程守则取决于你使用 C++ 的哪一部分。
 面对指针，`const` 可以修饰指针自身或指针所指，如下所示。注意到 C 语言中字符串常量的本质表示其实是一个地址，`const` 在星号左边修饰被指物，与在类型左右无关，在星号右边修饰指针。
 
 ```cpp
-char greeting[] = "hello";       // non-const pointer and data
-char* p = greeting;              // non-const pointer const data
+char greeting[] = "hello";       // const pointer non-const data
+char* p = greeting;              // non-const pointer and data
+char const* p = greeting;        // non-const pointer const data
 char* const p = greeting;        // const pointer non-const data
 const char * const p = greeting; // const pointer and data
 char const * const p = greeting; // const pointer and data
@@ -154,11 +155,19 @@ public:
 
 ```
 
-首先使用了 `static_cast` 为 `*this` 添加 `const`，这样才可以调用 `const operator[]`，然后将返回值的 `const` 去掉，使用了 `const_cast`。
+首先使用了 `static_cast` 为 `*this` 添加 `const`，这样才可以调用 `const operator[]`，然后使用了 `const_cast` 将返回值的 `const` 去掉。
 
 注意，由 non-`const` 版本成员函数调用 `const` 版本成员函数的方法如上所述，但是反过来是不可以的，因为这违背了 `const` 成员函数不改变其对象逻辑状态的承诺。
 
 ## 4. Make sure that objects are initialized before they're used
+
+使用 C part of C++ 且初始化可能招致运行期成本，那就不保证发生初始化。使用 non-C parts of C++ 时尽量保证初始化。如来自 C 的 `array` 不保证内容初始化而来自 STL 的 `vector` 保证初始化。
+
+对于内置类型使用手工的方式初始化，而对其他东西使用构造函数对每个成员进行初始化。
+
+C++ 规定对象的成员变量的初始化动作发生在进入构造函数本体之前，因此比起在构造函数中赋值（区分于初始化，因为初始化在这之前已经发生了），更应该做的是使用 **member initialization list （成员初值列）** 来进行初始化，这样效率更高。要 default 构造一个成员变量，只需要指定 nothing 作为初始化实参。规定总是在初值列中列出所有成员变量，若有许多构造函数，为了避免重复，可以将某些赋值表现像初始化一样好的成员变量放在某个私有函数中赋值然后此函数供诸多构造函数调用。
+
+成员初始化次序：base classes 更早于其 derived classes 被初始化，类成员变量总以其声明次序被初始化。所以在成员初值列中最好以各成员声明的次序将其列出。
 
 ## 5. Know what functions C++ sliently writes and calls
 
