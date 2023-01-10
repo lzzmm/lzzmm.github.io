@@ -28,7 +28,7 @@ tags:
 
 2022年5月，同专业的关学姐毕业赠送此由 Scott Meyers 先生著、侯捷先生翻译的《Effective C++》，我在夏天时粗浅读过一遍，但没有留下笔记。好书是值得反复总结和阅读的。相较于市面上广泛存在的各种各样 C++ 丛书，此书在有一定基础的情况下可以让自己进一步上手规范的 C++。我认为读书不在多而在精，因此在这岁末之际，我想重读一遍此书并记下笔记，也作为自己真正使用 C++ 创造程序这一历程的开始。
 
-## Chapter 1  Accustoming Yourself to C++
+## Chapter 1 <br> Accustoming Yourself to C++
 
 ### 1. View C++ as a federation of languages
 
@@ -194,7 +194,7 @@ Dir::Dir(params) {
 }
 ```
 
-## Chapter 2  Constructors, Destructors, and Assignment Operators
+## Chapter 2 <br> Constructors, Destructors, and Assignment Operators
 
 ### 5. Know what functions C++ silently writes and calls
 
@@ -239,7 +239,7 @@ class T: private Uncopyable { ... };
 
 ### 9. Never call virtual functions during construction or destruction
 
-基类构造过程中虚函数不会下降到派生类层——此时派生类的变量尚未初始化哩！实际上派生类对象的基类构造期间，RTTI 对象类型都是基类，虚函数也会被解析至基类。
+基类构造过程中虚函数不会下降到派生类层——此时派生类的变量尚未初始化哩！实际上在派生类对象的基类构造期间，RTTI 对象类型都是基类，虚函数也会被解析至基类。
 
 正确的做法是在基类将虚函数改为非虚函数并要求派生类的构造函数传递必要信息给基类构造函数，之后便可以调用这个非虚函数。注意派生类中 `private static` 函数，这样更为可读且不可能指向未定义的其他成员变量。
 
@@ -343,7 +343,9 @@ Widget& Widget::operator=(Widget rhs) {
 
 ### 12. Copy all parts of an object
 
-这章是面向对象的基本，亮点在于作者比较幽默地把编译器对于没有实现完全深拷贝没有报错的行为理解为编译器对你自己声明 copying 函数而不用 default 实现的函数的报复。**除了复制所有 local 变量** 之外值得注意的一点是派生类的 copying 函数要记得调用相应的基类函数**实现基类成分的 copy**，如在成员初值列中调用基类的 copy 构造函数等。
+这一点是面向对象的基本。亮点在于作者比较幽默地把编译器对于没有实现完全深拷贝没有报错的行为理解为编译器对你自己声明 copying 函数而不用 default 实现的函数的报复。
+
+**除了复制所有 local 变量** 之外值得注意的一点是派生类的 copying 函数要记得调用相应的基类函数**实现基类成分的 copy**，如在成员初值列中调用基类的 copy 构造函数等。
 
 ```cpp
 Derived::Derived(const Derived& rhs)
@@ -364,6 +366,6 @@ Derived& Derived::operator=(const Derived& rhs) {
 
 若发现 copy 构造函数与 copy assignment 操作符有着近似相同的本体，消除重复代码的做法**不是**让他们调用另一个函数，而是建立一个新的 `private` 成员函数（一般命名为 `init`）供他们俩调用。
 
-## Chapter 3  Resource Management
+## Chapter 3 <br> Resource Management
 
 ### TBD

@@ -19,6 +19,7 @@ byncsa:  true
 do-not-show-in-index: false
 tags:
     - OS
+    - Linux
 ---
 
 > DCS218 - Operating Systems Lab 2021 Spring
