@@ -4,7 +4,7 @@ title:      Effective C++
 subtitle:   55 Specific Ways to Improve Your Programs and Designs
 date:       2023-01-09
 author:     炸毛
-timecost:   20 minutes
+timecost:   30 minutes
 # header-style: black
 # header-style: text
 # header-mask: 0.01
@@ -27,6 +27,8 @@ tags:
 ## 前言
 
 2022年5月，同专业的关学姐毕业赠送此由 Scott Meyers 先生著、侯捷先生翻译的《Effective C++》，我在夏天时粗浅读过一遍，但没有留下笔记。好书是值得反复总结和阅读的。相较于市面上广泛存在的各种各样 C++ 丛书，此书在有一定基础的情况下可以让自己进一步上手规范的 C++。我认为读书不在多而在精，因此在这岁末之际，我想重读一遍此书并记下笔记，也作为自己真正使用 C++ 创造程序这一历程的开始。
+
+***注意：此笔记中的文字虽有些摘抄但大部分是我自己的语言，样例代码相较书中也有些更改。如果在阅读中遇到问题或错误欢迎留言讨论。***
 
 ## Chapter 1 <br> Accustoming Yourself to C++
 
@@ -195,6 +197,8 @@ Dir::Dir(params) {
 ```
 
 ## Chapter 2 <br> Constructors, Destructors, and Assignment Operators
+
+构造函数和 copy assignment 操作符决定了类的生，而析构函数决定了类的死。希望每个类都能顺利地出生、痛快地死去。
 
 ### 5. Know what functions C++ silently writes and calls
 
@@ -367,5 +371,13 @@ Derived& Derived::operator=(const Derived& rhs) {
 若发现 copy 构造函数与 copy assignment 操作符有着近似相同的本体，消除重复代码的做法**不是**让他们调用另一个函数，而是建立一个新的 `private` 成员函数（一般命名为 `init`）供他们俩调用。
 
 ## Chapter 3 <br> Resource Management
+
+资源就是用户向系统借来的东西——有借有还再借不难。除了动态分配内存，还有 file descriptors、 mutex locks、 GUI 中的字型和笔刷、数据库连接、网络 sockets。
+
+### 13. Use objects to management resources
+
+### 14. Think
+
+## Chapter 4 <br> Designs and Declarations
 
 ### TBD
