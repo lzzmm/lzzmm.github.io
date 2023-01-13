@@ -21,9 +21,7 @@
         {% if site.jike_yellow %}
         <li>
             <a target="_blank" href="https://jike.city/{{ site.jike_yellow }}">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <!-- <i class="fa  fa-stack-1x fa-inverse" style="font-weight:800">J</i> -->
+                <span class="fa-stack fa-2x">
                     <i class="fa fa-address-card"></i>
                 </span>
             </a>
@@ -32,9 +30,9 @@
         {% if site.jike_username %}
         <li>
             <a target="_blank" href="https://web.okjike.com/u/{{ site.jike_username }}">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa  fa-stack-1x fa-inverse" style="font-weight:800">J</i>
+                <span class="fa-stack fa-2x">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-stack-1x" style="font-weight:800">J</i>
                 </span>
             </a>
         </li>
@@ -42,19 +40,22 @@
         {% if site.twitter_username %}
         <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
+                </span>TODO: fa 6.2.1 -->
             </a>
         </li>
         {% endif %}
         {% if site.github_username %}
         <li>
             <a target="_blank" href="https://github.com/{{ site.github_username }}">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span> -->
+                <span class="fa-stack fa-2x">
+                    <i class="fa-brands fa-github-alt"></i>
                 </span>
             </a>
         </li>
@@ -62,9 +63,12 @@
         {% if site.bilibili_username %}
         <li>
             <a target="_blank" href="https://space.bilibili.com/{{ site.bilibili_username }}">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <!-- <i class="fa  fa-stack-1x fa-inverse">哔</i> -->
+                    <i class="fa fa-stack-1x fa-inverse">哔</i>
+                    <!-- <i class="fa fa-bilibili"></i> -->
+                </span> -->
+                <span class="fa-stack fa-2x">
                     <i class="fa-brands fa-bilibili"></i>
                 </span>
             </a>
@@ -73,40 +77,40 @@
         {% if site.zhihu_username %}
         <li>
             <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa  fa-stack-1x fa-inverse">知</i>
-                </span>
+                </span> TODO: -->
             </a>
         </li>
         {% endif %}
         {% if site.weibo_username %}
         <li>
             <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                </span>
+                </span> TODO: -->
             </a>
         </li>
         {% endif %}
         {% if site.facebook_username %}
         <li>
             <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
+                </span> TODO: -->
             </a>
         </li>
         {% endif %}
         {% if site.linkedin_username %}
         <li>
             <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-                <span class="fa-stack fa-lg">
+                <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
+                </span> -->
             </a>
         </li>
         {% endif %}
