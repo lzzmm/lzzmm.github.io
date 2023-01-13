@@ -18,6 +18,17 @@
             </a>
         </li>
         {% endif %}
+        {% if site.jike_yellow %}
+        <li>
+            <a target="_blank" href="https://jike.city/{{ site.jike_yellow }}">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <!-- <i class="fa  fa-stack-1x fa-inverse" style="font-weight:800">J</i> -->
+                    <i class="fa fa-stack-1x fa-address-card"></i>
+                </span>
+            </a>
+        </li>
+        {% endif %}
         {% if site.jike_username %}
         <li>
             <a target="_blank" href="https://web.okjike.com/u/{{ site.jike_username }}">
@@ -53,7 +64,8 @@
             <a target="_blank" href="https://space.bilibili.com/{{ site.bilibili_username }}">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa  fa-stack-1x fa-inverse">哔</i>
+                    <!-- <i class="fa  fa-stack-1x fa-inverse">哔</i> -->
+                    <i class="fa-brands fa-bilibili fa-stack-1x"></i>
                 </span>
             </a>
         </li>
