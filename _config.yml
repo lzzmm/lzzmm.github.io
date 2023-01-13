@@ -125,7 +125,7 @@ friends:
     { title: "HH", href: "https://whaohan.github.io" },
     { title: "KiritoShaw", href: "https://kiritoshaw.github.io/" },
     { title: "花降", href: "http://flowerfall.top/" },
-    { title: "重阳", href: "https://axunx3.github.io/" },
+    # { title: "重阳", href: "https://axunx3.github.io/" },
     { title: "济总", href: "https://www.cnblogs.com/axiao918/" },
-    { title: "PSEUDOYU", href: "https://www.pseudoyu.com/zh/"}
+    { title: "Pseudoyu", href: "https://www.pseudoyu.com"}
   ]
