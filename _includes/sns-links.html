@@ -10,7 +10,7 @@
 
         {% if site.RSS %}
         <li>
-            <a href="{{ " /feed.xml" | prepend: site.baseurl }}">
+            <a title="RSS" href="{{ " /feed.xml" | prepend: site.baseurl }}">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -20,19 +20,9 @@
         {% endif %}
         {% if site.jike_yellow %}
         <li>
-            <a target="_blank" href="https://jike.city/{{ site.jike_yellow }}">
+            <a target="_blank" title="Jike Yellow Page" href="https://jike.city/{{ site.jike_yellow }}">
                 <span class="fa-stack fa-lg">
-                    <i class="fa fa-address-card"></i>
-                </span>
-            </a>
-        </li>
-        {% endif %}
-        {% if site.jike_username %}
-        <li>
-            <a target="_blank" href="https://web.okjike.com/u/{{ site.jike_username }}">
-                <span class="fa-stack fa-lg">
-                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
-                    <i class="fa-sharp fa-solid fa-j"></i>
+                    <i class="fa fa-address-card fa-stack-1x"></i>
                 </span>
             </a>
         </li>
@@ -43,32 +33,45 @@
                 <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>TODO: fa 6.2.1 -->
+                </span> -->
+                <span class="fa-stack fa-lg">
+                    <i class="fa-brands fa-twitter fa-stack-1x"></i>
+                </span>
             </a>
         </li>
         {% endif %}
         {% if site.github_username %}
         <li>
-            <a target="_blank" href="https://github.com/{{ site.github_username }}">
+            <a target="_blank" title="Github" href="https://github.com/{{ site.github_username }}">
                 <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                 </span> -->
                 <span class="fa-stack fa-lg">
-                    <i class="fa-brands fa-github-alt"></i>
+                    <i class="fa-brands fa-github-alt fa-stack-1x"></i>
                 </span>
             </a>
         </li>
         {% endif %}
         {% if site.bilibili_username %}
         <li>
-            <a target="_blank" href="https://space.bilibili.com/{{ site.bilibili_username }}">
+            <a target="_blank" title="bilibili" href="https://space.bilibili.com/{{ site.bilibili_username }}">
                 <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-stack-1x fa-inverse">哔</i>
                 </span> -->
                 <span class="fa-stack fa-lg">
-                    <i class="fa-brands fa-bilibili"></i>
+                    <i class="fa-brands fa-bilibili fa-stack-1x"></i>
+                </span>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.jike_username %}
+        <li>
+            <a target="_blank" title="即刻" href="https://web.okjike.com/u/{{ site.jike_username }}">
+                <span class="fa-stack fa-lg">
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa-sharp fa-solid fa-j fa-stack-1x"></i>
                 </span>
             </a>
         </li>
@@ -109,7 +112,7 @@
                 <!-- <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span> -->
+                </span> TODO: -->
             </a>
         </li>
         {% endif %}
