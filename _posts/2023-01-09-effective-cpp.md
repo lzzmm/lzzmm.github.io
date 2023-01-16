@@ -198,7 +198,7 @@ Dir::Dir(params) {
 
 ## Chapter 2 <br> Constructors, Destructors, and Assignment Operators
 
-构造函数和 copy assignment 操作符决定了类的生，而析构函数决定了类的死。希望每个类都能顺利地出生、痛快地死去。
+构造函数和 copy assignment 操作符决定了对象的诞生，而析构函数决定了对象的消亡。
 
 ### 5. Know what functions C++ silently writes and calls
 
