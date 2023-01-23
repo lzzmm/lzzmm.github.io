@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "周报 #0x01 | 新的一年向 Effective 前进吧"
+title:      "周报 #0x01<br>新的一年向 Effective 前进吧"
 subtitle:   Project：删号跑路、修缮博客和糟糕的新冠感染体验
 date:       2023-01-16
 author:     炸毛
