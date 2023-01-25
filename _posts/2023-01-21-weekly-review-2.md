@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "周报 #0x02 | 人生道路的选择"
+title:      "周报 #0x01<br>人生道路的选择"
 subtitle:   爬虫项目的完善、决定尝试申请留学和又一个新年
 date:       2023-01-21
 author:     炸毛
