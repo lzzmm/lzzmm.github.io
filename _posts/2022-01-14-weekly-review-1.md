@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      "周报 <text style="font-family: 'CamingoCodeRegular';">#0x00</text><br>新的一年向 Effective 前进吧"
+title:      "周报 #0x00<br>新的一年向 Effective 前进吧"
 subtitle:   Project：删号跑路、修缮博客和糟糕的新冠感染体验
 date:       2023-01-16
 author:     炸毛
 timecost:   15 minutes
-# heading-font: CamingoCodeRegular
+heading-font: CamingoCodeRegular
 # header-style: black
 # header-mask: 0.01
 header-img-credit:      CHEN Yuhan
