@@ -17,9 +17,10 @@ catalog: true
 mathjax: false
 live2d:  false
 byncsa:  false
-do-not-show-in-index: false
+do-not-show-in-index: true
 tags:
     - 漫谈
+    - Web
 ---
 
 ## 前言
