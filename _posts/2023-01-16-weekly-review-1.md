@@ -20,6 +20,7 @@ byncsa:  false
 do-not-show-in-index: true
 tags:
     - 漫谈
+    - 总结
     - Web
 ---
 
