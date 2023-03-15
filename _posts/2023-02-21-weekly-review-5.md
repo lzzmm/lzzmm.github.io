@@ -142,6 +142,6 @@ TBD.
 
 ## 往期
 
-["#0x00 | 新的一年向 Effective 前进吧——Project：删号跑路、修缮博客和糟糕的新冠感染体验"](https://lzzmm.github.io/2023/01/16/weekly-review-1/)
+[#0x00 \| 新的一年向 Effective 前进吧——Project：删号跑路、修缮博客和糟糕的新冠感染体验](https://lzzmm.github.io/2023/01/16/weekly-review-1/)
 
-["#0x01 | 人生道路的选择——爬虫项目的完善、决定尝试申请留学和又一个新年"](https://lzzmm.github.io/2023/02/05/weekly-review-2/)
+[#0x01 \| 人生道路的选择——爬虫项目的完善、决定尝试申请留学和又一个新年](https://lzzmm.github.io/2023/02/05/weekly-review-2/)

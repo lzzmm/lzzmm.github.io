@@ -95,4 +95,4 @@ TBD
 
 ## 往期
 
-["#0x00 | 新的一年向 Effective 前进吧——Project：删号跑路、修缮博客和糟糕的新冠感染体验"](https://lzzmm.github.io/2023/01/16/weekly-review-1/)
+[#0x00 \| 新的一年向 Effective 前进吧——Project：删号跑路、修缮博客和糟糕的新冠感染体验](https://lzzmm.github.io/2023/01/16/weekly-review-1/)
