@@ -1,87 +1,241 @@
 ---
 layout: page
-description: "「(o゜▽゜)o☆奇怪的知识增加了」"
-header-img-credit: CHEN Yuhan
-header-img-year: 2020
+title: "About ZM"
+description: "Welcome to Zhamao's secret base."
+header-img: "img/about-bg-1.jpg"
+multilingual: true
+header-img-credit: SHUHUAN
+header-img-year: 2023
 ---
 
-{% for post in paginator.posts %}
-{% if post.do-not-show-in-index != true %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-            {% if post.tags %}
-            <!-- DONE: beauty the tags -->
-            <text style="color: #389ad3;">
-                {% for tag in post.tags %}
-                / {{ tag }}
-                {% endfor %}
-        </h3>
-        {% endif %}
-        </text>
-        {% else %}
-        <h3 class="post-subtitle" style="color: #389ad3;">/
-            {% for tag in post.tags %}
-            {{ tag }} /
-            {% endfor %}
-        </h3>
-        {% endif %}
+<!-- Language Selector -->
+<select class="sel-lang" onchange="onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 | Chinese </option>
+    <option value="1"> 英文 | English </option>
+</select>
 
-        <!--DONE: tags and reduce preview lines-->
-        <div class="post-content-preview">
-            <!-- DONE: preview 自定义是否显示 -->
-            {% if post.do-not-show-preview %}
-            {% else %}
-            {% if post.lang == 'en' %}
-            {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-            {{ post.content | strip_html | truncate:160 }}
-            {% endif %}
-            {% endif %}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on
-        {{ post.date | date: "%B %-d, %Y" }}{% if post.timecost %} · {{ post.timecost }} to read {% endif %}
-    </p>
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+    <!--copied from markdown -->
+    <blockquote>
+        <p>冰冻三尺 非一日之寒<br>
+            积土成山 非斯须之作</p>
+    </blockquote>
+
+    <!-- <p>嘿，我是<strong>炸毛</strong>，-->本科生，现就读于中山大学
+    <!--<del>数据科学与</del>-->计算机学院计算机科学与技术专业（超级计算方向）。</p>
+
+    <!-- <p>炸毛十分的<strong>懒</strong>。更多关于炸毛请前往 <a href="https://lzzmm.github.io/2020/02/15/HelloWorld/">Hello_World!</a> -->
+    <!-- </p> -->
+
+    <p>要怎么开始自我介绍呢？</p>
+
+    <p>在刚搭建这个博客的时候，我写了很多很多东西。那是在疫情的开端，我还拥有着改变世界的年轻梦想。现在看来，一切都十分可笑。我没有在这两年间认真对待我的梦想，我浑浑噩噩过了两年，到今天，好像已经不想认识自己了。</p>
+
+    <p>我是不好意思说我喜欢学习，喜欢编码，喜欢研究的。我感觉我的状态惯性特别大——很难开始干活，但一进入状态就又很享受，停不下来。所以，我姑且算是一个不时对学习有三分钟热度的家伙吧。</p>
+
+    <p>和高中同学自学半个月做了个小程序。尽管最后没能获奖，但十分开心。可惜的是社区需要的更重要的是运营，而我们后来没有继续做下去的打算了。</p>
+
+    <p>参加了机器人比赛，在许多通宵的日子里体会到了用尽全力做成事情的喜悦。</p>
+
+    <p>这两天写编译器，好像又有了这种感觉。去年的现在写操作系统应该可能也有吧，只是最后放纵了，很可惜没有用心写到最后。</p>
+
+    <p>虽然一直是间歇性踌躇满志，但是至少在还有踌躇满志的人生中把握住机会努力，应该也能有好结果吧。</p>
+
+    <p>社会环境什么的，可能之前看的很重。但是，除了热爱，其他都不重要了。我还是坚信自己热爱计算机，热爱运行自己建造的系统时的喜悦。</p>
+
+    <p>我也热爱阅读和摄影。</p>
+
+    <p>希望可以一直热爱生活。</p>
+
+    <p>这是利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a>
+        搭建的个人博客。源码在<a href="https://github.com/lzzmm/lzzmm.github.io_">GitHub</a>上。</p>
+
+    <!-- <p>虽然炸毛十分的<strong>菜</strong>，但是热爱计算机和web。感谢<a href="https://huangxuan.me/" target="_blank">Hux</a>和<a
+            href="https://github.com/qiubaiying/qiubaiying.github.io"
+            target="_blank">BY</a>的开源项目，胡乱魔改一番总算搭起了这个网页。我从现在开始克服懒惰努力写自己的博客。请多指教！(￣▽￣)"</p> -->
+
+    <p>欢迎评论和发邮件到 <br> <a href="mailto:cleveryh@qq.com">cleveryh@qq.com</a> 或 <br> <a
+            href="mailto:chenyh369@mail2.sysu.edu.com">chenyh369@mail2.sysu.edu.com</a> <br> 指出错误或与我交流(●'◡'●)</p>
+
+    <p>最后更新于2020年11月22日。</p>
+
+    <a href="https://lzzmm.github.io/2020/02/16/log/">这里是博客的维护记录( •̀ ω •́ )</a>
+
+    <p>推荐阅读：</p>
+    <li><a href="https://lzzmm.github.io/2021/09/10/GEMM/">GEMM 及其优化</a></li>
+    <li><a href="https://lzzmm.github.io/2020/02/19/Markdown/">Markdown</a></li>
+    <li><a href="https://lzzmm.github.io/2020/07/10/Nietzsche/">尼采的权力意志和自我超越</a></li>
+
 </div>
-<hr>
-{% endif %}
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<!-- English Version -->
+<div class="en post-container">
+    <!-- <blockquote><p>Le vent se lève, il faut tenter de vivre. </p></blockquote> -->
 
-<!-- Live2D -->
-<!-- <script type="text/javascript" charset="utf-8" src="https://lzzmm.github.io/js/L2Dwidget.0.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://lzzmm.github.io/js/L2Dwidget.min.js"></script>
+    <blockquote>
+        <p>Pas à pas, on va loin. </p>
+    </blockquote>
+
+    <p>Hey, I am <strong>lzzmm</strong>. You can call me <strong>Zhamao</strong>. I am an undergraduate and currently
+        studying in School of Data and Computer Science, Sun Yat-sen University.
+    </p>
+
+    <!-- <p>For more about me please click here → <a href="https://lzzmm.github.io/2020/02/15/HelloWorld/">Hello_World!</a>
+    </p> -->
+
+    <!-- <p>This page is based on open source projects by <a href="https://huangxuan.me/" target="_blank">Hux </a>and <a
+            href="https://github.com/qiubaiying/qiubaiying.github.io" target="_blank">BY</a>.</p> -->
+
+    <p>This is my personal blog, I'll share my life here from now on. My GitHub is <a
+            href="https://github.com/lzzmm">lzzmm</a>.</p>
+
+    <!-- <p>Although I'm so <strong>weak</strong> in Computer Science, I still love it very much.<br> I'd welcome any
+        suggestion. (￣▽￣)"</p> -->
+
+    <p>You can make comments through Gitalk down here or sent e-mails to me at <br> <a
+            href="mailto:cleveryh@qq.com">cleveryh@qq.com</a> or <br> <a
+            href="mailto:chenyh369@mail2.sysu.edu.com">chenyh369@mail2.sysu.edu.com</a><br> (●'◡'●)</p>
+
+    <p>Latest update on Nov.22nd,2020.</p>
+
+    <a href="https://lzzmm.github.io/2020/02/16/log/">Here is the log of this site. ( •̀ ω •́ )</a>
+
+    <p>READ MORE:</p>
+    <li><a href="https://lzzmm.github.io/2021/09/10/GEMM/">GEMM and its Optimization</a></li>
+    <li><a href="https://lzzmm.github.io/2020/02/19/Markdown/">Markdown</a></li>
+    <li><a href="https://lzzmm.github.io/2020/07/10/Nietzsche/">Der Wille zur Macht & Übermensch</a></li>
+
+</div>
+
+<!-- Handle Language Change -->
 <script type="text/javascript">
-    L2Dwidget.init({
-        "display": {
-            "superSample": 2,
-            "width": 128,
-            "height": 256,
-            "position": "right",
-            "hOffset": 0,
-            "vOffset": 0
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render() {
+        var _hash = window.location.hash;
+        // en
+        if (_hash == "#en") {
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+            // zh by default
+        } else {
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index) {
+        if (index == 0) {
+            window.location.hash = "#zh"
+        } else {
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>
+
+<!-- Live2D start -->
+<!-- <script type="text/javascript" charset="utf-8"  src="{{ site.baseurl }}/js/L2Dwidget.0.min.js"></script>
+<script type="text/javascript" charset="utf-8"  src="{{ site.baseurl }}/js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+    L2Dwidget.init({"display": {
+        "superSample": 2,
+        "width": 128,
+        "height": 256,
+        "position": "right",
+        "hOffset": 0,
+        "vOffset": 0
         }
     });
 </script> -->
+<!-- Live2D end -->
+
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Gitalk link  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '{{site.gitalk.clientID}}',
+        clientSecret: '{{site.gitalk.clientSecret}}',
+        repo: '{{site.gitalk.repo}}',
+        owner: '{{site.gitalk.owner}}',
+        admin: ['{{site.gitalk.admin}}'],
+        distractionFreeMode: {{ site.gitalk.distractionFreeMode }},
+    id: 'about',
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
+
+<!-- disqus 评论框 start  -->
+{% if site.disqus.enable %}
+
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus.username}}";
+    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
+
+
+
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
