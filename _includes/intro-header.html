@@ -45,15 +45,15 @@
         {% endif %}
     </style>
     {% endif %}
-{% if page.header-style == 'text' %}
-<header class="intro-header style-text" >
-{% else %}
-    {% if page.header-style == 'black' %}
-<header class="intro-header style-black" >
+    {% if page.header-style == 'text' %}
+    <header class="intro-header style-text" >
     {% else %}
-<header class="intro-header" >
+        {% if page.header-style == 'black' %}
+    <header class="intro-header style-black" >
+        {% else %}
+    <header class="intro-header" >
+        {% endif %}
     {% endif %}
-{% endif %}
     <div class="header-mask"></div>
     {% if page.header-img-credit %}
     {% if page.header-img-credit-long %}
@@ -148,7 +148,7 @@
                 {% else %}
                 <div class="site-heading">
                 {% endif %}
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <h1 {%if page.heading-font %} style="font-family:{{page.heading-font}}" {% endif %}>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <span class="subheading">{{ page.description }}</span>
                 </div>
             </div>
