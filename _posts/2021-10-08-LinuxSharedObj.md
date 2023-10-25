@@ -3,7 +3,7 @@ layout:     post
 title:      Linux 环境下构造动态链接库
 subtitle:   Generate Dynamic Link Libraries on Linux
 date:       2021-10-08
-author:     炸毛
+author:     lzzmm
 timecost:   5 minutes
 # header-style: black
 # header-mask: 0.01
