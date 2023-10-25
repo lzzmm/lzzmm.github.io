@@ -3,7 +3,7 @@ layout:     post
 title:      编译并启动 Linux 内核
 subtitle:   在 Linux 上构建 OS Kernel 开发环境
 date:       2021-03-10
-author:     炸毛
+author:     lzzmm
 timecost:   10 minutes
 # header-style: black
 # header-mask: 0.01

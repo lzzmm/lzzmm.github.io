@@ -3,7 +3,7 @@ layout:     post
 title:      Effective C++
 subtitle:   55 Specific Ways to Improve Your Programs and Designs
 date:       2023-01-09
-author:     炸毛
+author:     lzzmm
 timecost:   30 minutes
 # header-style: black
 # header-style: text

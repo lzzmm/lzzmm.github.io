@@ -3,7 +3,7 @@ layout:     post
 title:      尼采的权力意志和自我超越 
 subtitle:   Der Wille zur Macht & Übermensch
 date:       2020-07-10
-author:     炸毛
+author:     lzzmm
 timecost:   10 minutes
 # header-style: black
 header-style: text

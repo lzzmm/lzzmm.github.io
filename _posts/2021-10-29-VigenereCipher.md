@@ -3,7 +3,7 @@ layout:     post
 title:      维吉尼亚密码加密与解密
 subtitle:   Vigenere Cipher Encrypt and Decrypt
 date:       2021-10-29
-author:     炸毛
+author:     lzzmm
 timecost:   10 minutes
 # header-style: black
 # header-mask: 0.01
@@ -16,7 +16,7 @@ catalog: true
 mathjax: true
 live2d:  false
 byncsa:  true
-do-not-show-in-index: false
+do-not-show-in-index: true
 tags:
     - C/C++
     - Information Security

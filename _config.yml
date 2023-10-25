@@ -26,9 +26,9 @@ RSS: false # TODO: enable RSS
 # weibo_username:     CleverYh    # 查看自己主页网址，可以在设置里自定义网址
 # zhihu_username:  cyhhh-81
 github_username: lzzmm
-jike_username: D5560B5D-7448-4E1A-B43A-EC2D2C9AB7EC
-jike_yellow: owo
-bilibili_username: 81640939
+# jike_username: D5560B5D-7448-4E1A-B43A-EC2D2C9AB7EC
+# jike_yellow: owo
+# bilibili_username: 81640939
 #twitter_username:
 #facebook_username:
 #linkedin_username:             # firstname-lastname-idxxxx
@@ -107,12 +107,12 @@ ga_domain: auto
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "日复一日 必有精进"
+sidebar-about-description: "Stay Energetic"
 sidebar-avatar: /img/lzzmm.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 2 # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 3 # A tag will be featured if the size of it is more than this condition value
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
