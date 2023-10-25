@@ -47,6 +47,7 @@ live2d: false
 highlighter: rouge
 permalink: pretty
 paginate: 16
+paginate_path: "/blog/page:num/"
 exclude:
   [
     "less",
