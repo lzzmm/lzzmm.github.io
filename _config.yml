@@ -99,11 +99,11 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 5d750e7f8adc5c65a8813e68e650c924
+# ba_track_id: 5d750e7f8adc5c65a8813e68e650c924
 
 # Google Analytics
-ga_track_id: "UA-158666159-1" # Format: UA-xxxxxx-xx
-ga_domain: auto
+# ga_track_id: "UA-158666159-1" # Format: UA-xxxxxx-xx
+# ga_domain: auto
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
