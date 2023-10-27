@@ -55,7 +55,8 @@ layout: default
                 {% include featured-tags.html %}
 
                 <!-- Short About -->
-                {% if page.include-about %}
+                {% if page.no-about %}
+                {% else %}
                 {% include short-about.html %}
                 {% endif %}
 
