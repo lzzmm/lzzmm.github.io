@@ -55,7 +55,9 @@ layout: default
                 {% include featured-tags.html %}
 
                 <!-- Short About -->
+                {% if page.include-about %}
                 {% include short-about.html %}
+                {% endif %}
 
                 <hr>
                 <h5><a href="{{'/2002/03/01/Projects/' | prepend: site.baseurl }}">PROJECTS</a></h5>
