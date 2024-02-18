@@ -23,8 +23,8 @@ layout: default
                 <!-- Featured Tags -->
                 {% include featured-tags.html %}
 
-                <hr>
-                <h5><a href="{{'/2002/03/01/Projects/' | prepend: site.baseurl }}">PROJECTS</a></h5>
+                <!-- <hr> -->
+                <!-- <h5><a href="{{'/2002/03/01/Projects/' | prepend: site.baseurl }}">PROJECTS</a></h5> -->
                 <!-- TODO: show projects -->
 
                 <!-- Friends Blog -->
@@ -52,7 +52,10 @@ layout: default
                 sidebar-container
             ">
                 <!-- Featured Tags -->
+                {% if page.no-tags %}
+                {% else %}
                 {% include featured-tags.html %}
+                {% endif %}
 
                 <!-- Short About -->
                 {% if page.no-about %}
@@ -60,11 +63,14 @@ layout: default
                 {% include short-about.html %}
                 {% endif %}
 
-                <hr>
-                <h5><a href="{{'/2002/03/01/Projects/' | prepend: site.baseurl }}">PROJECTS</a></h5>
+                <!-- <hr> -->
+                <!-- <h5><a href="{{'/2002/03/01/Projects/' | prepend: site.baseurl }}">PROJECTS</a></h5> -->
 
                 <!-- Friends Blog -->
+                {% if page.no-friends %}
+                {% else %}
                 {% include friends.html %}
+                {% endif %}
     		</div>
         {% endif %}
 	</div>

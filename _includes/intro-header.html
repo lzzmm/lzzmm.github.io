@@ -129,6 +129,9 @@
 {% endif %}
 
 {% if include.type == 'page' %}
+    {% if page.header-style == 'text' %}
+<header class="intro-header style-text" >
+    {% else %}
 <header class="intro-header">
     <style type="text/css">
         header.intro-header {
@@ -138,10 +141,11 @@
     <script type="text/javascript">
         window.onload = diffBackground();
     </script>
-    {% if page.header-img-credit %}
+        {% if page.header-img-credit %}
     <div class="header-img-credit">
         &copy; {{page.header-img-year}} {{page.header-img-credit}}
     </div>
+        {% endif %}
     {% endif %}
     <div class="container">
         <div class="row">
@@ -158,4 +162,5 @@
         </div>
     </div>
 </header>
+
 {% endif %}

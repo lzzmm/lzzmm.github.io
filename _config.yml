@@ -26,6 +26,7 @@ RSS: false # TODO: enable RSS
 # weibo_username:     CleverYh    # 查看自己主页网址，可以在设置里自定义网址
 # zhihu_username:  cyhhh-81
 github_username: lzzmm
+google_scholar_username: JKM0lC8AAAAJ
 # jike_username: D5560B5D-7448-4E1A-B43A-EC2D2C9AB7EC
 # jike_yellow: owo
 # bilibili_username: 81640939
@@ -37,7 +38,7 @@ github_username: lzzmm
 grayscale: false
 
 #bg-animation
-bg-animate: true
+bg-animate: false
 
 # live 2d
 live2d: false
