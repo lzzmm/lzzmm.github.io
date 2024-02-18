@@ -53,6 +53,19 @@
             </a>
         </li>
         {% endif %}
+        {% if site.google_scholar_username %}
+        <li>
+            <a target="_blank" title="Google Scholar" href="https://scholar.google.com/citations?user={{ site.google_scholar_username }}">
+                <!-- <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span> -->
+                <span class="fa-stack fa-lg">
+                    <i class="fa-brands fa-google-scholar fa-stack-1x"></i>
+                </span>
+            </a>
+        </li>
+        {% endif %}
         {% if site.bilibili_username %}
         <li>
             <a target="_blank" title="bilibili" href="https://space.bilibili.com/{{ site.bilibili_username }}">
