@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <time.h>
 
+#define MAT_SIZE 2048
 #define SHOW_MATRIX 1
 #define CHECK 0
 #define MAX(x, y) (((x) > (y)) ? (x) : (y))
@@ -22,7 +23,7 @@ void matrix_multiply(int M, int N, int K, float *A, float *B, float *C);
 void PrintMatrix(float *Matrix, const int R, const int C);
 
 int main() {
-    int M = 2048, N = 2048, K = 2048, m, n, k, i;
+    int M = MAT_SIZE, N = MAT_SIZE, K = MAT_SIZE, m, n, k, i;
     // struct size{
     //     int _M,_N,_K;
     // };
@@ -38,7 +39,7 @@ int main() {
     MPI_Comm_rank(comm, &my_rank);
     MPI_Status status;
     int        begin_Arow, end_Arow, avg_rows;
-    if (comm_sz > 1) avg_rows = K / comm_sz;
+    if (comm_sz > 1) avg_rows = M / comm_sz;
 
     // use vecs to reperesent matrices
     // float **A = (float **)malloc(sizeof(float *) * M);
@@ -81,7 +82,7 @@ int main() {
     } else { // parallel
 
         // for (i = 0; i < comm_sz - 1; i++) {
-        //     begin_Arow = avg_rows * i, end_Arow = i + 1 == comm_sz - 1 ? MAX(K, avg_rows * (i + 1)) : avg_rows * (i + 1);
+        //     begin_Arow = avg_rows * i, end_Arow = i + 1 == comm_sz - 1 ? MAX(M, avg_rows * (i + 1)) : avg_rows * (i + 1);
         //     // printf("0bg%d endr%d\n", begin_Arow, end_Arow);
         //     MPI_Send(&end_Arow, 1, MPI_INT, i + 1, 10, MPI_COMM_WORLD);
         //     MPI_Send(&A[begin_Arow * N], (end_Arow - begin_Arow) * N, MPI_FLOAT, i + 1, 1, MPI_COMM_WORLD); // some rows of matrix A
@@ -116,7 +117,7 @@ int main() {
         printf("Total time: %lfs\n", (double)(endTime - startTime) / CLOCKS_PER_SEC);
 #endif
         // for (i = 0; i < comm_sz - 1; i++) {
-        //     begin_Arow = avg_rows * i, end_Arow = i + 1 == comm_sz - 1 ? MAX(K, avg_rows * (i + 1)) : avg_rows * (i + 1);
+        //     begin_Arow = avg_rows * i, end_Arow = i + 1 == comm_sz - 1 ? MAX(M, avg_rows * (i + 1)) : avg_rows * (i + 1);
         //     MPI_Recv(&C[begin_Arow * N], (end_Arow - begin_Arow) * K, MPI_FLOAT, i + 1, 3, MPI_COMM_WORLD, &status);
         // }
 
