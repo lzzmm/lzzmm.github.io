@@ -1,0 +1,147 @@
+<style>
+    /* details {
+  border: 1px solid #39a;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+} */
+
+    details {
+        /* display: inline-block; */
+        font-family: Arial, sans-serif;
+        color: #FF9422;
+        border: 1.5px solid #ddefff;
+        border-radius: 0px;
+        background-color: #fafeff;
+        max-width: 300px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 10px 0px 10px;
+        overflow: hidden;
+        transition: all 0.8s ease;
+        vertical-align: middle;
+    }
+
+    summary {
+        cursor: pointer;
+        list-style: none;
+        outline: none;
+        font-weight: bold;
+        color: #333;
+        margin: 0px -10px 0px -10px;
+        padding: 4px 10px 5px 10px;
+        background-color: #ddfaff;
+        border-radius: 0px 0px 0 0;
+        user-select: none;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary:after {
+        content: '+';
+        float: right;
+        margin-top: -6px;
+        font-size: 22px;
+        transition: transform 0.8s ease;
+    }
+
+    details[open] summary:after {
+        opacity: 1;
+        transform: rotate(45deg);
+    }
+
+    .content {
+        padding: 0 10px;
+        margin: 10px 0;
+        opacity: 0;
+        max-height: 0;
+        transition: all 0.8s ease;
+    }
+
+    details[open] .content {
+        text-shadow: 0 0 5px #FF9422;
+        opacity: 1;
+        max-height: 300px;
+    }
+
+    ul.no-bullets {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+    }
+</style>
+
+
+<h3>🔥 NEWS</h3>
+
+<ul>
+    <li>
+        [2024.04] 🎉🎉 I visited Sabah, Malaysia for the first time with Xi and Koh! I spent a perfect 7-day annual leave here, and then I took the opportunity to go to Singapore. <a href="/2024/04/18/trip2sabah/"><img style="display: inline-block; margin:0; cursor:pointer;" src="https://img.shields.io/badge/BLOG(WIP)-3495EA?style=flat-square&"></a>
+    </li>
+    <li>
+        <span>[2024.02] 🎉🎉 <i>Team HKUST(GZ)</i> ranked 6th in the Swiss round and advanced to the quarterfinals in
+            the Guangdong University Overwatch League 2024! I am really honored to take the position of DPS.
+            <details>
+                <summary><i>TEAM HKUST(GZ)</i></summary>
+                <i><b>
+                        <ul class="no-bullets">
+                            <li>Eason - TEAM LEAD/DPS/TANK</li>
+                            <li>Newsun - TANK/SUP</li>
+                            <li>reclusive - SUP/DPS</li>
+                            <li>Cortex - DPS</li>
+                            <li>Goldenglow - SUP</li>
+                            <li>Lovelin - SUP</li>
+                        </ul>
+                    </b></i>
+            </details>
+        </span>
+        <!-- <b>TEAM HKUST(GZ)</b> <i>Eason - LEAD/DPS/TANK, Newsun - TANK/SUP, Cortex - DPS, reclusive - SUP/DPS, Goldenglow - SUP, Lovelin - SUP</i> -->
+    </li>
+    <li>
+        <span>[2024.01] 🎉🎉 <i>Team Guangzhou Red Bird</i> won the second place in the Overwatch Metal League 2024
+            Guangzhou Division! I took the position of DPS, that was my first time participating in electronic sports as a player! <i>"The world could always use more heroes."</i>
+            <details>
+                <summary><i>TEAM Guangzhou Red Bird</i></summary>
+                <i><b>
+                        <ul class="no-bullets">
+                            <li>Newsun - TANK</li>
+                            <li>op10no3 - DPS</li>
+                            <li>Cortex - DPS</li>
+                            <li>GaryGuo - SUP/DPS</li>
+                            <li>Lovelin - SUP</li>
+                            <li>Goldenglow - TANK</li>
+                            <li>SumTsingWong - SUP</li>
+                        </ul>
+                    </b></i>
+            </details>
+            <!-- <b>TEAM GuangZhou Red Bird</b> <i>Newsun - TANK, op10no3 - DPS, Cortex - DPS, GaryGuo - SUP/DPS, Lovelin - SUP, SumTsingWong - SUP, Goldenglow - TANK</i> -->
+        </span>
+    </li>
+    <li>
+        [2024.01] 🎉🎉 Our paper “Towards Efficient and Reliable LLM Serving: A Real-World Workload Study” is available!
+        This paper introduces the first real-world trace dataset of LLM serving workloads, detailing user, system, and
+        LLM behaviors. Many new insights of GPT services are found in this work. We'll keep updating the trace, and
+        new features will be available soon. <a href="https://arxiv.org/pdf/2401.17644.pdf" target="_blank"><img
+                style="display: inline-block; margin:0; cursor:pointer;" alt="Paper"
+                src="https://img.shields.io/badge/Paper-8A2BE2?style=flat-square&logo=arxiv&logoColor=FFFFFF"></a>
+        <a href="https://github.com/HPMLL/BurstGPT" target="_blank"><img
+                style="display: inline-block; margin:0; cursor:pointer;" alt="BurstGPT"
+                src="https://img.shields.io/github/stars/HPMLL/BurstGPT?style=flat-square&logo=github&label=Star&labelColor=103A80&color=0FBEEF"></a>
+    </li>
+</ul>
