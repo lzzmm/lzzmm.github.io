@@ -12,6 +12,7 @@ header-style: text
 # header-img-year:        2021 
 # header-img-outchain: false
 # nav-style: invert
+sctext: true
 catalog: false
 mathjax: false
 live2d:  false
