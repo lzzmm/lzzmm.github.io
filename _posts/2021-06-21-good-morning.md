@@ -10,6 +10,7 @@ header-img-outchain:    false
 header-img: img/cat.jpg
 timecost:   3 minutes
 # nav-style: invert
+sctext: true
 catalog: false
 mathjax: false
 live2d:  false

@@ -11,7 +11,11 @@ layout: default
 
 <!-- Post Content -->
 <article>
+    {% if page.sctext %}
+    <div class="container" style="font-family: 'Optima', 'Source Han Serif SC', serif; font-size: large;">
+    {% else %}
     <div class="container">
+    {% endif %}
         <div class="row">
 
             <!-- Post Container -->
