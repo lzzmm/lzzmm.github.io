@@ -17,7 +17,7 @@ catalog: false
 mathjax: false
 live2d:  false
 byncsa:  true
-do-not-show-in-index: false
+do-not-show-in-index: true
 tags:
     - 漫谈
 ---
