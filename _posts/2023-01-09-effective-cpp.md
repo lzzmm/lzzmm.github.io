@@ -18,7 +18,7 @@ catalog: true
 mathjax: true
 live2d:  false
 byncsa:  true
-do-not-show-in-index: true
+do-not-show-in-index: false
 tags:
     - C/C++
     - Notes
